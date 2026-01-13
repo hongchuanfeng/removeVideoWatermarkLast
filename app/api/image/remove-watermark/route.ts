@@ -192,7 +192,7 @@ export async function POST(request: NextRequest) {
           });
         });
 
-      } catch (ciError) {
+      } catch (ciError: any) {
         console.error('CI processing error:', ciError);
 
         // Fallback: try the download-process-upload method
@@ -235,9 +235,12 @@ export async function POST(request: NextRequest) {
 
           console.log('Fallback method successful');
 
-        } catch (fallbackError) {
-          console.error('Both CI processing methods failed');
-          throw new Error(`Image processing failed: ${ciError.message}`);
+        } catch (fallbackError: any) {
+          console.error('Both CI processing methods failed', fallbackError);
+          // Include both errors if available
+          const outerMsg = ciError && ciError.message ? ciError.message : String(ciError);
+          const fallbackMsg = fallbackError && fallbackError.message ? fallbackError.message : String(fallbackError);
+          throw new Error(`Image processing failed. copyObject error: ${outerMsg}; fallback error: ${fallbackMsg}`);
         }
       }
 
