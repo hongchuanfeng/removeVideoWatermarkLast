@@ -10,7 +10,7 @@ export async function GET() {
     if (existsSync(envFilePath)) {
       envFileContent = readFileSync(envFilePath, 'utf-8');
     }
-  } catch (error) {
+  } catch (error: any) {
     envFileContent = `Error reading file: ${error.message}`;
   }
 
