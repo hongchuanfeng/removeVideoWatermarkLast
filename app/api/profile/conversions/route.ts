@@ -16,7 +16,7 @@ export async function GET(request: NextRequest) {
 
     const { data: conversions, error } = await supabase
       .from('conversion_records')
-      .select('id, type, file_name, status, created_at, result_file_url')
+      .select('id, type, file_name, status, created_at, result_file_url, input_type, output_url')
       .eq('user_id', user.id)
       .order('created_at', { ascending: false });
 
@@ -29,7 +29,15 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ error: 'Failed to fetch conversions' }, { status: 500 });
     }
 
-    return NextResponse.json({ conversions: conversions || [] });
+    // Process conversions to use correct download URL based on input_type
+    const processedConversions = (conversions || []).map(conversion => ({
+      ...conversion,
+      result_file_url: conversion.input_type === 'image'
+        ? conversion.output_url
+        : conversion.result_file_url
+    }));
+
+    return NextResponse.json({ conversions: processedConversions });
   } catch (error: any) {
     console.error('Error in conversions API:', error);
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
