@@ -1,0 +1,709 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "imageWatermarkRemoval": "Bildwasserzeichen entfernen",
+    "subscription": "Abonnement",
+    "profile": "Mein Konto"
+  },
+  "imageWatermarkRemoval": {
+    "title": "Bildwasserzeichen entfernen",
+    "description": "Laden Sie ein Bild hoch, klicken Sie auf Wasserzeichen-Positionen und entfernen Sie sie mit einem Klick",
+    "imageCreditsInfo": "Die Verarbeitung eines Bildes erfordert 1 Guthaben. Ihnen bleiben {credits} Guthaben.",
+    "promptTitle": "Bitte klicken Sie auf das Bild, um Wasserzeichenbereiche zu markieren",
+    "promptDesc": "Klicken Sie auf Wasserzeichenbereiche im Bild, das System markiert sie automatisch",
+    "promptHint": "Tipp: Klicken Sie irgendwo auf das Bild, um den Test zu starten",
+    "demoNote": "Hinweis: Dies ist eine Demo-Version. Die tatsächliche Bildverarbeitung erfordert eine vollständige Tencent Cloud API-Konfiguration.",
+    "uploadTitle": "Bild hochladen",
+    "uploadPrompt": "Ziehen Sie ein Bild hierher oder klicken Sie zur Dateiauswahl",
+    "selectImage": "Bild auswählen",
+    "changeImage": "Bild ändern",
+    "clearPoints": "Markierungen löschen",
+    "removeLastPoint": "Letzte Markierung entfernen",
+    "markedPoints": "{count} Wasserzeichen-Positionen markiert",
+    "processImage": "Wasserzeichen entfernen",
+    "processing": "Verarbeitung...",
+    "resultTitle": "Verarbeitungsergebnis",
+    "downloadImage": "Bild herunterladen",
+    "loading": "Laden...",
+    "insufficientCredits": "Unzureichende Guthaben. Bitte zuerst aufladen.",
+    "processingError": "Verarbeitung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "features": {
+      "title": "Funktionen",
+      "intelligent": "Intelligente Erkennung: Automatische Erkennung und Entfernung von Wasserzeichen und Logos aus Bildern",
+      "precision": "Präzise Reparatur: Einsatz von KI-Technologie zur intelligenten Reparatur von Bereichen nach der Wasserzeichenentfernung",
+      "batch": "Stapelverarbeitung: Unterstützung der gleichzeitigen Entfernung mehrerer Wasserzeichenbereiche",
+      "quality": "HD-Erhaltung: Erhaltung der ursprünglichen Bildqualität nach der Verarbeitung"
+    },
+    "instructions": {
+      "title": "Anweisungen",
+      "step1": "Bild hochladen: Klicken Sie, um ein Bild auszuwählen, oder ziehen Sie ein Bild in den Upload-Bereich",
+      "step2": "Wasserzeichen markieren: Verwenden Sie die Maus, um den Wasserzeichenbereich zu ziehen und auszuwählen (gelbes Feld für Vorschau, rotes Feld für Bestätigung)",
+      "step3": "Markierung bestätigen: Mehrere Wasserzeichenbereiche können hinzugefügt werden, oder löschen und neu markieren",
+      "step4": "Verarbeitung starten: Klicken Sie auf die Schaltfläche 'Wasserzeichen entfernen' und warten Sie auf die KI-Verarbeitung",
+      "step5": "Ergebnis herunterladen: Laden Sie das reparierte Bild nach Abschluss der Verarbeitung herunter"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": "Welche Bildformate werden unterstützt?",
+      "a1": "Unterstützt gängige Formate wie JPG, PNG, JPEG mit einer Größe von bis zu 10 MB.",
+      "q2": "Wie gut ist der Effekt der Wasserzeichenentfernung?",
+      "a2": "Verwendet Tencent Cloud KI-Technologie für intelligente Erkennung und Reparatur von Wasserzeichenbereichen mit natürlichen Ergebnissen unter Beibehaltung der Bildqualität.",
+      "q3": "Wie viele Wasserzeichen können gleichzeitig entfernt werden?",
+      "a3": "Unterstützt das Markieren und Entfernen mehrerer Wasserzeichenbereiche gleichzeitig ohne Mengenbegrenzung.",
+      "q4": "Wie lange dauert die Verarbeitung?",
+      "a4": "Wird normalerweise in 10-30 Sekunden abgeschlossen, abhängig von Bildgröße und Wasserzeichenschwierigkeit.",
+      "q5": "Was tun, wenn ich nicht genug Credits habe?",
+      "a5": "Sie können Credit-Pakete kaufen oder das kostenlose Testguthaben verwenden (eine kostenlose Gelegenheit für jeden neuen Benutzer)."
+    },
+    "examples": {
+      "title": "Verarbeitungsbeispiele",
+      "subtitle": "Sehen Sie, wie unsere KI-Technologie Wasserzeichen und Logos präzise entfernt",
+      "before": "Vorher",
+      "after": "Nachher",
+      "logoExample": "Logo-Entfernungsbeispiel",
+      "watermarkExample": "Wasserzeichen-Entfernungsbeispiel",
+      "combinedExample": "Kombinierte Verarbeitungsbeispiel"
+    }
+  },
+  "auth": {
+    "signInWithGoogle": "Mit Google anmelden",
+    "signOut": "Abmelden",
+    "signingIn": "Wird angemeldet...",
+    "signingOut": "Wird abgemeldet..."
+  },
+  "subscription": {
+    "title": "Abonnementpläne",
+    "subtitle": "Wählen Sie den Plan, der zu Ihnen passt",
+    "description": "Erhalten Sie Credits, um Videos in Untertitel umzuwandeln. 1 Credit = 1 Minute Video.",
+    "basic": {
+      "name": "Basic",
+      "price": "$39.9",
+      "period": "/Monat",
+      "credits": "30 Credits",
+      "description": "Perfekt für gelegentliche Nutzung",
+      "button": "Abonnieren"
+    },
+    "standard": {
+      "name": "Standard",
+      "price": "$119.9",
+      "period": "/Monat",
+      "credits": "100 Credits",
+      "description": "Großartig für regelmäßige Nutzer",
+      "button": "Abonnieren",
+      "popular": "Beliebtester"
+    },
+    "premium": {
+      "name": "Premium",
+      "price": "$239.9",
+      "period": "/Monat",
+      "credits": "210 Credits",
+      "description": "Bester Wert für Power-User",
+      "button": "Abonnieren"
+    },
+    "features": {
+      "title": "Was ist enthalten",
+      "videoToSubtitle": "Video-zu-Untertitel-Konvertierung",
+      "creditBased": "Credit-basierte Preisgestaltung",
+      "monthlyRenewal": "Monatliche automatische Verlängerung",
+      "cancelAnytime": "Jederzeit kündbar"
+    },
+    "freeTrial": {
+      "title": "Kostenlose Testversion",
+      "description": "Neue Benutzer erhalten 1 kostenlose Konvertierung (max. 30 Sekunden) nach der Anmeldung"
+    },
+    "pricingRules": {
+      "title": "Credit-Preisregeln",
+      "subtitle": "Untertitel-Entfernungsservice wird nach Videoauflösung und -dauer abgerechnet",
+      "rule1": "Auflösung 2560 × 1440: 2 Credits/Minute (aufgerundet)",
+      "rule2": "Auflösung 1280 × 640: 1 Credit/Minute (aufgerundet)",
+      "note": "Teilminuten werden auf 1 Minute aufgerundet"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": "Was sind Credits?",
+      "a1": "Credits sind die Abrechnungseinheit für unseren Service. 1 Credit kann 1 Minute Video (Wasserzeichen/Logo-Entfernung) verarbeiten. Die Untertitel-Entfernung wird je nach Videoauflösung unterschiedlich abgerechnet.",
+      "q2": "Muss ich mich registrieren, um den Service zur Wasserzeichenentfernung zu nutzen?",
+      "a2": "Ja, Sie müssen sich registrieren und anmelden, um unseren Service zu nutzen. Neue Benutzer erhalten nach der Registrierung 1 kostenlose Testversion (max. 30 Sekunden).",
+      "q3": "Ist der Service kostenlos?",
+      "a3": "Wir bieten neuen Benutzern 1 kostenlose Testversion (max. 30 Sekunden) an. Danach müssen Sie Credits kaufen oder einen Plan abonnieren, um den Service weiter zu nutzen.",
+      "q4": "Sollte ich Pay-as-you-go Credits oder einen Abonnementplan wählen?",
+      "a4": "Wenn Sie den Service gelegentlich nutzen, passen Pay-as-you-go Credits möglicherweise zu Ihnen. Wenn Sie ihn häufig nutzen, sind Abonnementpläne kosteneffektiver mit monatlicher automatischer Verlängerung und können jederzeit gekündigt werden.",
+      "q5": "Was ist, wenn ich mit dem Ergebnis nicht zufrieden bin?",
+      "a5": "Wenn Sie mit dem Verarbeitungsergebnis nicht zufrieden sind, kontaktieren Sie bitte unser Kundenserviceteam und wir werden unser Bestes tun, um Ihr Problem zu lösen.",
+      "q6": "Was ist, wenn mir das Credit-Limit ausgeht?",
+      "a6": "Wenn Ihre Credits aufgebraucht sind, können Sie zusätzliche Credit-Pakete kaufen oder auf einen höheren Abonnementplan upgraden, um den Service weiter zu nutzen.",
+      "q7": "Wie hoch sind die Kosten für die zusätzliche Nutzung über meine monatlichen Credits hinaus?",
+      "a7": "Die Nutzung über die monatlichen Credits hinaus wird zu den Standard-Credit-Preisen abgerechnet. Bitte überprüfen Sie unsere Preisliste für spezifische Preise.",
+      "q8": "Ist eine Registrierung vor der Nutzung des Services erforderlich?",
+      "a8": "Ja, eine Registrierung ist erforderlich. Nach der Registrierung können Sie die kostenlose Testversion nutzen und Ihre Konvertierungsaufzeichnungen und Credits verwalten.",
+      "q9": "Wie viele Konvertierungen kann ich mit dem Service durchführen?",
+      "a9": "Die Anzahl der Konvertierungen hängt von den Credits ab, die Sie haben. Jede Videokonvertierung verbraucht Credits basierend auf Videolänge und Verarbeitungstyp.",
+      "q10": "Welche Zahlungsmethoden werden akzeptiert?",
+      "a10": "Wir akzeptieren verschiedene Zahlungsmethoden einschließlich Kreditkarten, Debitkarten und mehr. Alle Zahlungen werden über sichere Zahlungsgateways abgewickelt.",
+      "q11": "Akzeptieren Sie individuelle Anfragen oder spezifische Bedürfnisse?",
+      "a11": "Wir bieten hauptsächlich standardisierte Video-Wasserzeichen-, Logo- und Untertitel-Entfernungsservices. Für spezielle Anforderungen kontaktieren Sie bitte unser Kundenserviceteam.",
+      "q12": "Was ist, wenn ich eine spezifische Bildkonvertierung durchführen möchte?",
+      "a12": "Unser Service konzentriert sich auf die Videoverarbeitung. Wenn Sie Bildverarbeitungsservices benötigen, überprüfen Sie bitte unsere anderen Produkte.",
+      "q13": "Was passiert, wenn ich die volle Menge der monatlichen Credits nicht aufbrauche?",
+      "a13": "Nicht genutzte monatliche Credits werden nicht in den nächsten Monat übertragen. Wir empfehlen, einen Abonnementplan zu wählen, der Ihrer tatsächlichen Nutzung entspricht.",
+      "q14": "Kann ich mein Abonnement upgraden/downgraden/kündigen?",
+      "a14": "Ja, Sie können Ihr Abonnement jederzeit upgraden, downgraden oder kündigen. Nach der Kündigung können Sie weiterhin gekaufte Credits nutzen, aber die automatische Verlängerung wird gestoppt."
+    },
+    "loginRequired": "Bitte melden Sie sich an, um zu abonnieren",
+    "processing": "Wird verarbeitet...",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+  },
+  "profile": {
+    "title": "Mein Konto",
+    "orders": {
+      "title": "Meine Bestellungen",
+      "noOrders": "Keine Bestellungen gefunden",
+      "transactionId": "Transaktions-ID",
+      "productId": "Produkt",
+      "credits": "Credits",
+      "date": "Datum",
+      "status": "Status",
+      "loading": "Lade Bestellungen..."
+    },
+    "conversions": {
+      "title": "Meine Konvertierungen",
+      "noConversions": "Keine Konvertierungsaufzeichnungen gefunden",
+      "type": "Typ",
+      "fileName": "Dateiname",
+      "status": "Status",
+      "date": "Datum",
+      "result": "Ergebnis",
+      "download": "Herunterladen",
+      "noResult": "Noch kein Ergebnis",
+      "loading": "Lade Konvertierungen...",
+      "statusText": {
+        "pending": "In Warteschlange",
+        "processing": "Wird verarbeitet",
+        "completed": "Abgeschlossen",
+        "failed": "Fehlgeschlagen"
+      },
+      "typeText": {
+        "watermark_logo_removal": "Wasserzeichen/Logo-Entfernung",
+        "subtitle_removal": "Untertitel-Entfernung",
+        "watermark_removal": "Wasserzeichen-Entfernung",
+        "logo_removal": "Logo-Entfernung"
+      }
+    },
+    "credits": {
+      "title": "Meine Credits",
+      "currentCredits": "Aktuelle Credits",
+      "totalCredits": "Gesamt Credits",
+      "usedCredits": "Verwendete Credits",
+      "freeTrialUsed": "Kostenlose Testversion verwendet",
+      "freeTrialAvailable": "Kostenlose Testversion verfügbar",
+      "loading": "Lade Credits..."
+    },
+    "tabs": {
+      "orders": "Bestellungen",
+      "conversions": "Konvertierungen",
+      "credits": "Credits"
+    },
+    "loginRequired": "Bitte melden Sie sich an, um Ihr Konto anzuzeigen",
+    "login": "Anmelden"
+  },
+  "home": {
+    "title": "Video-Wasserzeichen, Logo & Untertitel entfernen",
+    "subtitle": "Professioneller Video-Wasserzeichen-Entfernungsservice",
+    "description": "Entfernen Sie Wasserzeichen, Logos und Untertitel aus Ihren Videos mit unserer fortschrittlichen KI-gestützten Technologie",
+    "subscribe": "Jetzt abonnieren",
+    "upload": {
+      "title": "Laden Sie Ihr Video hoch",
+      "removalType": "Entfernungstyp",
+      "watermark_logo": "Wasserzeichen & Logo entfernen",
+      "subtitle": "Untertitel",
+      "dragDrop": "Ziehen Sie Ihr Video hierher oder klicken Sie zum Durchsuchen",
+      "selectFile": "Videodatei auswählen",
+      "start": "Verarbeitung starten",
+      "uploading": "Wird hochgeladen...",
+      "processing": "Wird verarbeitet...",
+      "completed": "Verarbeitung erfolgreich abgeschlossen!",
+      "failed": "Verarbeitung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+      "retry": "Wiederholen",
+      "recharge": "Aufladen",
+      "download": "Video herunterladen",
+      "waiting": "Die Verarbeitung dauert einige Zeit, bitte warten Sie geduldig. Die Datei wird automatisch heruntergeladen, wenn die Verarbeitung abgeschlossen ist.",
+      "tip": "Nach dem Hochladen können Sie Ihre Konvertierungsaufzeichnungen im Profilzentrum anzeigen, auch wenn Sie diese Seite verlassen",
+      "freeLimit": "Die kostenlose Nutzung ist auf Videos bis zu 30 Sekunden beschränkt. Abonnieren oder aufladen, um längere Videos zu verarbeiten.",
+      "creditLimit": "Bei Verwendung von Credits dürfen Videos 2 Minuten nicht überschreiten. Bitte schneiden Sie zu und versuchen Sie es erneut."
+    },
+    "cta": {
+      "start": "Loslegen",
+      "learnMore": "Mehr erfahren"
+    },
+    "creditsInfo": {
+      "title": "Credit-Abzugsregeln",
+      "rule": "1 Minute Video zieht 1 Credit ab, weniger als 1 Minute wird als 1 Minute berechnet",
+      "example1": "30-Sekunden-Video → 1 Credit abziehen",
+      "example2": "1,5-Minuten-Video → 2 Credits abziehen",
+      "example3": "2-Minuten-Video → 2 Credits abziehen"
+    },
+    "features": {
+      "title": "Funktionen",
+      "watermark": "Wasserzeichen entfernen",
+      "logo": "Logo entfernen",
+      "subtitle": "Untertitel entfernen",
+      "watermarkDesc": "Unerwünschte Wasserzeichen präzise entfernen",
+      "logoDesc": "Logos und Branding nahtlos entfernen",
+      "subtitleDesc": "Untertitel und Textüberlagerungen aus Videos entfernen"
+    },
+    "howToUse": {
+      "title": "Wie man verwendet",
+      "step1": "Laden Sie Ihr Video hoch",
+      "step2": "Entfernungstyp auswählen",
+      "step3": "Verarbeiten und herunterladen",
+      "step1Desc": "Wählen Sie Ihre Videodatei aus und laden Sie sie hoch",
+      "step2Desc": "Wählen Sie, was entfernt werden soll: Wasserzeichen, Logo oder Untertitel",
+      "step3Desc": "Warten Sie auf die Verarbeitung und laden Sie Ihr sauberes Video herunter"
+    },
+    "help": {
+      "title": "Hilfe & Support",
+      "faq": "FAQ",
+      "feedback": "Feedback",
+      "faq1": {
+        "title": "Welche Videoformate werden unterstützt?",
+        "desc": "Wir unterstützen gängige Formate: MP4, AVI, MOV, MKV usw."
+      },
+      "faq2": {
+        "title": "Wie lange dauert die Verarbeitung?",
+        "desc": "Hängt von Länge/Komplexität ab. Ein 1-Minuten-Video benötigt normalerweise 2-5 Minuten."
+      },
+      "faq3": {
+        "title": "Ist mein Video sicher?",
+        "desc": "Verschlüsselt und automatisch nach 24 Stunden gelöscht."
+      }
+    },
+    "caseStudies": {
+      "title": "Fallstudien",
+      "description": "Sehen Sie, wie wir anderen geholfen haben, Wasserzeichen zu entfernen",
+      "beforeTitle": "Vorher",
+      "beforeDesc": "Video mit Wasserzeichen",
+      "afterTitle": "Nachher",
+      "afterDesc": "Wasserzeichen entfernt",
+      "subtitleBeforeTitle": "Untertitel-Entfernung - Vorher",
+      "subtitleBeforeDesc": "Video mit Untertiteln",
+      "subtitleAfterTitle": "Untertitel-Entfernung - Nachher",
+      "subtitleAfterDesc": "Untertitel entfernt",
+      "logo1BeforeTitle": "Logo-Entfernung Beispiel 1 - Vorher",
+      "logo1BeforeDesc": "Video mit Logo",
+      "logo1AfterTitle": "Logo-Entfernung Beispiel 1 - Nachher",
+      "logo1AfterDesc": "Logo entfernt",
+      "logo2BeforeTitle": "Logo-Entfernung Beispiel 2 - Vorher",
+      "logo2BeforeDesc": "Video mit Logo",
+      "logo2AfterTitle": "Logo-Entfernung Beispiel 2 - Nachher",
+      "logo2AfterDesc": "Logo entfernt",
+      "subtitle2BeforeTitle": "Untertitel-Entfernung Beispiel - Vorher",
+      "subtitle2BeforeDesc": "Video mit Untertiteln",
+      "subtitle2AfterTitle": "Untertitel-Entfernung Beispiel - Nachher",
+      "subtitle2AfterDesc": "Untertitel entfernt"
+    }
+  },
+  "footer": {
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "refund": "Rückerstattungsrichtlinie",
+    "disclaimer": "Haftungsausschluss",
+    "copyright": "Urheberrechtshinweis",
+    "legal": "Rechtlicher Hinweis",
+    "ip": "Geistiges Eigentum",
+    "contact": "Kontakt",
+    "address": "Adresse",
+    "addressValue": "Gebäude 130, Longhua Avenue, Longhua District, Shenzhen, China",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "quickLinks": "Schnelllinks",
+    "home": "Startseite",
+    "about": "Über uns",
+    "contactUs": "Kontaktieren Sie uns",
+    "description": "Professioneller Video-Wasserzeichen-Entfernungsservice. Entfernen Sie Wasserzeichen, Logos und Untertitel aus Ihren Videos."
+  },
+  "about": {
+    "title": "Über uns",
+    "subtitle": "Professioneller Video-Verarbeitungsservice-Anbieter",
+    "description": "Wir sind ein professioneller Video-Verarbeitungsservice-Anbieter, der sich darauf konzentriert, Content-Erstellern, Unternehmen und Einzelpersonen zu helfen, unerwünschte Elemente aus ihren Videos zu entfernen.",
+    "mission": {
+      "title": "Unsere Mission",
+      "content": "Wir sind darauf ausgerichtet, hochwertige Video-Verarbeitungsservices bereitzustellen, die Content-Erstellern, Unternehmen und Einzelpersonen helfen, unerwünschte Elemente aus ihren Videos zu entfernen. Unsere fortschrittliche KI-gestützte Technologie gewährleistet eine präzise und effiziente Entfernung von Wasserzeichen, Logos und Untertiteln."
+    },
+    "whyChooseUs": {
+      "title": "Warum uns wählen",
+      "items": {
+        "ai": "Fortschrittliche KI-Technologie für genaue Entfernung",
+        "fast": "Schnelle Verarbeitungszeiten",
+        "secure": "Sichere und vertrauliche Behandlung Ihrer Videos",
+        "formats": "Unterstützung für mehrere Videoformate",
+        "support": "Professioneller Kundensupport",
+        "quality": "Hochwertige Ergebnisse garantiert"
+      }
+    },
+    "technology": {
+      "title": "Unsere Technologie",
+      "content": "Wir nutzen modernste künstliche Intelligenz und Machine-Learning-Algorithmen, um Wasserzeichen, Logos und Untertitel aus Videos zu identifizieren und zu entfernen. Unsere Technologie wird kontinuierlich verbessert, um die besten Ergebnisse für unsere Kunden zu liefern."
+    },
+    "team": {
+      "title": "Unser Team",
+      "content": "Unser Team besteht aus erfahrenen Video-Verarbeitungsexperten und KI-Ingenieuren, die leidenschaftlich daran arbeiten, unseren Kunden den bestmöglichen Service zu bieten."
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "quality": "Qualität zuerst",
+      "qualityDesc": "Wir priorisieren Qualität in jedem Aspekt unseres Services",
+      "innovation": "Innovation",
+      "innovationDesc": "Wir innovieren kontinuierlich, um unsere Technologie zu verbessern",
+      "customer": "Kundenorientierung",
+      "customerDesc": "Die Zufriedenheit unserer Kunden hat oberste Priorität",
+      "integrity": "Integrität",
+      "integrityDesc": "Wir handeln mit Ehrlichkeit und Transparenz"
+    },
+    "history": {
+      "title": "Unsere Geschichte",
+      "content": "Mit der Vision gegründet, Videobearbeitung für alle zugänglich zu machen, bedienen wir Tausende von Kunden weltweit. Unser Engagement für Exzellenz und Innovation hat uns zu einem vertrauenswürdigen Namen in Video-Verarbeitungsservices gemacht."
+    }
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Kontakt aufnehmen",
+    "description": "Wir sind hier, um zu helfen! Kontaktieren Sie uns über eine der folgenden Methoden.",
+    "info": {
+      "title": "Kontaktinformationen",
+      "email": "E-Mail",
+      "address": "Adresse",
+      "addressValue": "Gebäude 130, Longhua Avenue, Longhua District, Shenzhen, China",
+      "phone": "Telefon",
+      "businessHours": "Geschäftszeiten",
+      "businessHoursValue": "Montag - Freitag: 9:00 - 18:00 Uhr<br />Samstag: 10:00 - 16:00 Uhr<br />Sonntag: Geschlossen",
+      "responseTime": "Antwortzeit"
+    },
+    "form": {
+      "title": "Senden Sie uns eine Nachricht",
+      "name": "Name",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "submit": "Nachricht senden",
+      "sending": "Wird gesendet...",
+      "success": "Nachricht erfolgreich gesendet!",
+      "error": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
+    },
+    "methods": {
+      "title": "Andere Möglichkeiten, uns zu erreichen",
+      "emailDesc": "Senden Sie uns eine E-Mail und wir antworten innerhalb von 24 Stunden",
+      "addressDesc": "Besuchen Sie uns an unserem Bürostandort",
+      "support": "Kundensupport",
+      "supportDesc": "Unser Support-Team steht Ihnen zur Verfügung"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": "Wie lange dauert die Verarbeitung eines Videos?",
+      "a1": "Die Verarbeitungszeit hängt von Länge und Komplexität des Videos ab. Typischerweise benötigt ein 1-Minuten-Video 2-5 Minuten.",
+      "q2": "Welche Videoformate unterstützen Sie?",
+      "a2": "Wir unterstützen alle gängigen Videoformate einschließlich MP4, AVI, MOV, MKV und mehr.",
+      "q3": "Ist mein Video sicher?",
+      "a3": "Ja, wir verwenden sichere Verschlüsselung und löschen Ihre Videos automatisch nach 24 Stunden."
+    }
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "intro": "Diese Datenschutzerklärung beschreibt, wie wir Ihre persönlichen Informationen sammeln, verwenden und schützen, wenn Sie unseren Video-Wasserzeichen-Entfernungsservice nutzen.",
+    "section1": {
+      "title": "1. Informationen, die wir sammeln",
+      "content": "Wir sammeln Informationen, die Sie uns direkt zur Verfügung stellen, einschließlich wenn Sie Videos hochladen, ein Konto erstellen oder uns für Support kontaktieren. Dies kann Ihren Namen, Ihre E-Mail-Adresse, Zahlungsinformationen und alle Videos umfassen, die Sie auf unseren Service hochladen. Wir sammeln auch automatisch bestimmte Informationen über Ihr Gerät und wie Sie mit unserem Service interagieren, einschließlich IP-Adresse, Browsertyp und Nutzungsmuster."
+    },
+    "section2": {
+      "title": "2. Wie wir Ihre Informationen verwenden",
+      "content": "Wir verwenden die gesammelten Informationen, um unsere Services bereitzustellen, zu pflegen und zu verbessern, Ihre Video-Entfernungsanfragen zu verarbeiten, mit Ihnen über Ihr Konto und unsere Services zu kommunizieren, Ihnen technische Mitteilungen und Support-Nachrichten zu senden, auf Ihre Kommentare und Fragen zu antworten und die Sicherheit unserer Plattform zu gewährleisten. Wir können Ihre Informationen auch für Analysezwecke verwenden, um zu verstehen, wie unser Service genutzt wird."
+    },
+    "section3": {
+      "title": "3. Datensicherheit",
+      "content": "Wir implementieren angemessene technische und organisatorische Maßnahmen zum Schutz Ihrer persönlichen Informationen und Videos. Dies umfasst Verschlüsselung von Daten während der Übertragung und im Ruhezustand, sichere Server und regelmäßige Sicherheitsaudits. Alle hochgeladenen Videos werden automatisch 24 Stunden nach Abschluss der Verarbeitung gelöscht. Wir speichern Ihre Videos nicht dauerhaft oder teilen sie mit Dritten."
+    },
+    "section4": {
+      "title": "4. Datenaufbewahrung",
+      "content": "Wir bewahren Ihre persönlichen Informationen nur so lange auf, wie es zur Bereitstellung unserer Services und zur Erfüllung der in dieser Richtlinie dargelegten Zwecke erforderlich ist. Videodateien werden automatisch innerhalb von 24 Stunden nach der Verarbeitung gelöscht. Kontoinformationen werden aufbewahrt, bis Sie die Löschung anfordern oder Ihr Konto schließen."
+    },
+    "section5": {
+      "title": "5. Drittanbieter-Services",
+      "content": "Wir können Drittanbieter-Services verwenden, um uns beim Betrieb unserer Plattform und bei der Bereitstellung von Services für Sie zu helfen, wie Zahlungsabwickler, Cloud-Speicheranbieter und Analyse-Services. Diese Dritten haben nur Zugriff auf Ihre Informationen, um bestimmte Aufgaben in unserem Auftrag auszuführen, und sind verpflichtet, sie nicht für andere Zwecke zu offenbaren oder zu verwenden."
+    },
+    "section6": {
+      "title": "6. Ihre Rechte",
+      "content": "Sie haben das Recht, jederzeit auf Ihre persönlichen Informationen zuzugreifen, sie zu aktualisieren oder zu löschen. Sie können auch eine Kopie Ihrer Daten anfordern, Ihre Einwilligung zur Datenverarbeitung widerrufen, bestimmten Verarbeitungsarten widersprechen und Datenportabilität anfordern. Um diese Rechte auszuüben, kontaktieren Sie uns bitte über die unten angegebenen Informationen."
+    },
+    "section7": {
+      "title": "7. Cookies und Tracking",
+      "content": "Wir verwenden Cookies und ähnliche Tracking-Technologien, um Aktivitäten auf unserem Service zu verfolgen und bestimmte Informationen zu speichern. Sie können Ihren Browser anweisen, alle Cookies abzulehnen oder anzuzeigen, wenn ein Cookie gesendet wird. Wenn Sie jedoch keine Cookies akzeptieren, können Sie möglicherweise einige Teile unseres Services nicht nutzen."
+    },
+    "section8": {
+      "title": "8. Datenschutz für Kinder",
+      "content": "Unser Service richtet sich nicht an Kinder unter 18 Jahren. Wir sammeln wissentlich keine persönlichen Informationen von Kindern. Wenn Sie ein Elternteil oder Erziehungsberechtigter sind und glauben, dass Ihr Kind uns persönliche Informationen bereitgestellt hat, kontaktieren Sie uns bitte sofort."
+    },
+    "section9": {
+      "title": "9. Änderungen an dieser Richtlinie",
+      "content": "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Wir werden Sie über Änderungen informieren, indem wir die neue Datenschutzerklärung auf dieser Seite veröffentlichen und das Datum 'Zuletzt aktualisiert' aktualisieren. Es wird empfohlen, diese Datenschutzerklärung regelmäßig auf Änderungen zu überprüfen."
+    },
+    "section10": {
+      "title": "10. Kontaktieren Sie uns",
+      "content": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte unter:",
+      "email": "E-Mail: support@removewatermarker.com",
+      "address": "Adresse: 深圳市龙华区龙华大道130栋"
+    }
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "intro": "Bitte lesen Sie diese Nutzungsbedingungen sorgfältig durch, bevor Sie unseren Video-Wasserzeichen-Entfernungsservice nutzen.",
+    "section1": {
+      "title": "1. Annahme der Bedingungen",
+      "content": "Durch den Zugriff auf und die Nutzung unseres Services akzeptieren Sie diese Nutzungsbedingungen und alle geltenden Gesetze und Vorschriften und erklären sich damit einverstanden, an sie gebunden zu sein. Wenn Sie mit einer dieser Bedingungen nicht einverstanden sind, ist es Ihnen untersagt, diesen Service zu nutzen oder darauf zuzugreifen."
+    },
+    "section2": {
+      "title": "2. Beschreibung des Services",
+      "content": "Wir bieten Video-Verarbeitungsservices an, um Wasserzeichen, Logos und Untertitel aus Videos zu entfernen. Unser Service verwendet automatisierte KI-Technologie, um Ihre hochgeladenen Videos zu verarbeiten. Wir behalten uns das Recht vor, jeden Aspekt des Services jederzeit ohne Vorankündigung zu ändern, zu sperren oder einzustellen."
+    },
+    "section3": {
+      "title": "3. Benutzerkonto",
+      "content": "Um bestimmte Funktionen unseres Services zu nutzen, müssen Sie möglicherweise ein Konto erstellen. Sie sind verantwortlich für die Vertraulichkeit Ihrer Kontozugangsdaten und für alle Aktivitäten, die unter Ihrem Konto stattfinden. Sie verpflichten sich, uns unverzüglich über jede unbefugte Nutzung Ihres Kontos zu informieren."
+    },
+    "section4": {
+      "title": "4. Benutzerverantwortlichkeiten",
+      "content": "Sie sind verantwortlich dafür, sicherzustellen, dass Sie das rechtliche Recht haben, die Videos zu ändern, die Sie hochladen. Sie dürfen keine Inhalte hochladen, die Gesetze verletzen, die Rechte anderer verletzen, Malware oder Viren enthalten oder anderweitig schädlich oder illegal sind. Sie verpflichten sich, unseren Service nur zu rechtmäßigen Zwecken zu nutzen."
+    },
+    "section5": {
+      "title": "5. Geistiges Eigentum",
+      "content": "Sie behalten alle Rechte an Ihren hochgeladenen Videos. Durch die Nutzung unseres Services gewähren Sie uns eine begrenzte, nicht exklusive Lizenz, Ihre Videos ausschließlich zum Zweck der Bereitstellung des Services zu verarbeiten. Alle Inhalte auf unserer Website, einschließlich Text, Grafiken, Logos und Software, sind Eigentum von RemoveWatermark und durch Urheberrecht und andere Gesetze zum geistigen Eigentum geschützt."
+    },
+    "section6": {
+      "title": "6. Zahlungsbedingungen",
+      "content": "Einige Funktionen unseres Services erfordern möglicherweise eine Zahlung. Alle Gebühren sind nicht erstattungsfähig, sofern nicht anders angegeben. Wir behalten uns das Recht vor, unsere Preise jederzeit zu ändern. Sie sind für alle geltenden Steuern verantwortlich."
+    },
+    "section7": {
+      "title": "7. Service-Verfügbarkeit",
+      "content": "Wir garantieren nicht, dass unser Service jederzeit verfügbar ist oder dass er ununterbrochen, sicher oder fehlerfrei ist. Wir können Ausfallzeiten aufgrund von Wartung, Updates oder unvorhergesehenen Umständen erleben."
+    },
+    "section8": {
+      "title": "8. Haftungsbeschränkung",
+      "content": "Im größtmöglichen gesetzlich zulässigen Umfang haften wir nicht für indirekte, zufällige, besondere, Folge- oder Strafschäden oder Verluste von Gewinnen oder Einnahmen, ob direkt oder indirekt entstanden, oder Verluste von Daten, Nutzung, Goodwill oder anderen immateriellen Verlusten, die sich aus Ihrer Nutzung unseres Services ergeben."
+    },
+    "section9": {
+      "title": "9. Entschädigung",
+      "content": "Sie verpflichten sich, RemoveWatermark und seine leitenden Angestellten, Direktoren, Mitarbeiter und Vertreter von allen Ansprüchen, Schäden, Verlusten, Haftungen und Ausgaben freizustellen, die sich aus Ihrer Nutzung unseres Services oder der Verletzung dieser Bedingungen ergeben."
+    },
+    "section10": {
+      "title": "10. Kündigung",
+      "content": "Wir können Ihr Konto und den Zugriff auf unseren Service jederzeit ohne Vorankündigung aus beliebigem Grund, einschließlich Verletzung dieser Bedingungen, sofort kündigen oder sperren. Bei Kündigung erlischt Ihr Recht zur Nutzung des Services sofort."
+    },
+    "section11": {
+      "title": "11. Geltendes Recht",
+      "content": "Diese Bedingungen unterliegen den Gesetzen der Gerichtsbarkeit, in der wir tätig sind, und werden in Übereinstimmung mit diesen Gesetzen ausgelegt, ohne Rücksicht auf ihre kollisionsrechtlichen Bestimmungen."
+    },
+    "section12": {
+      "title": "12. Kontaktinformationen",
+      "content": "Bei Fragen zu diesen Nutzungsbedingungen kontaktieren Sie uns bitte unter:",
+      "email": "E-Mail: support@removewatermarker.com",
+      "address": "Adresse: 深圳市龙华区龙华大道130栋"
+    }
+  },
+  "refund": {
+    "title": "Rückerstattungsrichtlinie",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "intro": "Diese Rückerstattungsrichtlinie beschreibt die Bedingungen und Modalitäten für Rückerstattungen bei unseren Video-Verarbeitungsservices.",
+    "section1": {
+      "title": "1. Berechtigung zur Rückerstattung",
+      "content": "Wir bieten Rückerstattungen für Services an, die unsere Qualitätsstandards nicht erfüllen, wenn ein technischer Fehler unsererseits die Bereitstellung des Services verhindert, oder wenn der Service nicht innerhalb des versprochenen Zeitrahmens bereitgestellt wird. Rückerstattungen werden von Fall zu Fall geprüft."
+    },
+    "section2": {
+      "title": "2. Rückerstattungsprozess",
+      "content": "Um eine Rückerstattung anzufordern, kontaktieren Sie uns bitte innerhalb von 7 Tagen nach Ihrem Kauf oder der Service-Abschluss. Sie müssen Ihre Bestellnummer und eine detaillierte Erklärung angeben, warum Sie eine Rückerstattung anfordern. Wir werden Ihre Anfrage prüfen und innerhalb von 5 Werktagen antworten. Wenn genehmigt, werden Rückerstattungen innerhalb von 14 Werktagen auf Ihre ursprüngliche Zahlungsmethode bearbeitet."
+    },
+    "section3": {
+      "title": "3. Nicht erstattungsfähige Artikel",
+      "content": "Rückerstattungen sind nicht verfügbar für Services, die erfolgreich abgeschlossen und geliefert wurden, wenn das Problem auf einen Benutzerfehler zurückzuführen ist (wie das Hochladen falscher Dateien oder inkompatibler Formate), wenn Sie Ihre Meinung nach Abschluss des Services ändern oder wenn der Service für illegale Zwecke verwendet wurde."
+    },
+    "section4": {
+      "title": "4. Teilweise Rückerstattungen",
+      "content": "In einigen Fällen können wir teilweise Rückerstattungen anbieten, wenn nur ein Teil des Services unbefriedigend war. Der Betrag der teilweisen Rückerstattung wird basierend auf den spezifischen Umständen Ihres Falls bestimmt."
+    },
+    "section5": {
+      "title": "5. Bearbeitungszeit",
+      "content": "Rückerstattungsanfragen werden normalerweise innerhalb von 5-10 Werktagen bearbeitet. Nach Genehmigung erscheint die Rückerstattung innerhalb von 14 Werktagen auf Ihrem Konto, abhängig von Ihrer Zahlungsmethode und Ihrer Finanzinstitution."
+    },
+    "section6": {
+      "title": "6. Rückbuchungen",
+      "content": "Wenn Sie eine Rückbuchung über Ihre Bank oder Kreditkartengesellschaft einleiten, behalten wir uns das Recht vor, die Rückbuchung zu bestreiten und Nachweise für die Servicebereitstellung zu liefern. Wir empfehlen Ihnen, sich zunächst direkt an uns zu wenden, um Probleme zu lösen."
+    },
+    "section7": {
+      "title": "7. Kontakt für Rückerstattungen",
+      "content": "Um eine Rückerstattung anzufordern, kontaktieren Sie uns bitte unter:",
+      "email": "E-Mail: support@removewatermarker.com",
+      "address": "Adresse: 深圳市龙华区龙华大道130栋",
+      "note": "Bitte geben Sie Ihre Bestellnummer und den Grund für die Rückerstattung in Ihrer Anfrage an."
+    }
+  },
+  "disclaimer": {
+    "title": "Haftungsausschluss",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "intro": "Bitte lesen Sie diesen Haftungsausschluss sorgfältig durch, bevor Sie unseren Video-Wasserzeichen-Entfernungsservice nutzen.",
+    "section1": {
+      "title": "1. Service-Haftungsausschluss",
+      "content": "Unser Video-Verarbeitungsservice wird 'wie besehen' und 'wie verfügbar' ohne Gewährleistungen jeglicher Art, ausdrücklich oder stillschweigend, bereitgestellt. Wir garantieren nicht, dass der Service ununterbrochen, sicher oder fehlerfrei ist oder dass Mängel behoben werden. Wir behalten uns das Recht vor, den Service jederzeit ohne Vorankündigung zu ändern oder einzustellen."
+    },
+    "section2": {
+      "title": "2. Ergebnis-Haftungsausschluss",
+      "content": "Während wir uns bemühen, die besten Ergebnisse zu liefern, kann die Qualität der Entfernung von Wasserzeichen, Logos oder Untertiteln je nach verschiedenen Faktoren variieren, einschließlich Videoinhalt, Wasserzeichenmerkmalen, Videoqualität, Kompression und anderen technischen Faktoren, die außerhalb unserer Kontrolle liegen. Wir garantieren keine spezifischen Ergebnisse oder dass alle Wasserzeichen, Logos oder Untertitel vollständig entfernt werden."
+    },
+    "section3": {
+      "title": "3. Rechtlicher Haftungsausschluss",
+      "content": "Benutzer sind allein dafür verantwortlich, sicherzustellen, dass sie das rechtliche Recht haben, Videos zu ändern, einschließlich der Beschaffung der erforderlichen Genehmigungen und Lizenzen. Wir sind nicht verantwortlich für rechtliche Konsequenzen, die sich aus der Nutzung unseres Services ergeben, einschließlich Urheberrechtsverletzungen, Markenrechtsverletzungen oder anderen rechtlichen Problemen. Benutzer müssen alle geltenden Gesetze und Vorschriften einhalten."
+    },
+    "section4": {
+      "title": "4. Inhalts-Haftungsausschluss",
+      "content": "Wir prüfen, überwachen oder kontrollieren nicht den Inhalt von Videos, die von Benutzern hochgeladen wurden. Wir sind nicht verantwortlich für Inhalte, die Gesetze verletzen oder Rechte verletzen. Benutzer sind allein verantwortlich für die Inhalte, die sie hochladen, und die Nutzung verarbeiteter Videos."
+    },
+    "section5": {
+      "title": "5. Haftungsbeschränkung",
+      "content": "Im größtmöglichen gesetzlich zulässigen Umfang haften wir nicht für indirekte, zufällige, besondere, Folge- oder Strafschäden, einschließlich, aber nicht beschränkt auf Verluste von Gewinnen, Daten oder Geschäftsmöglichkeiten, die sich aus der Nutzung oder Unfähigkeit zur Nutzung unseres Services ergeben, auch wenn wir auf die Möglichkeit solcher Schäden hingewiesen wurden."
+    },
+    "section6": {
+      "title": "6. Keine professionelle Beratung",
+      "content": "Die auf unserer Plattform bereitgestellten Informationen und Services dienen nur zu allgemeinen Informationszwecken und stellen keine professionelle, rechtliche oder technische Beratung dar. Sie sollten sich für Beratung spezifisch zu Ihrer Situation an entsprechende Fachleute wenden."
+    },
+    "section7": {
+      "title": "7. Drittanbieter-Links",
+      "content": "Unser Service kann Links zu Websites oder Services von Drittanbietern enthalten. Wir sind nicht verantwortlich für den Inhalt, die Datenschutzrichtlinien oder die Praktiken von Websites oder Services Dritter. Ihre Nutzung von Websites Dritter erfolgt auf eigenes Risiko."
+    },
+    "section8": {
+      "title": "8. Höhere Gewalt",
+      "content": "Wir haften nicht für Ausfälle oder Verzögerungen bei der Erfüllung dieser Bedingungen, die auf Feuer, Überschwemmungen, Erdbeben, Naturereignisse oder höhere Gewalt, Kriegshandlungen, Terrorismus, Unruhen, zivile Unruhen, Rebellionen oder Revolutionen oder andere Ursachen zurückzuführen sind, die außerhalb unserer angemessenen Kontrolle liegen."
+    }
+  },
+  "copyright": {
+    "title": "Urheberrechtshinweis",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "intro": "Dieser Urheberrechtshinweis beschreibt die Urheberrechtseigentümerschaft und Nutzungsrechte für Inhalte auf unserer Plattform.",
+    "section1": {
+      "title": "1. Urheberrechtseigentümerschaft",
+      "content": "Alle Inhalte auf dieser Website, einschließlich, aber nicht beschränkt auf Text, Grafiken, Logos, Symbole, Bilder, Audioclips, digitale Downloads, Datensammlungen und Software, sind Eigentum von RemoveWatermark oder seinen Inhaltslieferanten und durch internationale Urheberrechtsgesetze geschützt. Die Zusammenstellung aller Inhalte auf dieser Website ist ausschließliches Eigentum von RemoveWatermark."
+    },
+    "section2": {
+      "title": "2. Benutzerinhalte",
+      "content": "Benutzer behalten alle Urheberrechte und Rechte des geistigen Eigentums an Videos und anderen Inhalten, die sie auf unseren Service hochladen. Wir erheben keinen Anspruch auf Eigentum an von Benutzern hochgeladenen Inhalten. Durch das Hochladen von Inhalten erklären und garantieren Sie, dass Sie Eigentümer sind oder die notwendigen Rechte an den Inhalten haben und dass diese keine Rechte Dritter verletzen."
+    },
+    "section3": {
+      "title": "3. Verbotene Verwendungen",
+      "content": "Sie dürfen kein Material von unserer Website reproduzieren, verteilen, ändern, abgeleitete Werke erstellen, öffentlich anzeigen, öffentlich aufführen, erneut veröffentlichen, herunterladen, speichern oder übertragen, ohne unsere ausdrückliche schriftliche Genehmigung. Dies umfasst, ist aber nicht beschränkt auf das Kopieren, Scraping oder Herunterladen von Inhalten für kommerzielle oder nicht-kommerzielle Zwecke."
+    },
+    "section4": {
+      "title": "4. Fair Use",
+      "content": "Sie können unsere Website-Inhalte für persönliche, nicht-kommerzielle Zwecke in Übereinstimmung mit Fair-Use-Grundsätzen verwenden. Jede kommerzielle Nutzung erfordert jedoch unsere ausdrückliche schriftliche Zustimmung."
+    },
+    "section5": {
+      "title": "5. Marken",
+      "content": "Alle Marken, Service-Marken und Handelsnamen von RemoveWatermark, die auf dieser Website verwendet werden, sind Marken oder eingetragene Marken von RemoveWatermark. Sie dürfen keine unserer Marken ohne unsere vorherige schriftliche Genehmigung verwenden."
+    },
+    "section6": {
+      "title": "6. DMCA-Richtlinie",
+      "content": "Wir respektieren die Rechte des geistigen Eigentums anderer und erwarten von unseren Benutzern dasselbe. Wenn Sie glauben, dass Ihre urheberrechtlich geschützte Arbeit in einer Weise kopiert wurde, die eine Urheberrechtsverletzung darstellt, kontaktieren Sie uns bitte mit den folgenden Informationen: (1) eine Beschreibung der urheberrechtlich geschützten Arbeit; (2) der Standort des verletzenden Materials; (3) Ihre Kontaktinformationen; (4) eine Erklärung des guten Glaubens; (5) Ihre Unterschrift.",
+      "email": "E-Mail: support@removewatermarker.com",
+      "address": "Adresse: 深圳市龙华区龙华大道130栋"
+    },
+    "section7": {
+      "title": "7. Urheberrechtsverletzungsansprüche",
+      "content": "Nach Erhalt einer gültigen DMCA-Benachrichtigung werden wir den angeblich verletzenden Inhalt sofort entfernen oder den Zugriff darauf deaktivieren und den Benutzer benachrichtigen, der den Inhalt veröffentlicht hat. Wir können Konten von Wiederholungstätern kündigen."
+    },
+    "section8": {
+      "title": "8. Gegenbenachrichtigung",
+      "content": "Wenn Sie glauben, dass Ihr Inhalt fälschlicherweise entfernt wurde, können Sie eine Gegenbenachrichtigung mit einer Erklärung unter Strafandrohung einreichen, dass der Inhalt versehentlich oder durch falsche Identifizierung entfernt wurde."
+    }
+  },
+  "legal": {
+    "title": "Rechtlicher Hinweis",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "intro": "Dieser rechtliche Hinweis bietet wichtige Informationen über unser Unternehmen und den rechtlichen Rahmen, der unsere Services regelt.",
+    "section1": {
+      "title": "1. Unternehmensinformationen",
+      "content": "Diese Website wird von RemoveWatermark betrieben, einem professionellen Video-Verarbeitungsservice-Anbieter.",
+      "address": "Adresse: 深圳市龙华区龙华大道130栋",
+      "email": "E-Mail: support@removewatermarker.com",
+      "website": "Website: https://www.removewatermarker.com"
+    },
+    "section2": {
+      "title": "2. Geltendes Recht",
+      "content": "Diese Bedingungen werden durch die Gesetze der Gerichtsbarkeit, in der wir tätig sind, geregelt und in Übereinstimmung mit diesen Gesetzen ausgelegt. Alle Streitigkeiten, die sich aus diesen Bedingungen oder unseren Services ergeben oder sich darauf beziehen, unterliegen der ausschließlichen Gerichtsbarkeit der Gerichte in dieser Gerichtsbarkeit."
+    },
+    "section3": {
+      "title": "3. Einhaltung",
+      "content": "Benutzer sind dafür verantwortlich, sicherzustellen, dass ihre Nutzung unseres Services allen geltenden Gesetzen und Vorschriften in ihrer Gerichtsbarkeit entspricht, einschließlich, aber nicht beschränkt auf Urheberrechtsgesetze, Datenschutzgesetze und Inhaltsvorschriften. Wir behalten uns das Recht vor, den Service jedem zu verweigern, der geltende Gesetze verletzt."
+    },
+    "section4": {
+      "title": "4. Service-Verfügbarkeit",
+      "content": "Wir geben keine Zusicherungen oder Garantien bezüglich der Verfügbarkeit, Genauigkeit oder Zuverlässigkeit unseres Services ab. Wir behalten uns das Recht vor, jeden Teil unseres Services jederzeit ohne Vorankündigung zu ändern, zu sperren oder einzustellen."
+    },
+    "section5": {
+      "title": "5. Haftungsbeschränkung",
+      "content": "Im größtmöglichen gesetzlich zulässigen Umfang schließen wir alle Zusicherungen, Garantien und Bedingungen in Bezug auf unsere Website und die Nutzung unseres Services aus. Nichts in diesem Hinweis wird unsere Haftung für Tod oder Körperverletzung, Betrug oder jede andere Haftung, die gesetzlich nicht ausgeschlossen werden kann, einschränken oder ausschließen."
+    },
+    "section6": {
+      "title": "6. Teilbarkeit",
+      "content": "Wenn eine Bestimmung dieses rechtlichen Hinweises als nicht durchsetzbar oder ungültig erachtet wird, wird diese Bestimmung auf das mindeste notwendige Maß beschränkt oder eliminiert, damit dieser Hinweis ansonsten in vollem Umfang in Kraft bleibt."
+    },
+    "section7": {
+      "title": "7. Vollständige Vereinbarung",
+      "content": "Dieser rechtliche Hinweis bildet zusammen mit unseren Nutzungsbedingungen und unserer Datenschutzerklärung die vollständige Vereinbarung zwischen Ihnen und RemoveWatermark bezüglich Ihrer Nutzung unseres Services."
+    },
+    "section8": {
+      "title": "8. Änderungen an diesem Hinweis",
+      "content": "Wir behalten uns das Recht vor, diesen rechtlichen Hinweis jederzeit zu ändern. Änderungen treten sofort nach Veröffentlichung auf dieser Seite in Kraft. Ihre fortgesetzte Nutzung unseres Services nach Veröffentlichung der Änderungen stellt eine Annahme des geänderten Hinweises dar."
+    },
+    "section9": {
+      "title": "9. Kontakt",
+      "content": "Für rechtliche Anfragen oder Fragen zu diesem rechtlichen Hinweis kontaktieren Sie uns bitte unter:",
+      "email": "E-Mail: support@removewatermarker.com",
+      "address": "Adresse: 深圳市龙华区龙华大道130栋"
+    }
+  },
+  "ip": {
+    "title": "Erklärung zum geistigen Eigentum",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "intro": "Diese Erklärung zum geistigen Eigentum beschreibt die Rechte und Schutzmaßnahmen des geistigen Eigentums, die mit unserem Service zusammenhängen.",
+    "section1": {
+      "title": "1. Unser geistiges Eigentum",
+      "content": "Alle Rechte des geistigen Eigentums an unserer Website, Technologie, Algorithmen, Software, Designs, Marken, Service-Marken, Handelsnamen und Service gehören RemoveWatermark oder seinen Lizenzgebern. Dies umfasst, ist aber nicht beschränkt auf Patente, Marken, Urheberrechte, Geschäftsgeheimnisse und proprietäre Algorithmen, die in unserer Video-Verarbeitungstechnologie verwendet werden."
+    },
+    "section2": {
+      "title": "2. Geistiges Eigentum der Benutzer",
+      "content": "Benutzer behalten alle Rechte des geistigen Eigentums an ihren hochgeladenen Videos und anderen Inhalten. Wir erheben keinen Anspruch auf Eigentum an von Benutzern hochgeladenen Inhalten und verwenden sie nur, um unseren Service bereitzustellen. Durch das Hochladen von Inhalten gewähren Sie uns eine begrenzte, nicht exklusive Lizenz, Ihre Inhalte ausschließlich zum Zweck der Bereitstellung des Services zu verarbeiten."
+    },
+    "section3": {
+      "title": "3. Verbotene Aktivitäten",
+      "content": "Benutzer dürfen unsere proprietären Algorithmen, Quellcode oder Technologie nicht reverse engineeren, dekompilieren, disassemblieren oder zu extrahieren versuchen. Jede unbefugte Nutzung, Reproduktion oder Verteilung unseres geistigen Eigentums ist strengstens untersagt und kann rechtliche Schritte zur Folge haben."
+    },
+    "section4": {
+      "title": "4. Lizenz zur Nutzung",
+      "content": "Wir gewähren Ihnen eine begrenzte, nicht exklusive, nicht übertragbare Lizenz, auf unseren Service zuzugreifen und ihn für seinen vorgesehenen Zweck zu nutzen. Diese Lizenz umfasst nicht das Recht, unsere Technologie oder unseren Service weiterzuverkaufen, weiterzuverteilen oder abgeleitete Werke zu erstellen."
+    },
+    "section5": {
+      "title": "5. Geistiges Eigentum Dritter",
+      "content": "Wir respektieren die Rechte des geistigen Eigentums anderer und erwarten von unseren Benutzern dasselbe. Wenn Sie glauben, dass Ihre Rechte des geistigen Eigentums verletzt wurden, kontaktieren Sie uns bitte sofort mit Details der mutmaßlichen Verletzung."
+    },
+    "section6": {
+      "title": "6. Marken",
+      "content": "RemoveWatermark und verwandte Marken sind Marken von RemoveWatermark. Sie dürfen unsere Marken nicht ohne unsere vorherige schriftliche Zustimmung verwenden. Alle anderen Marken, Service-Marken und Handelsnamen sind Eigentum ihrer jeweiligen Eigentümer."
+    },
+    "section7": {
+      "title": "7. Durchsetzung",
+      "content": "Wir nehmen Rechte des geistigen Eigentums ernst und werden angemessene rechtliche Schritte gegen jede Verletzung unserer Rechte des geistigen Eigentums einleiten. Dies kann die Beantragung von einstweiligen Verfügungen, Schadensersatz und Anwaltskosten umfassen."
+    },
+    "section8": {
+      "title": "8. Meldung von Verletzungen",
+      "content": "Wenn Sie glauben, dass unser Service oder unsere Benutzer Ihre Rechte des geistigen Eigentums verletzen, kontaktieren Sie uns bitte mit: (1) Identifizierung des geistigen Eigentums; (2) Beschreibung der Verletzung; (3) Ihre Kontaktinformationen; (4) eine Erklärung des guten Glaubens; (5) Ihre Unterschrift.",
+      "email": "E-Mail: support@removewatermarker.com",
+      "address": "Adresse: 深圳市龙华区龙华大道130栋"
+    }
+  }
+}
+

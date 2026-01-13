@@ -1,0 +1,233 @@
+订阅套餐：
+
+1、只有用户登录才能使用视频转为字幕功能，字幕文件转为文件和文件转为字幕文件不需要登录，直接使用即可，是免费使用的。
+
+2、只有视频转为字幕文件需要付费，字幕文件转为文件和文件转为字幕文件不需要付费，是免费使用的。
+
+3、没订阅的用户，登录后，只有一次视频转为字幕文件的机会，并且视频长度不能超过1分钟，超过一分钟需要付费。
+
+4、付款模式：按分钟来计算，1美元3个积分，1分钟视频消耗一个积分。
+
+5、订阅套餐：
+
+1、10美元/月，30个积分。
+
+2、30美元/月，100个积分。
+
+3、100美元/月，330个积分。
+
+
+
+将上面的功能实现，index 也加上订阅功能，然后再加一个订阅页面，订阅页面有三个套餐，10美元/月，30个积分。30美元/月，100个积分。100美元/月，330个积分。
+
+再导航栏加上链接，然后导航栏上的关于我们，联系我们去掉。
+
+
+
+对接Creem：
+
+Basic版本，10美元/月，30个积分，product_id=prod_N6rm4KG1ZeGvfnNOIzkjt
+Standard版本，30美元/月，100个积分，product_id=prod_3CQsZ5gNb1Nhkl9a3Yxhs2
+Premium版本，100美元/月，350个积分，product_id=prod_5h3JThYd4iw4SIDm6L5sCO
+
+测试产品product_id: prod_1l9cjsowPhSJlsfrTTXlKb
+
+CREEM_API_KEY=creem_4QGhR5aZTjFxJELOoLmQa6
+APP_BASE_URL=http://localhost:3000
+
+
+https://api.creem.io/v1/checkouts  这个链接设置可以配置的。
+
+
+const redirectUrl = await axios.post(
+      `https://api.creem.io/v1/checkouts`,
+        {
+          product_id: 'xxxx',
+          metadata: {
+            internal_customer_id: user.id,
+            email: user.email ?? undefined
+          }
+        },
+        {
+          headers: { "x-api-key": `CREEM_API_KEY` },
+        },
+    );
+
+
+
+Creem回调：
+
+creem 支付成功回调说明：
+
+
+回调参数中的header头含有creem-signature字段，值为signature字段。
+
+"creem-signature": "3f2ad853aa3f180d99a038641ea12031ddf930a9d68a87b2360ebcbce08c7624",
+
+上面的是回调的地址的参数，对signature字段用如下处理：
+
+import * as crypto from 'crypto';
+
+  generateSignature(payload: string, secret: string): string {
+    const computedSignature = crypto
+      .createHmac('sha256', secret)
+      .update(payload)
+      .digest('hex');
+    return computedSignature;
+  }
+
+
+  处理后的payload是：
+  {
+  "id": "evt_21mO1jWmU2QHe7u2oFV7y1",
+  "eventType": "subscription.paid",
+  "created_at": 1728734327355,
+  "object": {
+    "id": "sub_6pC2lNB6joCRQIZ1aMrTpi",
+    "object": "subscription",
+    "product": {
+      "id": "prod_d1AY2Sadk9YAvLI0pj97f",
+      "name": "Monthly",
+      "description": "Monthly",
+      "image_url": null,
+      "price": 1000,
+      "currency": "EUR",
+      "billing_type": "recurring",
+      "billing_period": "every-month",
+      "status": "active",
+      "tax_mode": "exclusive",
+      "tax_category": "saas",
+      "default_success_url": "",
+      "created_at": "2024-10-11T11:50:00.182Z",
+      "updated_at": "2024-10-11T11:50:00.182Z",
+      "mode": "local"
+    },
+    "customer": {
+      "id": "cust_1OcIK1GEuVvXZwD19tjq2z",
+      "object": "customer",
+      "email": "text@example.com",
+      "name": "Tester Test",
+      "country": "NL",
+      "created_at": "2024-10-11T09:16:48.557Z",
+      "updated_at": "2024-10-11T09:16:48.557Z",
+      "mode": "local"
+    },
+    "collection_method": "charge_automatically",
+    "status": "active",
+    "last_transaction_id": "tran_5yMaWzAl3jxuGJMCOrYWwk",
+    "last_transaction_date": "2024-10-12T11:58:47.109Z",
+    "next_transaction_date": "2024-11-12T11:58:38.000Z",
+    "current_period_start_date": "2024-10-12T11:58:38.000Z",
+    "current_period_end_date": "2024-11-12T11:58:38.000Z",
+    "canceled_at": null,
+    "created_at": "2024-10-12T11:58:45.425Z",
+    "updated_at": "2024-10-12T11:58:45.425Z",
+    "metadata": {
+      "custom_data": "mycustom data",
+      "internal_customer_id": "internal_customer_id"
+    },
+    "mode": "local"
+  }
+}
+
+
+或是
+{
+  "id": "evt_ZJtfgcg8HeVJpy6MSYIEK",
+  "eventType": "checkout.completed",
+  "created_at": 1764464900081,
+  "object": {
+    "id": "ch_3eXMfac3kXsmUqfReCMIHD",
+    "object": "checkout",
+    "order": {
+      "object": "order",
+      "id": "ord_JAMEfYRIGW1GNMBsl6WKl",
+      "customer": "cust_7iL6J3cGO2SpiUEia1oL9F",
+      "product": "prod_1l9cjsowPhSJlsfrTTXlKb",
+      "amount": 990,
+      "currency": "USD",
+      "sub_total": 990,
+      "tax_amount": 0,
+      "amount_due": 990,
+      "amount_paid": 990,
+      "status": "paid",
+      "type": "recurring",
+      "transaction": "tran_19Tpvt1JB9CLql2YiTMWTl",
+      "created_at": "2025-11-30T01:07:33.553Z",
+      "updated_at": "2025-11-30T01:07:33.553Z",
+      "mode": "test"
+    },
+    "product": {
+      "id": "prod_1l9cjsowPhSJlsfrTTXlKb",
+      "object": "product",
+      "name": "test",
+      "description": "test api test api",
+      "price": 990,
+      "currency": "USD",
+      "billing_type": "recurring",
+      "billing_period": "every-month",
+      "status": "active",
+      "tax_mode": "exclusive",
+      "tax_category": "saas",
+      "default_success_url": "https://video2txt.zorezoro.com",
+      "created_at": "2025-11-13T15:07:09.812Z",
+      "updated_at": "2025-11-13T15:07:09.812Z",
+      "mode": "test"
+    },
+    "units": 1,
+    "customer": {
+      "id": "cust_7iL6J3cGO2SpiUEia1oL9F",
+      "object": "customer",
+      "email": "support@chdaoai.com",
+      "name": "ace",
+      "country": "CN",
+      "created_at": "2025-11-17T14:16:52.089Z",
+      "updated_at": "2025-11-17T14:16:52.089Z",
+      "mode": "test"
+    },
+    "subscription": {
+      "id": "sub_7WlgmsWiKmOPgTAfy9F5sk",
+      "object": "subscription",
+      "product": "prod_1l9cjsowPhSJlsfrTTXlKb",
+      "customer": "cust_7iL6J3cGO2SpiUEia1oL9F",
+      "collection_method": "charge_automatically",
+      "status": "active",
+      "current_period_start_date": "2025-11-30T01:07:59.000Z",
+      "current_period_end_date": "2025-12-30T01:07:59.000Z",
+      "canceled_at": null,
+      "created_at": "2025-11-30T01:08:06.727Z",
+      "updated_at": "2025-11-30T01:08:09.026Z",
+      "mode": "test"
+    },
+    "status": "completed",
+    "mode": "test"
+  }
+}
+
+
+secret :whsec_tsf4I58EXUxebny8SvoBv
+
+支付完成标识：
+1、"eventType": "subscription.paid"  表示支付完成。
+
+2、"eventType": "checkout.completed" 以及 object.order.status: "paid"  也表示支付完成。
+
+
+先根据传过来的数据中的：  "eventType": "subscription.paid", 中对应的last_transaction_id，
+以及eventType": "checkout.completed" 和 object.order.status: "paid" 中的 object.order.transaction
+
+这个交易id 判定是subscription_orders是否该记录，不存在 才添加到表中，再更新用户积分。
+存在就不处理数据。在subscription_orders 添加transaction_id字段，请重新修改回调。
+
+
+
+根据上面的资料获取回调参数，然后把数据添加到supabase数据库中，表名是subscription_orders，
+
+
+回调URL：https://www.removewatermarker.com/api/creem/webhook
+
+
+
+相关的creem 配置到 .env.local 文件中。
+
+

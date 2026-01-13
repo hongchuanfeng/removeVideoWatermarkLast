@@ -1,0 +1,34 @@
+import { MetadataRoute } from 'next';
+import { locales } from '@/i18n';
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://www.removewatermarker.com';
+
+  const routes = [
+    '',
+    '/about',
+    '/contact',
+    '/privacy',
+    '/terms',
+    '/refund',
+    '/disclaimer',
+    '/copyright',
+    '/legal',
+    '/ip',
+  ];
+
+  const sitemapEntries: MetadataRoute.Sitemap = [];
+
+  locales.forEach((locale) => {
+    routes.forEach((route) => {
+      sitemapEntries.push({
+        url: baseUrl + '/' + locale + route,
+        lastModified: new Date(),
+        changeFrequency: route === '' ? 'daily' : 'weekly',
+        priority: route === '' ? 1.0 : 0.8,
+      });
+    });
+  });
+
+  return sitemapEntries;
+}

@@ -1,0 +1,49 @@
+当调用 /api/video/upload 接口后，返回了 taskId，
+
+等处理成功后，使用上面的taskId，调用如下接口文档，获取处理后视频的链接，
+
+https://cloud.tencent.com/document/product/862/37614，然后把返回的视频链接保存到数据库中。
+
+
+
+
+写一个测试页面，在conversion_records表中，
+查找task_id='2600022993-WorkflowTask-10c41dcecb0fc288f74bdf1ab8cd87c9tt7'的记录显示在页面上。
+
+
+
+把public/image/logo-before.png和public/image/logo-after.png显示在index页面的处理前和处理后的图片。
+
+
+把public/image/srt-before.jpeg和public/image/srt-after.jpg显示在index页面的案例 再加上一个去字幕的示例图片。
+
+
+
+把public/image/b1.png和public/image/a1.png显示在index页面的案例 再加上一个去logo的示例图片。
+把public/image/b2.png和public/image/a2.png显示在index页面的案例 再加上一个去logo的示例图片。
+把public/image/b3.png和public/image/a3.png显示在index页面的案例 再加上一个去字幕的示例图片。
+
+
+
+
+
+
+对于分辨率2560 × 1440的输出视频，去字幕单价为2积分/分钟，向上取整（不足一分钟的部分按一分钟计算）。
+对于分辨率1280 × 640的输出视频，去字幕单价为1积分/分钟，向上取整（不足一分钟的部分按一分钟计算）。
+
+
+39.9美元 = 30个积分
+
+119.9美元 = 100个积分
+
+239.9美元 =   210个积分
+
+
+
+
+
+
+
+
+
+

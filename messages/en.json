@@ -1,0 +1,709 @@
+{
+  "nav": {
+    "home": "Home",
+    "imageWatermarkRemoval": "Image Watermark Removal",
+    "subscription": "Subscription",
+    "profile": "My Account"
+  },
+  "imageWatermarkRemoval": {
+    "title": "Image Watermark Removal",
+    "description": "Upload an image, click on watermark locations, and remove watermarks with one click",
+    "imageCreditsInfo": "Processing one image requires 1 credit. You have {credits} credits remaining.",
+    "promptTitle": "Please click the image to mark watermark areas",
+    "promptDesc": "Click on watermark regions in the image; the system will mark them automatically",
+    "promptHint": "Tip: click any area to start testing",
+    "demoNote": "Note: This is a demo version. Actual image processing requires complete Tencent Cloud API configuration.",
+    "uploadTitle": "Upload Image",
+    "uploadPrompt": "Drag and drop an image here, or click to select a file",
+    "selectImage": "Select Image",
+    "changeImage": "Change Image",
+    "clearPoints": "Clear Marks",
+    "removeLastPoint": "Remove Last Mark",
+    "markedPoints": "Marked {count} watermark locations",
+    "processImage": "Remove Watermarks",
+    "processing": "Processing...",
+    "resultTitle": "Processing Result",
+    "downloadImage": "Download Image",
+    "loading": "Loading...",
+    "insufficientCredits": "Insufficient credits. Please recharge first.",
+    "processingError": "Processing failed. Please try again.",
+    "features": {
+      "title": "Features",
+      "intelligent": "Intelligent Recognition: Automatically detect and remove watermarks and logos from images",
+      "precision": "Precise Repair: Use AI technology to intelligently repair areas after watermark removal",
+      "batch": "Batch Processing: Support simultaneous removal of multiple watermark areas",
+      "quality": "HD Preservation: Maintain original image quality after processing"
+    },
+    "instructions": {
+      "title": "Instructions",
+      "step1": "Upload Image: Click to select image or drag image to upload area",
+      "step2": "Mark Watermark: Use mouse to drag and select watermark area (yellow box for preview, red box for confirmed)",
+      "step3": "Confirm Marking: Can add multiple watermark areas, or clear and re-mark",
+      "step4": "Start Processing: Click the 'Remove Watermark' button and wait for AI processing",
+      "step5": "Download Result: Download the repaired image after processing is complete"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "What image formats are supported?",
+      "a1": "Supports common formats like JPG, PNG, JPEG, up to 10MB in size.",
+      "q2": "How good is the watermark removal effect?",
+      "a2": "Uses Tencent Cloud AI technology for intelligent recognition and repair of watermark areas, with natural results while maintaining image quality.",
+      "q3": "How many watermarks can be removed at once?",
+      "a3": "Supports marking and removing multiple watermark areas simultaneously, with no quantity limit.",
+      "q4": "How long does processing take?",
+      "a4": "Usually completes within 10-30 seconds, depending on image size and watermark complexity.",
+      "q5": "What if I don't have enough credits?",
+      "a5": "You can purchase credit packages, or use the free trial quota (one free opportunity for each new user)."
+    },
+    "examples": {
+      "title": "Processing Examples",
+      "subtitle": "See how our AI technology precisely removes watermarks and logos",
+      "before": "Before",
+      "after": "After",
+      "logoExample": "Logo Removal Example",
+      "watermarkExample": "Watermark Removal Example",
+      "combinedExample": "Comprehensive Processing Example"
+    }
+  },
+  "auth": {
+    "signInWithGoogle": "Sign in with Google",
+    "signOut": "Sign Out",
+    "signingIn": "Signing in...",
+    "signingOut": "Signing out..."
+  },
+  "subscription": {
+    "title": "Subscription Plans",
+    "subtitle": "Choose the plan that works for you",
+    "description": "Get credits to convert videos to subtitles. 1 credit = 1 minute of video.",
+    "basic": {
+      "name": "Basic",
+      "price": "$39.9",
+      "period": "/month",
+      "credits": "30 credits",
+      "description": "Perfect for occasional use",
+      "button": "Subscribe"
+    },
+    "standard": {
+      "name": "Standard",
+      "price": "$119.9",
+      "period": "/month",
+      "credits": "100 credits",
+      "description": "Great for regular users",
+      "button": "Subscribe",
+      "popular": "Most Popular"
+    },
+    "premium": {
+      "name": "Premium",
+      "price": "$239.9",
+      "period": "/month",
+      "credits": "210 credits",
+      "description": "Best value for power users",
+      "button": "Subscribe"
+    },
+    "features": {
+      "title": "What's included",
+      "videoToSubtitle": "Video to subtitle conversion",
+      "creditBased": "Credit-based pricing",
+      "monthlyRenewal": "Monthly auto-renewal",
+      "cancelAnytime": "Cancel anytime"
+    },
+    "freeTrial": {
+      "title": "Free Trial",
+      "description": "New users get 1 free conversion (max 30 seconds) after login"
+    },
+    "pricingRules": {
+      "title": "Credit Pricing Rules",
+      "subtitle": "Subtitle removal service is billed by video resolution and duration",
+      "rule1": "Resolution 2560 × 1440: 2 credits/minute (rounded up)",
+      "rule2": "Resolution 1280 × 640: 1 credit/minute (rounded up)",
+      "note": "Partial minutes are rounded up to 1 minute"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "What are credits?",
+      "a1": "Credits are the billing unit for our service. 1 credit can process 1 minute of video (watermark/logo removal). Subtitle removal is billed at different rates based on video resolution.",
+      "q2": "Do I need to register to use the service to remove watermarks?",
+      "a2": "Yes, you need to register and log in to use our service. New users get 1 free trial (max 30 seconds) after registration.",
+      "q3": "Is the service free?",
+      "a3": "We offer 1 free trial (max 30 seconds) for new users. After that, you need to purchase credits or subscribe to a plan to continue using the service.",
+      "q4": "Should I choose pay-as-you-go credits or a subscription plan?",
+      "a4": "If you use the service occasionally, pay-as-you-go credits may suit you. If you use it frequently, subscription plans are more cost-effective with monthly auto-renewal and can be cancelled anytime.",
+      "q5": "What if I'm not satisfied with the result?",
+      "a5": "If you're not satisfied with the processing result, please contact our customer service team and we'll do our best to resolve your issue.",
+      "q6": "What if I run out of credit limit?",
+      "a6": "When your credits are exhausted, you can purchase additional credit packs or upgrade to a higher-tier subscription plan to continue using the service.",
+      "q7": "What is the cost for additional usage beyond my monthly credits?",
+      "a7": "Usage beyond monthly credits will be billed at standard credit prices. Please check our pricing page for specific rates.",
+      "q8": "Is registration required before using the service?",
+      "a8": "Yes, registration is required. After registration, you can enjoy the free trial and manage your conversion records and credits.",
+      "q9": "How many conversions can I perform with the service?",
+      "a9": "The number of conversions depends on the credits you have. Each video conversion consumes credits based on video length and processing type.",
+      "q10": "What payment methods are accepted?",
+      "a10": "We accept various payment methods including credit cards, debit cards, and more. All payments are processed through secure payment gateways.",
+      "q11": "Do you accept custom requests or specific needs?",
+      "a11": "We primarily provide standardized video watermark, logo, and subtitle removal services. For special requirements, please contact our customer service team.",
+      "q12": "What if I want to perform a specific image conversion?",
+      "a12": "Our service focuses on video processing. If you need image processing services, please check our other products.",
+      "q13": "What happens if I don't use up the full amount of monthly credits?",
+      "a13": "Unused monthly credits do not roll over to the next month. We recommend choosing a subscription plan that matches your actual usage.",
+      "q14": "Can I upgrade/downgrade/cancel my subscription?",
+      "a14": "Yes, you can upgrade, downgrade, or cancel your subscription at any time. After cancellation, you can still use purchased credits, but auto-renewal will stop."
+    },
+    "loginRequired": "Please login to subscribe",
+    "processing": "Processing...",
+    "error": "An error occurred. Please try again."
+  },
+  "profile": {
+    "title": "My Account",
+    "orders": {
+      "title": "My Orders",
+      "noOrders": "No orders found",
+      "transactionId": "Transaction ID",
+      "productId": "Product",
+      "credits": "Credits",
+      "date": "Date",
+      "status": "Status",
+      "loading": "Loading orders..."
+    },
+    "conversions": {
+      "title": "My Conversions",
+      "noConversions": "No conversion records found",
+      "type": "Type",
+      "fileName": "File Name",
+      "status": "Status",
+      "date": "Date",
+      "result": "Result",
+      "download": "Download",
+      "noResult": "No result yet",
+      "loading": "Loading conversions...",
+      "statusText": {
+        "pending": "Queued",
+        "processing": "Processing",
+        "completed": "Completed",
+        "failed": "Failed"
+      },
+      "typeText": {
+        "watermark_logo_removal": "Watermark/Logo removal",
+        "subtitle_removal": "Subtitle removal",
+        "watermark_removal": "Watermark removal",
+        "logo_removal": "Logo removal"
+      }
+    },
+    "credits": {
+      "title": "My Credits",
+      "currentCredits": "Current Credits",
+      "totalCredits": "Total Credits",
+      "usedCredits": "Used Credits",
+      "freeTrialUsed": "Free Trial Used",
+      "freeTrialAvailable": "Free Trial Available",
+      "loading": "Loading credits..."
+    },
+    "tabs": {
+      "orders": "Orders",
+      "conversions": "Conversions",
+      "credits": "Credits"
+    },
+    "loginRequired": "Please login to view your account",
+    "login": "Login"
+  },
+  "home": {
+    "title": "Remove Video Watermark, Logo & Subtitle",
+    "subtitle": "Professional Video Watermark Removal Service",
+    "description": "Remove watermarks, logos, and subtitles from your videos with our advanced AI-powered technology",
+    "subscribe": "Subscribe Now",
+    "upload": {
+      "title": "Upload Your Video",
+      "removalType": "Removal Type",
+      "watermark_logo": "Remove Watermark & Logo",
+      "subtitle": "Subtitle",
+      "dragDrop": "Drag and drop your video here, or click to browse",
+      "selectFile": "Select Video File",
+      "start": "Start Processing",
+      "uploading": "Uploading...",
+      "processing": "Processing...",
+      "completed": "Processing completed successfully!",
+      "failed": "Processing failed. Please try again.",
+      "retry": "Retry",
+      "recharge": "Recharge",
+      "download": "Download Video",
+      "waiting": "Processing takes some time, please wait patiently. The file will be automatically downloaded when processing is complete.",
+      "tip": "After uploading, you can view your conversion records in the Profile Center even if you leave this page",
+      "freeLimit": "Free usage is limited to videos up to 30 seconds. Subscribe or recharge to process longer videos.",
+      "creditLimit": "When using credits, videos must not exceed 2 minutes. Please trim and retry."
+    },
+    "creditsInfo": {
+      "title": "Credit Deduction Rules",
+      "rule": "1 minute of video deducts 1 credit, less than 1 minute is calculated as 1 minute",
+      "example1": "30 second video → deduct 1 credit",
+      "example2": "1.5 minute video → deduct 2 credits",
+      "example3": "2 minute video → deduct 2 credits"
+    },
+    "cta": {
+      "start": "Get Started",
+      "learnMore": "Learn More"
+    },
+    "features": {
+      "title": "Features",
+      "watermark": "Remove Watermark",
+      "logo": "Remove Logo",
+      "subtitle": "Remove Subtitle",
+      "watermarkDesc": "Precisely remove unwanted watermarks",
+      "logoDesc": "Seamlessly remove logos and branding",
+      "subtitleDesc": "Remove subtitles and text overlays from videos"
+    },
+    "howToUse": {
+      "title": "How to Use",
+      "step1": "Upload your video",
+      "step2": "Select removal type",
+      "step3": "Process and download",
+      "step1Desc": "Select your video file and upload",
+      "step2Desc": "Choose what to remove: watermark, logo, or subtitle",
+      "step3Desc": "Wait for processing and download your clean video"
+    },
+    "help": {
+      "title": "Help & Support",
+      "faq": "FAQ",
+      "feedback": "Feedback",
+      "faq1": {
+        "title": "What video formats are supported?",
+        "desc": "We support major formats: MP4, AVI, MOV, MKV, etc."
+      },
+      "faq2": {
+        "title": "How long does processing take?",
+        "desc": "Depends on length/complexity. A 1-minute video typically needs 2-5 minutes."
+      },
+      "faq3": {
+        "title": "Is my video secure?",
+        "desc": "Encrypted and auto-deleted after 24 hours."
+      }
+    },
+    "caseStudies": {
+      "title": "Case Studies",
+      "description": "See how we've helped others remove watermarks",
+      "beforeTitle": "Before",
+      "beforeDesc": "Video with watermark",
+      "afterTitle": "After",
+      "afterDesc": "Watermark removed",
+      "subtitleBeforeTitle": "Subtitle Removal - Before",
+      "subtitleBeforeDesc": "Video with subtitles",
+      "subtitleAfterTitle": "Subtitle Removal - After",
+      "subtitleAfterDesc": "Subtitles removed",
+      "logo1BeforeTitle": "Logo Removal Example 1 - Before",
+      "logo1BeforeDesc": "Video with logo",
+      "logo1AfterTitle": "Logo Removal Example 1 - After",
+      "logo1AfterDesc": "Logo removed",
+      "logo2BeforeTitle": "Logo Removal Example 2 - Before",
+      "logo2BeforeDesc": "Video with logo",
+      "logo2AfterTitle": "Logo Removal Example 2 - After",
+      "logo2AfterDesc": "Logo removed",
+      "subtitle2BeforeTitle": "Subtitle Removal Example - Before",
+      "subtitle2BeforeDesc": "Video with subtitles",
+      "subtitle2AfterTitle": "Subtitle Removal Example - After",
+      "subtitle2AfterDesc": "Subtitles removed"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Professional Video Processing Service Provider",
+    "description": "We are a professional video processing service provider dedicated to helping content creators, businesses, and individuals remove unwanted elements from their videos.",
+    "mission": {
+      "title": "Our Mission",
+      "content": "We are dedicated to providing high-quality video processing services that help content creators, businesses, and individuals remove unwanted elements from their videos. Our advanced AI-powered technology ensures precise and efficient watermark, logo, and subtitle removal."
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Us",
+      "items": {
+        "ai": "Advanced AI technology for accurate removal",
+        "fast": "Fast processing times",
+        "secure": "Secure and confidential handling of your videos",
+        "formats": "Support for multiple video formats",
+        "support": "Professional customer support",
+        "quality": "High-quality results guaranteed"
+      }
+    },
+    "technology": {
+      "title": "Our Technology",
+      "content": "We utilize cutting-edge artificial intelligence and machine learning algorithms to identify and remove watermarks, logos, and subtitles from videos. Our technology is continuously improved to provide the best results for our customers."
+    },
+    "team": {
+      "title": "Our Team",
+      "content": "Our team consists of experienced video processing experts and AI engineers who are passionate about delivering the best possible service to our customers."
+    },
+    "values": {
+      "title": "Our Values",
+      "quality": "Quality First",
+      "qualityDesc": "We prioritize quality in every aspect of our service",
+      "innovation": "Innovation",
+      "innovationDesc": "We continuously innovate to improve our technology",
+      "customer": "Customer Focus",
+      "customerDesc": "Our customers' satisfaction is our top priority",
+      "integrity": "Integrity",
+      "integrityDesc": "We operate with honesty and transparency"
+    },
+    "history": {
+      "title": "Our Story",
+      "content": "Founded with a vision to make video editing accessible to everyone, we have been serving thousands of customers worldwide. Our commitment to excellence and innovation has made us a trusted name in video processing services."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in Touch",
+    "description": "We're here to help! Reach out to us through any of the following methods.",
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "address": "Address",
+      "addressValue": "Building 130, Longhua Avenue, Longhua District, Shenzhen, China",
+      "phone": "Phone",
+      "businessHours": "Business Hours",
+      "businessHoursValue": "Monday - Friday: 9:00 AM - 6:00 PM<br />Saturday: 10:00 AM - 4:00 PM<br />Sunday: Closed",
+      "responseTime": "Response Time"
+    },
+    "form": {
+      "title": "Send us a Message",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    },
+    "methods": {
+      "title": "Other Ways to Reach Us",
+      "emailDesc": "Send us an email and we'll respond within 24 hours",
+      "addressDesc": "Visit us at our office location",
+      "support": "Customer Support",
+      "supportDesc": "Our support team is available to assist you"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "How long does it take to process a video?",
+      "a1": "Processing time depends on video length and complexity. Typically, a 1-minute video takes 2-5 minutes.",
+      "q2": "What video formats do you support?",
+      "a2": "We support all major video formats including MP4, AVI, MOV, MKV, and more.",
+      "q3": "Is my video secure?",
+      "a3": "Yes, we use secure encryption and automatically delete your videos after 24 hours."
+    }
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "refund": "Refund Policy",
+    "disclaimer": "Disclaimer",
+    "copyright": "Copyright Notice",
+    "legal": "Legal Notice",
+    "ip": "Intellectual Property",
+    "contact": "Contact",
+    "address": "Address",
+    "addressValue": "Building 130, Longhua Avenue, Longhua District, Shenzhen, China",
+    "phone": "Phone",
+    "email": "Email",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "about": "About Us",
+    "contactUs": "Contact Us",
+    "description": "Professional video watermark removal service. Remove watermarks, logos, and subtitles from your videos."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated",
+    "intro": "This Privacy Policy describes how we collect, use, and protect your personal information when you use our video watermark removal service.",
+    "section1": {
+      "title": "1. Information We Collect",
+      "content": "We collect information that you provide directly to us, including when you upload videos, create an account, or contact us for support. This may include your name, email address, payment information, and any videos you upload to our service. We also automatically collect certain information about your device and how you interact with our service, including IP address, browser type, and usage patterns."
+    },
+    "section2": {
+      "title": "2. How We Use Your Information",
+      "content": "We use the information we collect to provide, maintain, and improve our services, process your video removal requests, communicate with you about your account and our services, send you technical notices and support messages, respond to your comments and questions, and ensure the security of our platform. We may also use your information for analytics purposes to understand how our service is used."
+    },
+    "section3": {
+      "title": "3. Data Security",
+      "content": "We implement appropriate technical and organizational measures to protect your personal information and videos. This includes encryption of data in transit and at rest, secure servers, and regular security audits. All uploaded videos are automatically deleted after 24 hours of processing completion. We do not store your videos permanently or share them with third parties."
+    },
+    "section4": {
+      "title": "4. Data Retention",
+      "content": "We retain your personal information only for as long as necessary to provide our services and fulfill the purposes outlined in this policy. Video files are automatically deleted within 24 hours after processing. Account information is retained until you request deletion or close your account."
+    },
+    "section5": {
+      "title": "5. Third-Party Services",
+      "content": "We may use third-party services to help us operate our platform and provide services to you, such as payment processors, cloud storage providers, and analytics services. These third parties have access to your information only to perform specific tasks on our behalf and are obligated not to disclose or use it for any other purpose."
+    },
+    "section6": {
+      "title": "6. Your Rights",
+      "content": "You have the right to access, update, or delete your personal information at any time. You can also request a copy of your data, withdraw your consent for data processing, object to certain types of processing, and request data portability. To exercise these rights, please contact us using the information provided below."
+    },
+    "section7": {
+      "title": "7. Cookies and Tracking",
+      "content": "We use cookies and similar tracking technologies to track activity on our service and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our service."
+    },
+    "section8": {
+      "title": "8. Children's Privacy",
+      "content": "Our service is not intended for children under the age of 18. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately."
+    },
+    "section9": {
+      "title": "9. Changes to This Policy",
+      "content": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the 'Last updated' date. You are advised to review this Privacy Policy periodically for any changes."
+    },
+    "section10": {
+      "title": "10. Contact Us",
+      "content": "If you have any questions about this Privacy Policy, please contact us at:",
+      "email": "Email: support@removewatermarker.com",
+      "address": "Address: 深圳市龙华区龙华大道130栋"
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated",
+    "intro": "Please read these Terms of Service carefully before using our video watermark removal service.",
+    "section1": {
+      "title": "1. Acceptance of Terms",
+      "content": "By accessing and using our service, you accept and agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this service."
+    },
+    "section2": {
+      "title": "2. Description of Service",
+      "content": "We provide video processing services to remove watermarks, logos, and subtitles from videos. Our service uses automated AI technology to process your uploaded videos. We reserve the right to modify, suspend, or discontinue any aspect of the service at any time without prior notice."
+    },
+    "section3": {
+      "title": "3. User Account",
+      "content": "To use certain features of our service, you may need to create an account. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account."
+    },
+    "section4": {
+      "title": "4. User Responsibilities",
+      "content": "You are responsible for ensuring that you have the legal right to modify the videos you upload. You must not upload content that violates any laws, infringes on the rights of others, contains malware or viruses, or is otherwise harmful or illegal. You agree to use our service only for lawful purposes."
+    },
+    "section5": {
+      "title": "5. Intellectual Property",
+      "content": "You retain all rights to your uploaded videos. By using our service, you grant us a limited, non-exclusive license to process your videos solely for the purpose of providing the service. All content on our website, including text, graphics, logos, and software, is the property of RemoveWatermark and is protected by copyright and other intellectual property laws."
+    },
+    "section6": {
+      "title": "6. Payment Terms",
+      "content": "Some features of our service may require payment. All fees are non-refundable unless otherwise stated. We reserve the right to change our pricing at any time. You are responsible for all applicable taxes."
+    },
+    "section7": {
+      "title": "7. Service Availability",
+      "content": "We do not guarantee that our service will be available at all times or that it will be uninterrupted, secure, or error-free. We may experience downtime due to maintenance, updates, or unforeseen circumstances."
+    },
+    "section8": {
+      "title": "8. Limitation of Liability",
+      "content": "To the fullest extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from your use of our service."
+    },
+    "section9": {
+      "title": "9. Indemnification",
+      "content": "You agree to indemnify and hold harmless RemoveWatermark and its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses arising out of your use of our service or violation of these Terms."
+    },
+    "section10": {
+      "title": "10. Termination",
+      "content": "We may terminate or suspend your account and access to our service immediately, without prior notice, for any reason, including breach of these Terms. Upon termination, your right to use the service will cease immediately."
+    },
+    "section11": {
+      "title": "11. Governing Law",
+      "content": "These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which we operate, without regard to its conflict of law provisions."
+    },
+    "section12": {
+      "title": "12. Contact Information",
+      "content": "For questions about these Terms of Service, please contact us at:",
+      "email": "Email: support@removewatermarker.com",
+      "address": "Address: 深圳市龙华区龙华大道130栋"
+    }
+  },
+  "refund": {
+    "title": "Refund Policy",
+    "lastUpdated": "Last updated",
+    "intro": "This Refund Policy outlines the terms and conditions for refunds on our video processing services.",
+    "section1": {
+      "title": "1. Refund Eligibility",
+      "content": "We offer refunds for services that fail to meet our quality standards, if there is a technical error on our part that prevents the service from being delivered, or if the service is not provided within the promised timeframe. Refunds are considered on a case-by-case basis."
+    },
+    "section2": {
+      "title": "2. Refund Process",
+      "content": "To request a refund, please contact us within 7 days of your purchase or service completion. You must provide your order number and a detailed explanation of why you are requesting a refund. We will review your request and respond within 5 business days. If approved, refunds will be processed within 14 business days to your original payment method."
+    },
+    "section3": {
+      "title": "3. Non-Refundable Items",
+      "content": "Refunds are not available for services that have been successfully completed and delivered, if the issue is due to user error (such as uploading incorrect files or incompatible formats), if you change your mind after the service has been completed, or if the service was used for illegal purposes."
+    },
+    "section4": {
+      "title": "4. Partial Refunds",
+      "content": "In some cases, we may offer partial refunds if only a portion of the service was unsatisfactory. The amount of the partial refund will be determined based on the specific circumstances of your case."
+    },
+    "section5": {
+      "title": "5. Processing Time",
+      "content": "Refund requests are typically processed within 5-10 business days. Once approved, the refund will appear in your account within 14 business days, depending on your payment method and financial institution."
+    },
+    "section6": {
+      "title": "6. Chargebacks",
+      "content": "If you initiate a chargeback through your bank or credit card company, we reserve the right to dispute the chargeback and provide evidence of service delivery. We encourage you to contact us directly first to resolve any issues."
+    },
+    "section7": {
+      "title": "7. Contact for Refunds",
+      "content": "To request a refund, please contact us at:",
+      "email": "Email: support@removewatermarker.com",
+      "address": "Address: 深圳市龙华区龙华大道130栋",
+      "note": "Please include your order number and reason for refund in your request."
+    }
+  },
+  "disclaimer": {
+    "title": "Disclaimer",
+    "lastUpdated": "Last updated",
+    "intro": "Please read this disclaimer carefully before using our video watermark removal service.",
+    "section1": {
+      "title": "1. Service Disclaimer",
+      "content": "Our video processing service is provided 'as is' and 'as available' without warranties of any kind, either express or implied. We do not guarantee that the service will be uninterrupted, secure, error-free, or that defects will be corrected. We reserve the right to modify or discontinue the service at any time without notice."
+    },
+    "section2": {
+      "title": "2. Results Disclaimer",
+      "content": "While we strive to provide the best results, the quality of watermark, logo, or subtitle removal may vary depending on various factors including video content, watermark characteristics, video quality, compression, and other technical factors beyond our control. We do not guarantee specific results or that all watermarks, logos, or subtitles will be completely removed."
+    },
+    "section3": {
+      "title": "3. Legal Disclaimer",
+      "content": "Users are solely responsible for ensuring they have the legal right to modify videos, including obtaining necessary permissions and licenses. We are not responsible for any legal consequences resulting from the use of our service, including copyright infringement, trademark violations, or other legal issues. Users must comply with all applicable laws and regulations."
+    },
+    "section4": {
+      "title": "4. Content Disclaimer",
+      "content": "We do not review, monitor, or control the content of videos uploaded by users. We are not responsible for any content that violates laws or infringes on rights. Users are solely responsible for the content they upload and the use of processed videos."
+    },
+    "section5": {
+      "title": "5. Limitation of Liability",
+      "content": "To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or business opportunities, arising from the use or inability to use our service, even if we have been advised of the possibility of such damages."
+    },
+    "section6": {
+      "title": "6. No Professional Advice",
+      "content": "The information and services provided on our platform are for general informational purposes only and do not constitute professional, legal, or technical advice. You should consult with appropriate professionals for advice specific to your situation."
+    },
+    "section7": {
+      "title": "7. Third-Party Links",
+      "content": "Our service may contain links to third-party websites or services. We are not responsible for the content, privacy policies, or practices of any third-party websites or services. Your use of third-party websites is at your own risk."
+    },
+    "section8": {
+      "title": "8. Force Majeure",
+      "content": "We shall not be liable for any failure or delay in performance under these terms which is due to fire, flood, earthquake, elements of nature or acts of God, acts of war, terrorism, riots, civil disorders, rebellions or revolutions, or any other cause beyond our reasonable control."
+    }
+  },
+  "copyright": {
+    "title": "Copyright Notice",
+    "lastUpdated": "Last updated",
+    "intro": "This Copyright Notice describes the copyright ownership and usage rights for content on our platform.",
+    "section1": {
+      "title": "1. Copyright Ownership",
+      "content": "All content on this website, including but not limited to text, graphics, logos, icons, images, audio clips, digital downloads, data compilations, and software, is the property of RemoveWatermark or its content suppliers and is protected by international copyright laws. The compilation of all content on this site is the exclusive property of RemoveWatermark."
+    },
+    "section2": {
+      "title": "2. User Content",
+      "content": "Users retain all copyright and intellectual property rights to videos and other content they upload to our service. We do not claim ownership of user-uploaded content. By uploading content, you represent and warrant that you own or have the necessary rights to the content and that it does not infringe on any third-party rights."
+    },
+    "section3": {
+      "title": "3. Prohibited Uses",
+      "content": "You may not reproduce, distribute, modify, create derivative works from, publicly display, publicly perform, republish, download, store, or transmit any of the material on our website without our express written permission. This includes but is not limited to copying, scraping, or downloading content for commercial or non-commercial purposes."
+    },
+    "section4": {
+      "title": "4. Fair Use",
+      "content": "You may use our website content for personal, non-commercial purposes in accordance with fair use principles. However, any commercial use requires our express written consent."
+    },
+    "section5": {
+      "title": "5. Trademarks",
+      "content": "All trademarks, service marks, and trade names of RemoveWatermark used on this site are trademarks or registered trademarks of RemoveWatermark. You may not use any of our trademarks without our prior written permission."
+    },
+    "section6": {
+      "title": "6. DMCA Policy",
+      "content": "We respect the intellectual property rights of others and expect our users to do the same. If you believe that your copyrighted work has been copied in a way that constitutes copyright infringement, please contact us with the following information: (1) a description of the copyrighted work; (2) the location of the infringing material; (3) your contact information; (4) a statement of good faith; (5) your signature.",
+      "email": "Email: support@removewatermarker.com",
+      "address": "Address: 深圳市龙华区龙华大道130栋"
+    },
+    "section7": {
+      "title": "7. Copyright Infringement Claims",
+      "content": "Upon receipt of a valid DMCA notice, we will promptly remove or disable access to the allegedly infringing content and notify the user who posted the content. We may terminate accounts of repeat infringers."
+    },
+    "section8": {
+      "title": "8. Counter-Notification",
+      "content": "If you believe your content was removed in error, you may submit a counter-notification with a statement under penalty of perjury that the content was removed by mistake or misidentification."
+    }
+  },
+  "legal": {
+    "title": "Legal Notice",
+    "lastUpdated": "Last updated",
+    "intro": "This Legal Notice provides important information about our company and the legal framework governing our services.",
+    "section1": {
+      "title": "1. Company Information",
+      "content": "This website is operated by RemoveWatermark, a professional video processing service provider.",
+      "address": "Address: 深圳市龙华区龙华大道130栋",
+      "email": "Email: support@removewatermarker.com",
+      "website": "Website: https://www.removewatermarker.com"
+    },
+    "section2": {
+      "title": "2. Applicable Law",
+      "content": "These terms and conditions are governed by and construed in accordance with the laws of the jurisdiction in which we operate. Any disputes arising from or relating to these terms or our services will be subject to the exclusive jurisdiction of the courts in that jurisdiction."
+    },
+    "section3": {
+      "title": "3. Compliance",
+      "content": "Users are responsible for ensuring their use of our service complies with all applicable laws and regulations in their jurisdiction, including but not limited to copyright laws, privacy laws, and content regulations. We reserve the right to refuse service to anyone who violates applicable laws."
+    },
+    "section4": {
+      "title": "4. Service Availability",
+      "content": "We make no representations or warranties regarding the availability, accuracy, or reliability of our service. We reserve the right to modify, suspend, or discontinue any part of our service at any time without notice."
+    },
+    "section5": {
+      "title": "5. Limitation of Liability",
+      "content": "To the fullest extent permitted by law, we exclude all representations, warranties, and conditions relating to our website and the use of our service. Nothing in this notice will limit or exclude our liability for death or personal injury, fraud, or any other liability that cannot be excluded by law."
+    },
+    "section6": {
+      "title": "6. Severability",
+      "content": "If any provision of this Legal Notice is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary so that this Notice shall otherwise remain in full force and effect."
+    },
+    "section7": {
+      "title": "7. Entire Agreement",
+      "content": "This Legal Notice, together with our Terms of Service and Privacy Policy, constitutes the entire agreement between you and RemoveWatermark regarding your use of our service."
+    },
+    "section8": {
+      "title": "8. Changes to This Notice",
+      "content": "We reserve the right to modify this Legal Notice at any time. Changes will be effective immediately upon posting to this page. Your continued use of our service after changes are posted constitutes acceptance of the modified notice."
+    },
+    "section9": {
+      "title": "9. Contact",
+      "content": "For legal inquiries or questions about this Legal Notice, please contact us at:",
+      "email": "Email: support@removewatermarker.com",
+      "address": "Address: 深圳市龙华区龙华大道130栋"
+    }
+  },
+  "ip": {
+    "title": "Intellectual Property Statement",
+    "lastUpdated": "Last updated",
+    "intro": "This Intellectual Property Statement outlines the intellectual property rights and protections related to our service.",
+    "section1": {
+      "title": "1. Our Intellectual Property",
+      "content": "All intellectual property rights in our website, technology, algorithms, software, designs, trademarks, service marks, trade names, and service belong to RemoveWatermark or its licensors. This includes but is not limited to patents, trademarks, copyrights, trade secrets, and proprietary algorithms used in our video processing technology."
+    },
+    "section2": {
+      "title": "2. User Intellectual Property",
+      "content": "Users retain all intellectual property rights to their uploaded videos and other content. We do not claim ownership of user-uploaded content and only use it to provide our service. By uploading content, you grant us a limited, non-exclusive license to process your content solely for the purpose of providing the service."
+    },
+    "section3": {
+      "title": "3. Prohibited Activities",
+      "content": "Users may not reverse engineer, decompile, disassemble, or attempt to extract our proprietary algorithms, source code, or technology. Any unauthorized use, reproduction, or distribution of our intellectual property is strictly prohibited and may result in legal action."
+    },
+    "section4": {
+      "title": "4. License to Use",
+      "content": "We grant you a limited, non-exclusive, non-transferable license to access and use our service for its intended purpose. This license does not include the right to resell, redistribute, or create derivative works based on our technology or service."
+    },
+    "section5": {
+      "title": "5. Third-Party Intellectual Property",
+      "content": "We respect the intellectual property rights of others and expect our users to do the same. If you believe your intellectual property rights have been infringed, please contact us immediately with details of the alleged infringement."
+    },
+    "section6": {
+      "title": "6. Trademarks",
+      "content": "RemoveWatermark and related marks are trademarks of RemoveWatermark. You may not use our trademarks without our prior written consent. All other trademarks, service marks, and trade names are the property of their respective owners."
+    },
+    "section7": {
+      "title": "7. Enforcement",
+      "content": "We take intellectual property rights seriously and will take appropriate legal action against any infringement of our intellectual property rights. This may include seeking injunctive relief, damages, and attorney's fees."
+    },
+    "section8": {
+      "title": "8. Reporting Infringement",
+      "content": "If you believe that our service or users are infringing on your intellectual property rights, please contact us with: (1) identification of the intellectual property; (2) description of the infringement; (3) your contact information; (4) a statement of good faith; (5) your signature.",
+      "email": "Email: support@removewatermarker.com",
+      "address": "Address: 深圳市龙华区龙华大道130栋"
+    }
+  }
+}
+

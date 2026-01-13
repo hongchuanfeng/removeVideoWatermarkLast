@@ -1,0 +1,709 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "imageWatermarkRemoval": "Suppression des filigranes d'images",
+    "subscription": "Abonnement",
+    "profile": "Mon compte"
+  },
+  "imageWatermarkRemoval": {
+    "title": "Suppression des filigranes d'images",
+    "description": "Téléchargez une image, cliquez sur les emplacements des filigranes et supprimez-les en un clic",
+    "imageCreditsInfo": "Le traitement d'une image nécessite 1 crédit. Il vous reste {credits} crédits.",
+    "promptTitle": "Veuillez cliquer sur l'image pour marquer les zones de filigrane",
+    "promptDesc": "Cliquez sur les zones de filigrane sur l'image, le système les marquera automatiquement",
+    "promptHint": "Astuce : cliquez n'importe où sur l'image pour commencer le test",
+    "demoNote": "Note: Ceci est une version de démonstration. Le traitement réel des images nécessite une configuration complète de l'API Tencent Cloud.",
+    "uploadTitle": "Télécharger l'image",
+    "uploadPrompt": "Glissez-déposez une image ici, ou cliquez pour sélectionner un fichier",
+    "selectImage": "Sélectionner l'image",
+    "changeImage": "Changer d'image",
+    "clearPoints": "Effacer les marques",
+    "removeLastPoint": "Supprimer la dernière marque",
+    "markedPoints": "{count} emplacements de filigranes marqués",
+    "processImage": "Supprimer les filigranes",
+    "processing": "Traitement en cours...",
+    "resultTitle": "Résultat du traitement",
+    "downloadImage": "Télécharger l'image",
+    "loading": "Chargement...",
+    "insufficientCredits": "Crédits insuffisants. Veuillez recharger d'abord.",
+    "processingError": "Échec du traitement. Veuillez réessayer.",
+    "features": {
+      "title": "Fonctionnalités",
+      "intelligent": "Reconnaissance Intelligente: Détection automatique et suppression des filigranes et logos des images",
+      "precision": "Réparation Précise: Utilisation de la technologie IA pour réparer intelligemment les zones après suppression des filigranes",
+      "batch": "Traitement par Lot: Support de suppression simultanée de multiples zones de filigranes",
+      "quality": "Préservation HD: Maintenir la qualité originale de l'image après traitement"
+    },
+    "instructions": {
+      "title": "Instructions",
+      "step1": "Télécharger l'Image: Cliquez pour sélectionner l'image ou faites glisser l'image vers la zone de téléchargement",
+      "step2": "Marquer le Filigrane: Utilisez la souris pour faire glisser et sélectionner la zone de filigrane (cadre jaune pour aperçu, cadre rouge pour confirmé)",
+      "step3": "Confirmer le Marquage: Plusieurs zones de filigranes peuvent être ajoutées, ou effacer et marquer à nouveau",
+      "step4": "Démarrer le Traitement: Cliquez sur le bouton 'Supprimer le Filigrane' et attendez le traitement IA",
+      "step5": "Télécharger le Résultat: Téléchargez l'image réparée après achèvement du traitement"
+    },
+    "faq": {
+      "title": "Questions Fréquemment Posées",
+      "q1": "Quels formats d'image sont pris en charge?",
+      "a1": "Prend en charge les formats courants comme JPG, PNG, JPEG jusqu'à 10 Mo.",
+      "q2": "Quelle est la qualité de suppression des filigranes?",
+      "a2": "Utilise la technologie IA de Tencent Cloud pour la reconnaissance intelligente et la réparation des zones de filigranes, avec des résultats naturels tout en préservant la qualité de l'image.",
+      "q3": "Combien de filigranes peuvent être supprimés à la fois?",
+      "a3": "Prend en charge le marquage et la suppression simultanés de multiples zones de filigranes, sans limite de quantité.",
+      "q4": "Combien de temps prend le traitement?",
+      "a4": "Se termine généralement en 10-30 secondes, selon la taille de l'image et la complexité du filigrane.",
+      "q5": "Que faire si je n'ai pas assez de crédits?",
+      "a5": "Vous pouvez acheter des packs de crédits, ou utiliser le quota d'essai gratuit (une opportunité gratuite pour chaque nouvel utilisateur)."
+    },
+    "examples": {
+      "title": "Exemples de Traitement",
+      "subtitle": "Découvrez comment notre technologie IA supprime précisément les filigranes et logos",
+      "before": "Avant",
+      "after": "Après",
+      "logoExample": "Exemple de Suppression de Logo",
+      "watermarkExample": "Exemple de Suppression de Filigrane",
+      "combinedExample": "Exemple de Traitement Combiné"
+    }
+  },
+  "auth": {
+    "signInWithGoogle": "Se connecter avec Google",
+    "signOut": "Se déconnecter",
+    "signingIn": "Connexion...",
+    "signingOut": "Déconnexion..."
+  },
+  "subscription": {
+    "title": "Plans d'abonnement",
+    "subtitle": "Choisissez le plan qui vous convient",
+    "description": "Obtenez des crédits pour convertir des vidéos en sous-titres. 1 crédit = 1 minute de vidéo.",
+    "basic": {
+      "name": "Basique",
+      "price": "$39.9",
+      "period": "/mois",
+      "credits": "30 crédits",
+      "description": "Parfait pour une utilisation occasionnelle",
+      "button": "S'abonner"
+    },
+    "standard": {
+      "name": "Standard",
+      "price": "$119.9",
+      "period": "/mois",
+      "credits": "100 crédits",
+      "description": "Idéal pour les utilisateurs réguliers",
+      "button": "S'abonner",
+      "popular": "Le plus populaire"
+    },
+    "premium": {
+      "name": "Premium",
+      "price": "$239.9",
+      "period": "/mois",
+      "credits": "210 crédits",
+      "description": "Meilleur rapport qualité-prix pour les utilisateurs intensifs",
+      "button": "S'abonner"
+    },
+    "features": {
+      "title": "Ce qui est inclus",
+      "videoToSubtitle": "Conversion vidéo en sous-titres",
+      "creditBased": "Tarification basée sur les crédits",
+      "monthlyRenewal": "Renouvellement automatique mensuel",
+      "cancelAnytime": "Annuler à tout moment"
+    },
+    "freeTrial": {
+      "title": "Essai gratuit",
+      "description": "Les nouveaux utilisateurs obtiennent 1 conversion gratuite (max 30 secondes) après connexion"
+    },
+    "pricingRules": {
+      "title": "Règles de tarification des crédits",
+      "subtitle": "Le service de suppression de sous-titres est facturé selon la résolution et la durée de la vidéo",
+      "rule1": "Résolution 2560 × 1440 : 2 crédits/minute (arrondi au supérieur)",
+      "rule2": "Résolution 1280 × 640 : 1 crédit/minute (arrondi au supérieur)",
+      "note": "Les parties inférieures à une minute sont arrondies à 1 minute"
+    },
+    "faq": {
+      "title": "Questions fréquemment posées",
+      "q1": "Qu'est-ce que les crédits ?",
+      "a1": "Les crédits sont l'unité de facturation de notre service. 1 crédit peut traiter 1 minute de vidéo (suppression de filigrane/logo). La suppression de sous-titres est facturée à des tarifs différents selon la résolution de la vidéo.",
+      "q2": "Dois-je m'inscrire pour utiliser le service de suppression de filigrane ?",
+      "a2": "Oui, vous devez vous inscrire et vous connecter pour utiliser notre service. Les nouveaux utilisateurs obtiennent 1 essai gratuit (max 30 secondes) après inscription.",
+      "q3": "Le service est-il gratuit ?",
+      "a3": "Nous offrons 1 essai gratuit (max 30 secondes) aux nouveaux utilisateurs. Ensuite, vous devez acheter des crédits ou vous abonner à un plan pour continuer à utiliser le service.",
+      "q4": "Dois-je choisir des crédits à la demande ou un plan d'abonnement ?",
+      "a4": "Si vous utilisez le service occasionnellement, les crédits à la demande peuvent vous convenir. Si vous l'utilisez fréquemment, les plans d'abonnement sont plus économiques avec un renouvellement automatique mensuel et peuvent être annulés à tout moment.",
+      "q5": "Que faire si je ne suis pas satisfait du résultat ?",
+      "a5": "Si vous n'êtes pas satisfait du résultat du traitement, veuillez contacter notre équipe de service client et nous ferons de notre mieux pour résoudre votre problème.",
+      "q6": "Que faire si j'ai épuisé ma limite de crédits ?",
+      "a6": "Lorsque vos crédits sont épuisés, vous pouvez acheter des packs de crédits supplémentaires ou passer à un plan d'abonnement de niveau supérieur pour continuer à utiliser le service.",
+      "q7": "Quel est le coût d'une utilisation supplémentaire au-delà de mes crédits mensuels ?",
+      "a7": "L'utilisation au-delà des crédits mensuels sera facturée aux prix standard des crédits. Veuillez consulter notre page de tarification pour les tarifs spécifiques.",
+      "q8": "L'inscription est-elle requise avant d'utiliser le service ?",
+      "a8": "Oui, l'inscription est requise. Après inscription, vous pouvez profiter de l'essai gratuit et gérer vos enregistrements de conversion et vos crédits.",
+      "q9": "Combien de conversions puis-je effectuer avec le service ?",
+      "a9": "Le nombre de conversions dépend des crédits dont vous disposez. Chaque conversion vidéo consomme des crédits en fonction de la longueur de la vidéo et du type de traitement.",
+      "q10": "Quels modes de paiement sont acceptés ?",
+      "a10": "Nous acceptons divers modes de paiement, notamment les cartes de crédit, les cartes de débit et plus encore. Tous les paiements sont traités via des passerelles de paiement sécurisées.",
+      "q11": "Acceptez-vous des demandes personnalisées ou des besoins spécifiques ?",
+      "a11": "Nous fournissons principalement des services standardisés de suppression de filigrane, de logo et de sous-titres vidéo. Pour des besoins spéciaux, veuillez contacter notre équipe de service client.",
+      "q12": "Que faire si je veux effectuer une conversion d'image spécifique ?",
+      "a12": "Notre service se concentre sur le traitement vidéo. Si vous avez besoin de services de traitement d'image, veuillez consulter nos autres produits.",
+      "q13": "Que se passe-t-il si je n'utilise pas la totalité de mes crédits mensuels ?",
+      "a13": "Les crédits mensuels non utilisés ne sont pas reportés au mois suivant. Nous recommandons de choisir un plan d'abonnement qui correspond à votre utilisation réelle.",
+      "q14": "Puis-je mettre à niveau/rétrograder/annuler mon abonnement ?",
+      "a14": "Oui, vous pouvez mettre à niveau, rétrograder ou annuler votre abonnement à tout moment. Après annulation, vous pouvez toujours utiliser les crédits achetés, mais le renouvellement automatique s'arrêtera."
+    },
+    "loginRequired": "Veuillez vous connecter pour vous abonner",
+    "processing": "Traitement...",
+    "error": "Une erreur s'est produite. Veuillez réessayer."
+  },
+  "profile": {
+    "title": "Mon compte",
+    "orders": {
+      "title": "Mes commandes",
+      "noOrders": "Aucune commande trouvée",
+      "transactionId": "ID de transaction",
+      "productId": "Produit",
+      "credits": "Crédits",
+      "date": "Date",
+      "status": "Statut",
+      "loading": "Chargement des commandes..."
+    },
+    "conversions": {
+      "title": "Mes conversions",
+      "noConversions": "Aucun enregistrement de conversion trouvé",
+      "type": "Type",
+      "fileName": "Nom du fichier",
+      "status": "Statut",
+      "date": "Date",
+      "result": "Résultat",
+      "download": "Télécharger",
+      "noResult": "Pas encore de résultat",
+      "loading": "Chargement des conversions...",
+      "statusText": {
+        "pending": "En file d'attente",
+        "processing": "Traitement",
+        "completed": "Terminé",
+        "failed": "Échec"
+      },
+      "typeText": {
+        "watermark_logo_removal": "Suppression de filigrane/logo",
+        "subtitle_removal": "Suppression de sous-titres",
+        "watermark_removal": "Suppression de filigrane",
+        "logo_removal": "Suppression de logo"
+      }
+    },
+    "credits": {
+      "title": "Mes crédits",
+      "currentCredits": "Crédits actuels",
+      "totalCredits": "Total des crédits",
+      "usedCredits": "Crédits utilisés",
+      "freeTrialUsed": "Essai gratuit utilisé",
+      "freeTrialAvailable": "Essai gratuit disponible",
+      "loading": "Chargement des crédits..."
+    },
+    "tabs": {
+      "orders": "Commandes",
+      "conversions": "Conversions",
+      "credits": "Crédits"
+    },
+    "loginRequired": "Veuillez vous connecter pour voir votre compte",
+    "login": "Se connecter"
+  },
+  "home": {
+    "title": "Supprimer le filigrane, le logo et les sous-titres des vidéos",
+    "subtitle": "Service professionnel de suppression de filigrane vidéo",
+    "description": "Supprimez les filigranes, logos et sous-titres de vos vidéos avec notre technologie avancée basée sur l'IA",
+    "subscribe": "S'abonner maintenant",
+    "upload": {
+      "title": "Téléchargez votre vidéo",
+      "removalType": "Type de suppression",
+      "watermark_logo": "Supprimer le filigrane et le logo",
+      "subtitle": "Sous-titres",
+      "dragDrop": "Glissez-déposez votre vidéo ici ou cliquez pour parcourir",
+      "selectFile": "Sélectionner un fichier vidéo",
+      "start": "Commencer le traitement",
+      "uploading": "Téléchargement...",
+      "processing": "Traitement...",
+      "completed": "Traitement terminé avec succès !",
+      "failed": "Le traitement a échoué. Veuillez réessayer.",
+      "retry": "Réessayer",
+      "recharge": "Recharger",
+      "download": "Télécharger la vidéo",
+      "waiting": "Le traitement prend un certain temps, veuillez patienter. Le fichier sera automatiquement téléchargé une fois le traitement terminé.",
+      "tip": "Après le téléchargement, vous pouvez consulter vos enregistrements de conversion dans le Centre de profil même si vous quittez cette page",
+      "freeLimit": "L'utilisation gratuite est limitée aux vidéos jusqu'à 30 secondes. Abonnez-vous ou rechargez pour traiter des vidéos plus longues.",
+      "creditLimit": "Lors de l'utilisation de crédits, les vidéos ne doivent pas dépasser 2 minutes. Veuillez couper et réessayer."
+    },
+    "cta": {
+      "start": "Commencer",
+      "learnMore": "En savoir plus"
+    },
+    "creditsInfo": {
+      "title": "Règles de Déduction de Crédits",
+      "rule": "1 minute de vidéo déduit 1 crédit, moins de 1 minute est calculé comme 1 minute",
+      "example1": "Vidéo de 30 secondes → déduit 1 crédit",
+      "example2": "Vidéo de 1,5 minute → déduit 2 crédits",
+      "example3": "Vidéo de 2 minutes → déduit 2 crédits"
+    },
+    "features": {
+      "title": "Fonctionnalités",
+      "watermark": "Supprimer le filigrane",
+      "logo": "Supprimer le logo",
+      "subtitle": "Supprimer les sous-titres",
+      "watermarkDesc": "Supprimez précisément les filigranes indésirables",
+      "logoDesc": "Supprimez de manière transparente les logos et le branding",
+      "subtitleDesc": "Supprimez les sous-titres et les superpositions de texte des vidéos"
+    },
+    "howToUse": {
+      "title": "Comment utiliser",
+      "step1": "Téléchargez votre vidéo",
+      "step2": "Sélectionnez le type de suppression",
+      "step3": "Traitez et téléchargez",
+      "step1Desc": "Sélectionnez votre fichier vidéo et téléchargez-le",
+      "step2Desc": "Choisissez ce qu'il faut supprimer : filigrane, logo ou sous-titres",
+      "step3Desc": "Attendez le traitement et téléchargez votre vidéo propre"
+    },
+    "help": {
+      "title": "Aide et support",
+      "faq": "FAQ",
+      "feedback": "Commentaires",
+      "faq1": {
+        "title": "Quels formats vidéo sont pris en charge ?",
+        "desc": "Nous prenons en charge les principaux formats : MP4, AVI, MOV, MKV, etc."
+      },
+      "faq2": {
+        "title": "Combien de temps prend le traitement ?",
+        "desc": "Cela dépend de la longueur/complexité. Une vidéo d'1 minute nécessite généralement 2-5 minutes."
+      },
+      "faq3": {
+        "title": "Ma vidéo est-elle sécurisée ?",
+        "desc": "Chiffrée et supprimée automatiquement après 24 heures."
+      }
+    },
+    "caseStudies": {
+      "title": "Études de cas",
+      "description": "Découvrez comment nous avons aidé d'autres à supprimer des filigranes",
+      "beforeTitle": "Avant",
+      "beforeDesc": "Vidéo avec filigrane",
+      "afterTitle": "Après",
+      "afterDesc": "Filigrane supprimé",
+      "subtitleBeforeTitle": "Suppression de sous-titres - Avant",
+      "subtitleBeforeDesc": "Vidéo avec sous-titres",
+      "subtitleAfterTitle": "Suppression de sous-titres - Après",
+      "subtitleAfterDesc": "Sous-titres supprimés",
+      "logo1BeforeTitle": "Exemple de suppression de logo 1 - Avant",
+      "logo1BeforeDesc": "Vidéo avec logo",
+      "logo1AfterTitle": "Exemple de suppression de logo 1 - Après",
+      "logo1AfterDesc": "Logo supprimé",
+      "logo2BeforeTitle": "Exemple de suppression de logo 2 - Avant",
+      "logo2BeforeDesc": "Vidéo avec logo",
+      "logo2AfterTitle": "Exemple de suppression de logo 2 - Après",
+      "logo2AfterDesc": "Logo supprimé",
+      "subtitle2BeforeTitle": "Exemple de suppression de sous-titres - Avant",
+      "subtitle2BeforeDesc": "Vidéo avec sous-titres",
+      "subtitle2AfterTitle": "Exemple de suppression de sous-titres - Après",
+      "subtitle2AfterDesc": "Sous-titres supprimés"
+    }
+  },
+  "footer": {
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "refund": "Politique de remboursement",
+    "disclaimer": "Avertissement",
+    "copyright": "Avis de droits d'auteur",
+    "legal": "Avis juridique",
+    "ip": "Propriété intellectuelle",
+    "contact": "Contact",
+    "address": "Adresse",
+    "addressValue": "Bâtiment 130, avenue Longhua, district de Longhua, Shenzhen, Chine",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "quickLinks": "Liens rapides",
+    "home": "Accueil",
+    "about": "À propos de nous",
+    "contactUs": "Nous contacter",
+    "description": "Service professionnel de suppression de filigrane vidéo. Supprimez les filigranes, logos et sous-titres de vos vidéos."
+  },
+  "about": {
+    "title": "À propos de nous",
+    "subtitle": "Fournisseur professionnel de services de traitement vidéo",
+    "description": "Nous sommes un fournisseur professionnel de services de traitement vidéo dédié à aider les créateurs de contenu, les entreprises et les particuliers à supprimer les éléments indésirables de leurs vidéos.",
+    "mission": {
+      "title": "Notre mission",
+      "content": "Nous nous engageons à fournir des services de traitement vidéo de haute qualité qui aident les créateurs de contenu, les entreprises et les particuliers à supprimer les éléments indésirables de leurs vidéos. Notre technologie avancée basée sur l'IA garantit une suppression précise et efficace des filigranes, logos et sous-titres."
+    },
+    "whyChooseUs": {
+      "title": "Pourquoi nous choisir",
+      "items": {
+        "ai": "Technologie IA avancée pour une suppression précise",
+        "fast": "Temps de traitement rapides",
+        "secure": "Gestion sécurisée et confidentielle de vos vidéos",
+        "formats": "Support de multiples formats vidéo",
+        "support": "Support client professionnel",
+        "quality": "Résultats de haute qualité garantis"
+      }
+    },
+    "technology": {
+      "title": "Notre technologie",
+      "content": "Nous utilisons des algorithmes d'intelligence artificielle et d'apprentissage automatique de pointe pour identifier et supprimer les filigranes, logos et sous-titres des vidéos. Notre technologie est continuellement améliorée pour fournir les meilleurs résultats à nos clients."
+    },
+    "team": {
+      "title": "Notre équipe",
+      "content": "Notre équipe est composée d'experts en traitement vidéo expérimentés et d'ingénieurs IA passionnés par la fourniture du meilleur service possible à nos clients."
+    },
+    "values": {
+      "title": "Nos valeurs",
+      "quality": "La qualité d'abord",
+      "qualityDesc": "Nous privilégions la qualité dans tous les aspects de notre service",
+      "innovation": "Innovation",
+      "innovationDesc": "Nous innovons continuellement pour améliorer notre technologie",
+      "customer": "Orientation client",
+      "customerDesc": "La satisfaction de nos clients est notre priorité absolue",
+      "integrity": "Intégrité",
+      "integrityDesc": "Nous opérons avec honnêteté et transparence"
+    },
+    "history": {
+      "title": "Notre histoire",
+      "content": "Fondée avec la vision de rendre le montage vidéo accessible à tous, nous servons des milliers de clients dans le monde entier. Notre engagement envers l'excellence et l'innovation a fait de nous un nom de confiance dans les services de traitement vidéo."
+    }
+  },
+  "contact": {
+    "title": "Nous contacter",
+    "subtitle": "Entrer en contact",
+    "description": "Nous sommes là pour vous aider ! Contactez-nous par l'un des moyens suivants.",
+    "info": {
+      "title": "Informations de contact",
+      "email": "E-mail",
+      "address": "Adresse",
+      "addressValue": "Bâtiment 130, avenue Longhua, district de Longhua, Shenzhen, Chine",
+      "phone": "Téléphone",
+      "businessHours": "Heures d'ouverture",
+      "businessHoursValue": "Lundi - Vendredi : 9h00 - 18h00<br />Samedi : 10h00 - 16h00<br />Dimanche : Fermé",
+      "responseTime": "Temps de réponse"
+    },
+    "form": {
+      "title": "Envoyez-nous un message",
+      "name": "Nom",
+      "email": "E-mail",
+      "subject": "Sujet",
+      "message": "Message",
+      "submit": "Envoyer le message",
+      "sending": "Envoi...",
+      "success": "Message envoyé avec succès !",
+      "error": "Échec de l'envoi du message. Veuillez réessayer."
+    },
+    "methods": {
+      "title": "Autres moyens de nous joindre",
+      "emailDesc": "Envoyez-nous un e-mail et nous répondrons dans les 24 heures",
+      "addressDesc": "Visitez-nous à notre emplacement de bureau",
+      "support": "Support client",
+      "supportDesc": "Notre équipe de support est disponible pour vous aider"
+    },
+    "faq": {
+      "title": "Questions fréquemment posées",
+      "q1": "Combien de temps faut-il pour traiter une vidéo ?",
+      "a1": "Le temps de traitement dépend de la longueur et de la complexité de la vidéo. Généralement, une vidéo d'1 minute prend 2-5 minutes.",
+      "q2": "Quels formats vidéo prenez-vous en charge ?",
+      "a2": "Nous prenons en charge tous les principaux formats vidéo, notamment MP4, AVI, MOV, MKV et plus encore.",
+      "q3": "Ma vidéo est-elle sécurisée ?",
+      "a3": "Oui, nous utilisons un chiffrement sécurisé et supprimons automatiquement vos vidéos après 24 heures."
+    }
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "lastUpdated": "Dernière mise à jour",
+    "intro": "Cette Politique de confidentialité décrit comment nous collectons, utilisons et protégeons vos informations personnelles lorsque vous utilisez notre service de suppression de filigrane vidéo.",
+    "section1": {
+      "title": "1. Informations que nous collectons",
+      "content": "Nous collectons les informations que vous nous fournissez directement, notamment lorsque vous téléchargez des vidéos, créez un compte ou nous contactez pour obtenir de l'aide. Cela peut inclure votre nom, votre adresse e-mail, vos informations de paiement et toutes les vidéos que vous téléchargez sur notre service. Nous collectons également automatiquement certaines informations sur votre appareil et la façon dont vous interagissez avec notre service, notamment l'adresse IP, le type de navigateur et les modèles d'utilisation."
+    },
+    "section2": {
+      "title": "2. Comment nous utilisons vos informations",
+      "content": "Nous utilisons les informations que nous collectons pour fournir, maintenir et améliorer nos services, traiter vos demandes de suppression de vidéo, communiquer avec vous concernant votre compte et nos services, vous envoyer des avis techniques et des messages de support, répondre à vos commentaires et questions, et assurer la sécurité de notre plateforme. Nous pouvons également utiliser vos informations à des fins d'analyse pour comprendre comment notre service est utilisé."
+    },
+    "section3": {
+      "title": "3. Sécurité des données",
+      "content": "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos informations personnelles et vos vidéos. Cela comprend le chiffrement des données en transit et au repos, des serveurs sécurisés et des audits de sécurité réguliers. Toutes les vidéos téléchargées sont automatiquement supprimées 24 heures après la fin du traitement. Nous ne stockons pas vos vidéos de manière permanente et ne les partageons pas avec des tiers."
+    },
+    "section4": {
+      "title": "4. Conservation des données",
+      "content": "Nous conservons vos informations personnelles uniquement aussi longtemps que nécessaire pour fournir nos services et remplir les objectifs décrits dans cette politique. Les fichiers vidéo sont automatiquement supprimés dans les 24 heures suivant le traitement. Les informations du compte sont conservées jusqu'à ce que vous demandiez leur suppression ou fermiez votre compte."
+    },
+    "section5": {
+      "title": "5. Services tiers",
+      "content": "Nous pouvons utiliser des services tiers pour nous aider à exploiter notre plateforme et vous fournir des services, tels que des processeurs de paiement, des fournisseurs de stockage cloud et des services d'analyse. Ces tiers n'ont accès à vos informations que pour effectuer des tâches spécifiques en notre nom et sont tenus de ne pas les divulguer ou les utiliser à d'autres fins."
+    },
+    "section6": {
+      "title": "6. Vos droits",
+      "content": "Vous avez le droit d'accéder, de mettre à jour ou de supprimer vos informations personnelles à tout moment. Vous pouvez également demander une copie de vos données, retirer votre consentement au traitement des données, vous opposer à certains types de traitement et demander la portabilité des données. Pour exercer ces droits, veuillez nous contacter en utilisant les informations fournies ci-dessous."
+    },
+    "section7": {
+      "title": "7. Cookies et suivi",
+      "content": "Nous utilisons des cookies et des technologies de suivi similaires pour suivre l'activité sur notre service et conserver certaines informations. Vous pouvez demander à votre navigateur de refuser tous les cookies ou d'indiquer quand un cookie est envoyé. Cependant, si vous n'acceptez pas les cookies, vous ne pourrez peut-être pas utiliser certaines parties de notre service."
+    },
+    "section8": {
+      "title": "8. Confidentialité des enfants",
+      "content": "Notre service n'est pas destiné aux enfants de moins de 18 ans. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants. Si vous êtes un parent ou un tuteur et que vous croyez que votre enfant nous a fourni des informations personnelles, veuillez nous contacter immédiatement."
+    },
+    "section9": {
+      "title": "9. Modifications de cette politique",
+      "content": "Nous pouvons mettre à jour cette Politique de confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle Politique de confidentialité sur cette page et en mettant à jour la date de 'Dernière mise à jour'. Il vous est conseillé de consulter périodiquement cette Politique de confidentialité pour tout changement."
+    },
+    "section10": {
+      "title": "10. Contactez-nous",
+      "content": "Si vous avez des questions concernant cette Politique de confidentialité, veuillez nous contacter à :",
+      "email": "E-mail : support@removewatermarker.com",
+      "address": "Adresse : 深圳市龙华区龙华大道130栋"
+    }
+  },
+  "terms": {
+    "title": "Conditions d'utilisation",
+    "lastUpdated": "Dernière mise à jour",
+    "intro": "Veuillez lire attentivement ces Conditions d'utilisation avant d'utiliser notre service de suppression de filigrane vidéo.",
+    "section1": {
+      "title": "1. Acceptation des conditions",
+      "content": "En accédant et en utilisant notre service, vous acceptez et convenez d'être lié par ces Conditions d'utilisation et toutes les lois et réglementations applicables. Si vous n'acceptez aucune de ces conditions, il vous est interdit d'utiliser ou d'accéder à ce service."
+    },
+    "section2": {
+      "title": "2. Description du service",
+      "content": "Nous fournissons des services de traitement vidéo pour supprimer les filigranes, logos et sous-titres des vidéos. Notre service utilise une technologie IA automatisée pour traiter vos vidéos téléchargées. Nous nous réservons le droit de modifier, suspendre ou interrompre tout aspect du service à tout moment sans préavis."
+    },
+    "section3": {
+      "title": "3. Compte utilisateur",
+      "content": "Pour utiliser certaines fonctionnalités de notre service, vous devrez peut-être créer un compte. Vous êtes responsable de maintenir la confidentialité de vos identifiants de compte et de toutes les activités qui se produisent sous votre compte. Vous acceptez de nous informer immédiatement de toute utilisation non autorisée de votre compte."
+    },
+    "section4": {
+      "title": "4. Responsabilités de l'utilisateur",
+      "content": "Vous êtes responsable de vous assurer que vous avez le droit légal de modifier les vidéos que vous téléchargez. Vous ne devez pas télécharger de contenu qui viole des lois, porte atteinte aux droits d'autrui, contient des logiciels malveillants ou des virus, ou est autrement nuisible ou illégal. Vous acceptez d'utiliser notre service uniquement à des fins légales."
+    },
+    "section5": {
+      "title": "5. Propriété intellectuelle",
+      "content": "Vous conservez tous les droits sur vos vidéos téléchargées. En utilisant notre service, vous nous accordez une licence limitée, non exclusive, de traiter vos vidéos uniquement dans le but de fournir le service. Tout le contenu de notre site Web, y compris le texte, les graphiques, les logos et les logiciels, est la propriété de RemoveWatermark et est protégé par les lois sur le droit d'auteur et autres lois sur la propriété intellectuelle."
+    },
+    "section6": {
+      "title": "6. Conditions de paiement",
+      "content": "Certaines fonctionnalités de notre service peuvent nécessiter un paiement. Tous les frais ne sont pas remboursables sauf indication contraire. Nous nous réservons le droit de modifier nos prix à tout moment. Vous êtes responsable de tous les impôts applicables."
+    },
+    "section7": {
+      "title": "7. Disponibilité du service",
+      "content": "Nous ne garantissons pas que notre service sera disponible en tout temps ou qu'il sera ininterrompu, sécurisé ou sans erreur. Nous pouvons connaître des temps d'arrêt dus à la maintenance, aux mises à jour ou à des circonstances imprévues."
+    },
+    "section8": {
+      "title": "8. Limitation de responsabilité",
+      "content": "Dans la mesure maximale permise par la loi, nous ne serons pas responsables de tout dommage indirect, accessoire, spécial, consécutif ou punitif, ou de toute perte de profits ou de revenus, qu'elle soit subie directement ou indirectement, ou de toute perte de données, d'utilisation, de bonne volonté ou d'autres pertes intangibles résultant de votre utilisation de notre service."
+    },
+    "section9": {
+      "title": "9. Indemnisation",
+      "content": "Vous acceptez d'indemniser et de dégager RemoveWatermark et ses dirigeants, administrateurs, employés et agents de toute réclamation, dommage, perte, responsabilité et dépense découlant de votre utilisation de notre service ou de la violation de ces Conditions."
+    },
+    "section10": {
+      "title": "10. Résiliation",
+      "content": "Nous pouvons résilier ou suspendre votre compte et l'accès à notre service immédiatement, sans préavis, pour quelque raison que ce soit, y compris la violation de ces Conditions. Lors de la résiliation, votre droit d'utiliser le service cessera immédiatement."
+    },
+    "section11": {
+      "title": "11. Loi applicable",
+      "content": "Ces Conditions sont régies et interprétées conformément aux lois de la juridiction dans laquelle nous opérons, sans égard à ses dispositions relatives aux conflits de lois."
+    },
+    "section12": {
+      "title": "12. Informations de contact",
+      "content": "Pour des questions concernant ces Conditions d'utilisation, veuillez nous contacter à :",
+      "email": "E-mail : support@removewatermarker.com",
+      "address": "Adresse : 深圳市龙华区龙华大道130栋"
+    }
+  },
+  "refund": {
+    "title": "Politique de remboursement",
+    "lastUpdated": "Dernière mise à jour",
+    "intro": "Cette Politique de remboursement décrit les conditions et modalités de remboursement pour nos services de traitement vidéo.",
+    "section1": {
+      "title": "1. Admissibilité au remboursement",
+      "content": "Nous offrons des remboursements pour les services qui ne répondent pas à nos normes de qualité, s'il y a une erreur technique de notre part qui empêche la prestation du service, ou si le service n'est pas fourni dans les délais promis. Les remboursements sont examinés au cas par cas."
+    },
+    "section2": {
+      "title": "2. Processus de remboursement",
+      "content": "Pour demander un remboursement, veuillez nous contacter dans les 7 jours suivant votre achat ou la fin du service. Vous devez fournir votre numéro de commande et une explication détaillée de la raison de votre demande de remboursement. Nous examinerons votre demande et répondrons dans les 5 jours ouvrables. Si approuvé, les remboursements seront traités dans les 14 jours ouvrables sur votre méthode de paiement d'origine."
+    },
+    "section3": {
+      "title": "3. Articles non remboursables",
+      "content": "Les remboursements ne sont pas disponibles pour les services qui ont été complétés et livrés avec succès, si le problème est dû à une erreur de l'utilisateur (telle que le téléchargement de fichiers incorrects ou de formats incompatibles), si vous changez d'avis après la fin du service, ou si le service a été utilisé à des fins illégales."
+    },
+    "section4": {
+      "title": "4. Remboursements partiels",
+      "content": "Dans certains cas, nous pouvons offrir des remboursements partiels si seule une partie du service était insatisfaisante. Le montant du remboursement partiel sera déterminé en fonction des circonstances spécifiques de votre cas."
+    },
+    "section5": {
+      "title": "5. Délai de traitement",
+      "content": "Les demandes de remboursement sont généralement traitées dans les 5 à 10 jours ouvrables. Une fois approuvé, le remboursement apparaîtra sur votre compte dans les 14 jours ouvrables, selon votre méthode de paiement et votre institution financière."
+    },
+    "section6": {
+      "title": "6. Contestations de paiement",
+      "content": "Si vous initiez une contestation de paiement par l'intermédiaire de votre banque ou de votre société de carte de crédit, nous nous réservons le droit de contester la contestation et de fournir des preuves de la prestation du service. Nous vous encourageons à nous contacter directement d'abord pour résoudre tout problème."
+    },
+    "section7": {
+      "title": "7. Contact pour les remboursements",
+      "content": "Pour demander un remboursement, veuillez nous contacter à :",
+      "email": "E-mail : support@removewatermarker.com",
+      "address": "Adresse : 深圳市龙华区龙华大道130栋",
+      "note": "Veuillez inclure votre numéro de commande et la raison du remboursement dans votre demande."
+    }
+  },
+  "disclaimer": {
+    "title": "Avertissement",
+    "lastUpdated": "Dernière mise à jour",
+    "intro": "Veuillez lire attentivement cet avertissement avant d'utiliser notre service de suppression de filigrane vidéo.",
+    "section1": {
+      "title": "1. Avertissement concernant le service",
+      "content": "Notre service de traitement vidéo est fourni 'tel quel' et 'tel que disponible' sans garanties d'aucune sorte, expresses ou implicites. Nous ne garantissons pas que le service sera ininterrompu, sécurisé, sans erreur ou que les défauts seront corrigés. Nous nous réservons le droit de modifier ou d'interrompre le service à tout moment sans préavis."
+    },
+    "section2": {
+      "title": "2. Avertissement concernant les résultats",
+      "content": "Bien que nous nous efforcions de fournir les meilleurs résultats, la qualité de la suppression du filigrane, du logo ou des sous-titres peut varier en fonction de divers facteurs, notamment le contenu vidéo, les caractéristiques du filigrane, la qualité vidéo, la compression et d'autres facteurs techniques indépendants de notre volonté. Nous ne garantissons pas de résultats spécifiques ou que tous les filigranes, logos ou sous-titres seront complètement supprimés."
+    },
+    "section3": {
+      "title": "3. Avertissement juridique",
+      "content": "Les utilisateurs sont seuls responsables de s'assurer qu'ils ont le droit légal de modifier les vidéos, y compris l'obtention des autorisations et licences nécessaires. Nous ne sommes pas responsables des conséquences juridiques résultant de l'utilisation de notre service, y compris la violation du droit d'auteur, les violations de marque de commerce ou d'autres problèmes juridiques. Les utilisateurs doivent se conformer à toutes les lois et réglementations applicables."
+    },
+    "section4": {
+      "title": "4. Avertissement concernant le contenu",
+      "content": "Nous n'examinons pas, ne surveillons pas et ne contrôlons pas le contenu des vidéos téléchargées par les utilisateurs. Nous ne sommes pas responsables de tout contenu qui viole des lois ou porte atteinte aux droits. Les utilisateurs sont seuls responsables du contenu qu'ils téléchargent et de l'utilisation des vidéos traitées."
+    },
+    "section5": {
+      "title": "5. Limitation de responsabilité",
+      "content": "Dans la mesure maximale permise par la loi, nous ne serons pas responsables de tout dommage indirect, accessoire, spécial, consécutif ou punitif, y compris, mais sans s'y limiter, la perte de profits, de données ou d'opportunités commerciales, découlant de l'utilisation ou de l'impossibilité d'utiliser notre service, même si nous avons été informés de la possibilité de tels dommages."
+    },
+    "section6": {
+      "title": "6. Aucun conseil professionnel",
+      "content": "Les informations et services fournis sur notre plateforme sont uniquement à des fins d'information générale et ne constituent pas des conseils professionnels, juridiques ou techniques. Vous devriez consulter des professionnels appropriés pour obtenir des conseils spécifiques à votre situation."
+    },
+    "section7": {
+      "title": "7. Liens tiers",
+      "content": "Notre service peut contenir des liens vers des sites Web ou services tiers. Nous ne sommes pas responsables du contenu, des politiques de confidentialité ou des pratiques de tout site Web ou service tiers. Votre utilisation de sites Web tiers se fait à vos propres risques."
+    },
+    "section8": {
+      "title": "8. Force majeure",
+      "content": "Nous ne serons pas responsables de tout échec ou retard dans l'exécution de ces conditions qui est dû à un incendie, une inondation, un tremblement de terre, des éléments de la nature ou des actes de Dieu, des actes de guerre, du terrorisme, des émeutes, des troubles civils, des rébellions ou des révolutions, ou toute autre cause indépendante de notre contrôle raisonnable."
+    }
+  },
+  "copyright": {
+    "title": "Avis de droit d'auteur",
+    "lastUpdated": "Dernière mise à jour",
+    "intro": "Cet Avis de droit d'auteur décrit la propriété du droit d'auteur et les droits d'utilisation du contenu sur notre plateforme.",
+    "section1": {
+      "title": "1. Propriété du droit d'auteur",
+      "content": "Tout le contenu de ce site Web, y compris mais sans s'y limiter, le texte, les graphiques, les logos, les icônes, les images, les clips audio, les téléchargements numériques, les compilations de données et les logiciels, est la propriété de RemoveWatermark ou de ses fournisseurs de contenu et est protégé par les lois internationales sur le droit d'auteur. La compilation de tout le contenu sur ce site est la propriété exclusive de RemoveWatermark."
+    },
+    "section2": {
+      "title": "2. Contenu utilisateur",
+      "content": "Les utilisateurs conservent tous les droits d'auteur et de propriété intellectuelle sur les vidéos et autres contenus qu'ils téléchargent sur notre service. Nous ne revendiquons pas la propriété du contenu téléchargé par les utilisateurs. En téléchargeant du contenu, vous déclarez et garantissez que vous possédez ou avez les droits nécessaires sur le contenu et qu'il ne porte pas atteinte aux droits de tiers."
+    },
+    "section3": {
+      "title": "3. Utilisations interdites",
+      "content": "Vous ne pouvez pas reproduire, distribuer, modifier, créer des œuvres dérivées, afficher publiquement, exécuter publiquement, republier, télécharger, stocker ou transmettre tout matériel de notre site Web sans notre autorisation écrite expresse. Cela inclut, mais sans s'y limiter, la copie, le scraping ou le téléchargement de contenu à des fins commerciales ou non commerciales."
+    },
+    "section4": {
+      "title": "4. Utilisation équitable",
+      "content": "Vous pouvez utiliser le contenu de notre site Web à des fins personnelles et non commerciales conformément aux principes d'utilisation équitable. Cependant, toute utilisation commerciale nécessite notre consentement écrit exprès."
+    },
+    "section5": {
+      "title": "5. Marques de commerce",
+      "content": "Toutes les marques de commerce, marques de service et noms commerciaux de RemoveWatermark utilisés sur ce site sont des marques de commerce ou des marques de commerce déposées de RemoveWatermark. Vous ne pouvez pas utiliser nos marques de commerce sans notre autorisation écrite préalable."
+    },
+    "section6": {
+      "title": "6. Politique DMCA",
+      "content": "Nous respectons les droits de propriété intellectuelle d'autrui et nous attendons de nos utilisateurs qu'ils fassent de même. Si vous croyez que votre œuvre protégée par le droit d'auteur a été copiée d'une manière qui constitue une violation du droit d'auteur, veuillez nous contacter avec les informations suivantes : (1) une description de l'œuvre protégée par le droit d'auteur ; (2) l'emplacement du matériel contrefaisant ; (3) vos informations de contact ; (4) une déclaration de bonne foi ; (5) votre signature.",
+      "email": "E-mail : support@removewatermarker.com",
+      "address": "Adresse : 深圳市龙华区龙华大道130栋"
+    },
+    "section7": {
+      "title": "7. Réclamations de violation du droit d'auteur",
+      "content": "Dès réception d'un avis DMCA valide, nous supprimerons ou désactiverons rapidement l'accès au contenu prétendument contrefaisant et notifierons l'utilisateur qui a publié le contenu. Nous pouvons résilier les comptes des contrevenants récidivistes."
+    },
+    "section8": {
+      "title": "8. Contre-notification",
+      "content": "Si vous croyez que votre contenu a été supprimé par erreur, vous pouvez soumettre une contre-notification avec une déclaration sous peine de parjure que le contenu a été supprimé par erreur ou par mauvaise identification."
+    }
+  },
+  "legal": {
+    "title": "Avis juridique",
+    "lastUpdated": "Dernière mise à jour",
+    "intro": "Cet Avis juridique fournit des informations importantes sur notre entreprise et le cadre juridique régissant nos services.",
+    "section1": {
+      "title": "1. Informations sur l'entreprise",
+      "content": "Ce site Web est exploité par RemoveWatermark, un fournisseur professionnel de services de traitement vidéo.",
+      "address": "Adresse : 深圳市龙华区龙华大道130栋",
+      "email": "E-mail : support@removewatermarker.com",
+      "website": "Site Web : https://www.removewatermarker.com"
+    },
+    "section2": {
+      "title": "2. Loi applicable",
+      "content": "Ces termes et conditions sont régis et interprétés conformément aux lois de la juridiction dans laquelle nous opérons. Tout litige découlant de ou lié à ces termes ou à nos services sera soumis à la juridiction exclusive des tribunaux de cette juridiction."
+    },
+    "section3": {
+      "title": "3. Conformité",
+      "content": "Les utilisateurs sont responsables de s'assurer que leur utilisation de notre service est conforme à toutes les lois et réglementations applicables dans leur juridiction, y compris mais sans s'y limiter, les lois sur le droit d'auteur, les lois sur la confidentialité et les réglementations sur le contenu. Nous nous réservons le droit de refuser le service à quiconque viole les lois applicables."
+    },
+    "section4": {
+      "title": "4. Disponibilité du service",
+      "content": "Nous ne faisons aucune déclaration ni garantie concernant la disponibilité, l'exactitude ou la fiabilité de notre service. Nous nous réservons le droit de modifier, suspendre ou interrompre toute partie de notre service à tout moment sans préavis."
+    },
+    "section5": {
+      "title": "5. Limitation de responsabilité",
+      "content": "Dans la mesure maximale permise par la loi, nous excluons toutes les déclarations, garanties et conditions relatives à notre site Web et à l'utilisation de notre service. Rien dans cet avis ne limitera ou n'exclura notre responsabilité pour décès ou blessures corporelles, fraude ou toute autre responsabilité qui ne peut être exclue par la loi."
+    },
+    "section6": {
+      "title": "6. Divisibilité",
+      "content": "Si une disposition de cet Avis juridique est jugée inapplicable ou invalide, cette disposition sera limitée ou éliminée dans la mesure minimale nécessaire pour que cet Avis reste par ailleurs en pleine vigueur et effet."
+    },
+    "section7": {
+      "title": "7. Accord complet",
+      "content": "Cet Avis juridique, ainsi que nos Conditions de service et notre Politique de confidentialité, constitue l'accord complet entre vous et RemoveWatermark concernant votre utilisation de notre service."
+    },
+    "section8": {
+      "title": "8. Modifications de cet avis",
+      "content": "Nous nous réservons le droit de modifier cet Avis juridique à tout moment. Les modifications prendront effet immédiatement après leur publication sur cette page. Votre utilisation continue de notre service après la publication des modifications constitue une acceptation de l'avis modifié."
+    },
+    "section9": {
+      "title": "9. Contact",
+      "content": "Pour les questions juridiques ou les questions concernant cet Avis juridique, veuillez nous contacter à :",
+      "email": "E-mail : support@removewatermarker.com",
+      "address": "Adresse : 深圳市龙华区龙华大道130栋"
+    }
+  },
+  "ip": {
+    "title": "Déclaration de propriété intellectuelle",
+    "lastUpdated": "Dernière mise à jour",
+    "intro": "Cette Déclaration de propriété intellectuelle décrit les droits et protections de propriété intellectuelle liés à notre service.",
+    "section1": {
+      "title": "1. Notre propriété intellectuelle",
+      "content": "Tous les droits de propriété intellectuelle sur notre site Web, notre technologie, nos algorithmes, nos logiciels, nos conceptions, nos marques de commerce, nos marques de service, nos noms commerciaux et notre service appartiennent à RemoveWatermark ou à ses concédants de licence. Cela inclut, mais sans s'y limiter, les brevets, les marques de commerce, les droits d'auteur, les secrets commerciaux et les algorithmes propriétaires utilisés dans notre technologie de traitement vidéo."
+    },
+    "section2": {
+      "title": "2. Propriété intellectuelle de l'utilisateur",
+      "content": "Les utilisateurs conservent tous les droits de propriété intellectuelle sur leurs vidéos téléchargées et autres contenus. Nous ne revendiquons pas la propriété du contenu téléchargé par les utilisateurs et ne l'utilisons que pour fournir notre service. En téléchargeant du contenu, vous nous accordez une licence limitée et non exclusive de traiter votre contenu uniquement dans le but de fournir le service."
+    },
+    "section3": {
+      "title": "3. Activités interdites",
+      "content": "Les utilisateurs ne peuvent pas rétroconcevoir, décompiler, désassembler ou tenter d'extraire nos algorithmes propriétaires, notre code source ou notre technologie. Toute utilisation, reproduction ou distribution non autorisée de notre propriété intellectuelle est strictement interdite et peut entraîner des poursuites judiciaires."
+    },
+    "section4": {
+      "title": "4. Licence d'utilisation",
+      "content": "Nous vous accordons une licence limitée, non exclusive et non transférable d'accéder et d'utiliser notre service à ses fins prévues. Cette licence n'inclut pas le droit de revendre, redistribuer ou créer des œuvres dérivées basées sur notre technologie ou notre service."
+    },
+    "section5": {
+      "title": "5. Propriété intellectuelle de tiers",
+      "content": "Nous respectons les droits de propriété intellectuelle d'autrui et nous attendons de nos utilisateurs qu'ils fassent de même. Si vous croyez que vos droits de propriété intellectuelle ont été violés, veuillez nous contacter immédiatement avec les détails de la violation présumée."
+    },
+    "section6": {
+      "title": "6. Marques de commerce",
+      "content": "RemoveWatermark et les marques associées sont des marques de commerce de RemoveWatermark. Vous ne pouvez pas utiliser nos marques de commerce sans notre consentement écrit préalable. Toutes les autres marques de commerce, marques de service et noms commerciaux sont la propriété de leurs propriétaires respectifs."
+    },
+    "section7": {
+      "title": "7. Application",
+      "content": "Nous prenons les droits de propriété intellectuelle au sérieux et prendrons les mesures légales appropriées contre toute violation de nos droits de propriété intellectuelle. Cela peut inclure la recherche d'une injonction, de dommages-intérêts et de frais d'avocat."
+    },
+    "section8": {
+      "title": "8. Signalement de violation",
+      "content": "Si vous croyez que notre service ou nos utilisateurs violent vos droits de propriété intellectuelle, veuillez nous contacter avec : (1) l'identification de la propriété intellectuelle ; (2) la description de la violation ; (3) vos informations de contact ; (4) une déclaration de bonne foi ; (5) votre signature.",
+      "email": "E-mail : support@removewatermarker.com",
+      "address": "Adresse : 深圳市龙华区龙华大道130栋"
+    }
+  }
+}
+

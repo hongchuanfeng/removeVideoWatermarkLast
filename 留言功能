@@ -1,0 +1,2 @@
+联系我们 页面中的给我留言，完成该功能，对应的字段添加到supabase数据库中，
+然后把表的创建sql脚本保存到 supabase_schema.sql 文件中。

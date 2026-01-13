@@ -1,0 +1,13 @@
+使用supabase 实现google 登录：
+
+Project URL
+https://qtgvnucqvwdwgbuqssqx.supabase.co
+
+api key：
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF0Z3ZudWNxdndkd2didXFzc3F4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQxNjc2NTEsImV4cCI6MjA3OTc0MzY1MX0.OAbdpejgwv92ZrAX_jsZpJlaMWniRsX2iM3uToaaSk8
+
+在导航栏右边加上一个google 登录功能。
+
+
+上面两个参数配置到.env.local 文件中。

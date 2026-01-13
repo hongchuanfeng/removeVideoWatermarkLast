@@ -1,0 +1,701 @@
+{
+  "nav": {
+    "home": "Início",
+    "imageWatermarkRemoval": "Remover marcas d'água de imagens",
+    "subscription": "Assinatura",
+    "profile": "Minha Conta"
+  },
+  "imageWatermarkRemoval": {
+    "title": "Remover marcas d'água de imagens",
+    "description": "Faça upload de uma imagem, clique nas posições das marcas d'água e remova-as com um clique",
+    "imageCreditsInfo": "Processar uma imagem requer 1 crédito. Você tem {credits} créditos restantes.",
+    "promptTitle": "Clique na imagem para marcar as áreas de marca d'água",
+    "promptDesc": "Clique nas áreas com marca d'água na imagem; o sistema as marcará automaticamente",
+    "promptHint": "Dica: clique em qualquer área para iniciar o teste",
+    "demoNote": "Nota: Esta é uma versão de demonstração. O processamento real de imagens requer configuração completa da API Tencent Cloud.",
+    "uploadTitle": "Fazer upload da imagem",
+    "uploadPrompt": "Arraste e solte uma imagem aqui, ou clique para selecionar um arquivo",
+    "selectImage": "Selecionar imagem",
+    "changeImage": "Alterar imagem",
+    "clearPoints": "Limpar marcas",
+    "removeLastPoint": "Remover última marca",
+    "markedPoints": "{count} posições de marcas d'água marcadas",
+    "processImage": "Remover marcas d'água",
+    "processing": "Processando...",
+    "resultTitle": "Resultado do processamento",
+    "downloadImage": "Baixar imagem",
+    "loading": "Carregando...",
+    "insufficientCredits": "Créditos insuficientes. Por favor recarregue primeiro.",
+    "processingError": "Processamento falhou. Por favor tente novamente.",
+    "features": {
+      "title": "Recursos",
+      "intelligent": "Reconhecimento Inteligente: Detecção automática e remoção de marcas d'água e logos das imagens",
+      "precision": "Reparação Precisa: Uso de tecnologia IA para reparar inteligentemente áreas após remoção de marcas d'água",
+      "batch": "Processamento em Lote: Suporte para remoção simultânea de múltiplas áreas de marcas d'água",
+      "quality": "Preservação HD: Manter qualidade original da imagem após processamento"
+    },
+    "instructions": {
+      "title": "Instruções",
+      "step1": "Fazer Upload da Imagem: Clique para selecionar imagem ou arraste imagem para área de upload",
+      "step2": "Marcar Marca d'Água: Use o mouse para arrastar e selecionar área da marca d'água (caixa amarela para prévia, caixa vermelha para confirmado)",
+      "step3": "Confirmar Marcação: Podem ser adicionadas múltiplas áreas de marcas d'água, ou limpar e marcar novamente",
+      "step4": "Iniciar Processamento: Clique no botão 'Remover Marca d'Água' e aguarde processamento IA",
+      "step5": "Baixar Resultado: Baixe a imagem reparada após conclusão do processamento"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "q1": "Quais formatos de imagem são suportados?",
+      "a1": "Suporta formatos comuns como JPG, PNG, JPEG de até 10 MB.",
+      "q2": "Como é o efeito de remoção de marcas d'água?",
+      "a2": "Utiliza tecnologia IA da Tencent Cloud para reconhecimento inteligente e reparação de áreas de marcas d'água, com resultados naturais enquanto mantém qualidade da imagem.",
+      "q3": "Quantas marcas d'água podem ser removidas de uma vez?",
+      "a3": "Suporta marcação e remoção simultâneas de múltiplas áreas de marcas d'água, sem limite de quantidade.",
+      "q4": "Quanto tempo leva o processamento?",
+      "a4": "Geralmente completa em 10-30 segundos, dependendo do tamanho da imagem e complexidade da marca d'água.",
+      "q5": "O que fazer se não tenho créditos suficientes?",
+      "a5": "Você pode comprar pacotes de créditos, ou usar a cota de teste gratuita (uma oportunidade gratuita para cada novo usuário)."
+    },
+    "examples": {
+      "title": "Exemplos de Processamento",
+      "subtitle": "Veja como nossa tecnologia IA remove precisamente marcas d'água e logos",
+      "before": "Antes",
+      "after": "Depois",
+      "logoExample": "Exemplo de Remoção de Logo",
+      "watermarkExample": "Exemplo de Remoção de Marca d'Água",
+      "combinedExample": "Exemplo de Processamento Combinado"
+    }
+  },
+  "auth": {
+    "signInWithGoogle": "Entrar com Google",
+    "signOut": "Sair",
+    "signingIn": "Entrando...",
+    "signingOut": "Saindo..."
+  },
+  "subscription": {
+    "title": "Planos de Assinatura",
+    "subtitle": "Escolha o plano que melhor se adapta a você",
+    "description": "Obtenha créditos para converter vídeos em legendas. 1 crédito = 1 minuto de vídeo.",
+    "basic": {
+      "name": "Básico",
+      "price": "$39.9",
+      "period": "/mês",
+      "credits": "30 créditos",
+      "description": "Perfeito para uso ocasional",
+      "button": "Assinar"
+    },
+    "standard": {
+      "name": "Padrão",
+      "price": "$119.9",
+      "period": "/mês",
+      "credits": "100 créditos",
+      "description": "Ótimo para usuários regulares",
+      "button": "Assinar",
+      "popular": "Mais Popular"
+    },
+    "premium": {
+      "name": "Premium",
+      "price": "$239.9",
+      "period": "/mês",
+      "credits": "210 créditos",
+      "description": "A melhor opção para usuários avançados",
+      "button": "Assinar"
+    },
+    "features": {
+      "title": "O que inclui",
+      "videoToSubtitle": "Conversão de vídeo para legenda",
+      "creditBased": "Preços baseados em créditos",
+      "monthlyRenewal": "Renovação mensal automática",
+      "cancelAnytime": "Cancele a qualquer momento"
+    },
+    "freeTrial": {
+      "title": "Teste Gratuito",
+      "description": "Novos usuários obtêm 1 conversão gratuita (máximo 30 segundos) após fazer login"
+    },
+    "pricingRules": {
+      "title": "Regras de Preços de Créditos",
+      "subtitle": "O serviço de remoção de legendas é cobrado de acordo com a resolução e duração do vídeo",
+      "rule1": "Resolução 2560 × 1440: 2 créditos/minuto (arredondado para cima)",
+      "rule2": "Resolução 1280 × 640: 1 crédito/minuto (arredondado para cima)",
+      "note": "Minutos parciais são arredondados para 1 minuto"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "q1": "O que são créditos?",
+      "a1": "Créditos são a unidade de cobrança do nosso serviço. 1 crédito pode processar 1 minuto de vídeo (remoção de marca d'água/logo). A remoção de legendas é cobrada em taxas diferentes de acordo com a resolução do vídeo.",
+      "q2": "Preciso me registrar para usar o serviço para remover marcas d'água?",
+      "a2": "Sim, você precisa se registrar e fazer login para usar nosso serviço. Novos usuários obtêm 1 teste gratuito (máximo 30 segundos) após o registro.",
+      "q3": "O serviço é gratuito?",
+      "a3": "Oferecemos 1 teste gratuito (máximo 30 segundos) para novos usuários. Depois disso, você precisa comprar créditos ou assinar um plano para continuar usando o serviço.",
+      "q4": "Devo escolher créditos pré-pagos ou um plano de assinatura?",
+      "a4": "Se você usa o serviço ocasionalmente, créditos pré-pagos podem ser adequados. Se você usa com frequência, os planos de assinatura são mais econômicos com renovação mensal automática e podem ser cancelados a qualquer momento.",
+      "q5": "O que acontece se não estiver satisfeito com o resultado?",
+      "a5": "Se você não estiver satisfeito com o resultado do processamento, entre em contato com nossa equipe de atendimento ao cliente e faremos o possível para resolver seu problema.",
+      "q6": "O que acontece quando meu limite de créditos se esgota?",
+      "a6": "Quando seus créditos se esgotam, você pode comprar pacotes de crédito adicionais ou fazer upgrade para um plano de assinatura de nível superior para continuar usando o serviço.",
+      "q7": "Qual é o custo por uso adicional além dos meus créditos mensais?",
+      "a7": "O uso além dos créditos mensais é cobrado aos preços padrão de crédito. Verifique nossa página de preços para taxas específicas.",
+      "q8": "É necessário registro antes de usar o serviço?",
+      "a8": "Sim, o registro é necessário. Após o registro, você pode aproveitar o teste gratuito e gerenciar seus registros de conversão e créditos.",
+      "q9": "Quantas conversões posso realizar com o serviço?",
+      "a9": "O número de conversões depende dos créditos que você possui. Cada conversão de vídeo consome créditos baseados na duração do vídeo e no tipo de processamento.",
+      "q10": "Quais métodos de pagamento são aceitos?",
+      "a10": "Aceitamos diversos métodos de pagamento incluindo cartões de crédito, cartões de débito e mais. Todos os pagamentos são processados através de gateways de pagamento seguros.",
+      "q11": "Aceitam solicitações personalizadas ou necessidades específicas?",
+      "a11": "Principalmente fornecemos serviços padronizados de remoção de marcas d'água, logos e legendas de vídeo. Para requisitos especiais, entre em contato com nossa equipe de atendimento ao cliente.",
+      "q12": "O que acontece se eu quiser realizar uma conversão específica de imagem?",
+      "a12": "Nosso serviço se concentra no processamento de vídeo. Se você precisar de serviços de processamento de imagens, verifique nossos outros produtos.",
+      "q13": "O que acontece se eu não usar todo o valor dos créditos mensais?",
+      "a13": "Créditos mensais não utilizados não são transferidos para o próximo mês. Recomendamos escolher um plano de assinatura que corresponda ao seu uso real.",
+      "q14": "Posso fazer upgrade/downgrade/cancelar minha assinatura?",
+      "a14": "Sim, você pode fazer upgrade, downgrade ou cancelar sua assinatura a qualquer momento. Após o cancelamento, você ainda pode usar os créditos comprados, mas a renovação automática será interrompida."
+    },
+    "loginRequired": "Faça login para assinar",
+    "processing": "Processando...",
+    "error": "Ocorreu um erro. Tente novamente."
+  },
+  "profile": {
+    "title": "Minha Conta",
+    "orders": {
+      "title": "Meus Pedidos",
+      "noOrders": "Nenhum pedido encontrado",
+      "transactionId": "ID da Transação",
+      "productId": "Produto",
+      "credits": "Créditos",
+      "date": "Data",
+      "status": "Status",
+      "loading": "Carregando pedidos..."
+    },
+    "conversions": {
+      "title": "Minhas Conversões",
+      "noConversions": "Nenhum registro de conversão encontrado",
+      "type": "Tipo",
+      "fileName": "Nome do Arquivo",
+      "status": "Status",
+      "date": "Data",
+      "result": "Resultado",
+      "download": "Baixar",
+      "noResult": "Nenhum resultado ainda",
+      "loading": "Carregando conversões...",
+      "statusText": {
+        "pending": "Na fila",
+        "processing": "Processando",
+        "completed": "Concluído",
+        "failed": "Falhou"
+      },
+      "typeText": {
+        "watermark_logo_removal": "Remoção de marca d'água/logo",
+        "subtitle_removal": "Remoção de legendas",
+        "watermark_removal": "Remoção de marca d'água",
+        "logo_removal": "Remoção de logo"
+      }
+    },
+    "credits": {
+      "title": "Meus Créditos",
+      "currentCredits": "Créditos Atuais",
+      "totalCredits": "Créditos Totais",
+      "usedCredits": "Créditos Usados",
+      "freeTrialUsed": "Teste Gratuito Usado",
+      "freeTrialAvailable": "Teste Gratuito Disponível",
+      "loading": "Carregando créditos..."
+    },
+    "tabs": {
+      "orders": "Pedidos",
+      "conversions": "Conversões",
+      "credits": "Créditos"
+    },
+    "loginRequired": "Faça login para ver sua conta",
+    "login": "Login"
+  },
+  "home": {
+    "title": "Remover Marca d'Água, Logo e Legendas",
+    "subtitle": "Serviço Profissional de Remoção de Marcas d'Água",
+    "description": "Remova marcas d'água, logos e legendas dos seus vídeos com nossa tecnologia avançada impulsionada por IA",
+    "subscribe": "Assinar Agora",
+    "upload": {
+      "title": "Envie Seu Vídeo",
+      "removalType": "Tipo de Remoção",
+      "watermark_logo": "Remover Marca d'Água e Logo",
+      "subtitle": "Legendas",
+      "dragDrop": "Arraste e solte seu vídeo aqui, ou clique para navegar",
+      "selectFile": "Selecionar Arquivo de Vídeo",
+      "start": "Iniciar Processamento",
+      "uploading": "Enviando...",
+      "processing": "Processando...",
+      "completed": "Processamento concluído com sucesso!",
+      "failed": "Processamento falhou. Tente novamente.",
+      "retry": "Tentar Novamente",
+      "recharge": "Recarregar",
+      "download": "Baixar Vídeo",
+      "waiting": "O processamento leva algum tempo, aguarde pacientemente. O arquivo será baixado automaticamente quando o processamento estiver completo.",
+      "tip": "Depois de enviar, você pode ver seus registros de conversão no Centro de Perfil mesmo se sair desta página",
+      "freeLimit": "O uso gratuito é limitado a vídeos de até 30 segundos. Assine ou recarregue para processar vídeos mais longos.",
+      "creditLimit": "Ao usar créditos, os vídeos não podem exceder 2 minutos. Corte e tente novamente."
+    },
+    "cta": {
+      "start": "Começar",
+      "learnMore": "Saiba Mais"
+    },
+    "creditsInfo": {
+      "title": "Regras de Dedução de Créditos",
+      "rule": "Vídeo de 1 minuto → deduz 1 crédito; menos de 1 minuto conta como 1 minuto",
+      "example1": "30 segundos → deduz 1 crédito",
+      "example2": "1 minuto 30 segundos → deduz 2 créditos",
+      "example3": "2 minutos → deduz 2 créditos"
+    },
+    "features": {
+      "title": "Recursos",
+      "watermark": "Remover Marca d'Água",
+      "logo": "Remover Logo",
+      "subtitle": "Remover Legendas",
+      "watermarkDesc": "Remover precisamente marcas d'água indesejadas",
+      "logoDesc": "Remover logos e branding sem problemas",
+      "subtitleDesc": "Remover legendas e sobreposições de texto de vídeos"
+    },
+    "howToUse": {
+      "title": "Como Usar",
+      "step1": "Envie seu vídeo",
+      "step2": "Selecione tipo de remoção",
+      "step3": "Processe e baixe",
+      "step1Desc": "Selecione e envie seu arquivo de vídeo",
+      "step2Desc": "Escolha o que remover: marca d'água, logo ou legendas",
+      "step3Desc": "Aguarde o processamento e baixe seu vídeo limpo"
+    },
+    "help": {
+      "title": "Ajuda e Suporte",
+      "faq": "Perguntas Frequentes",
+      "feedback": "Comentários",
+      "faq1": {
+        "title": "Quais formatos de vídeo são suportados?",
+        "desc": "Suportamos formatos principais: MP4, AVI, MOV, MKV, etc."
+      },
+      "faq2": {
+        "title": "Quanto tempo leva o processamento?",
+        "desc": "Depende do comprimento/complexidade. Um vídeo de 1 minuto normalmente precisa de 2-5 minutos."
+      },
+      "faq3": {
+        "title": "Meu vídeo está seguro?",
+        "desc": "Criptografado e excluído automaticamente após 24 horas."
+      }
+    },
+    "caseStudies": {
+      "title": "Estudos de Caso",
+      "description": "Veja como ajudamos outros a remover marcas d'água",
+      "beforeTitle": "Antes",
+      "beforeDesc": "Vídeo com marca d'água",
+      "afterTitle": "Depois",
+      "afterDesc": "Marca d'água removida",
+      "subtitleBeforeTitle": "Remoção de Legendas - Antes",
+      "subtitleBeforeDesc": "Vídeo com legendas",
+      "subtitleAfterTitle": "Remoção de Legendas - Depois",
+      "subtitleAfterDesc": "Legendas removidas",
+      "logo1BeforeTitle": "Exemplo de Remoção de Logo 1 - Antes",
+      "logo1BeforeDesc": "Vídeo com logo",
+      "logo1AfterTitle": "Exemplo de Remoção de Logo 1 - Depois",
+      "logo1AfterDesc": "Logo removido",
+      "logo2BeforeTitle": "Exemplo de Remoção de Logo 2 - Antes",
+      "logo2BeforeDesc": "Vídeo com logo",
+      "logo2AfterTitle": "Exemplo de Remoção de Logo 2 - Depois",
+      "logo2AfterDesc": "Logo removido",
+      "subtitle2BeforeTitle": "Exemplo de Remoção de Legendas - Antes",
+      "subtitle2BeforeDesc": "Vídeo com legendas",
+      "subtitle2AfterTitle": "Exemplo de Remoção de Legendas - Depois",
+      "subtitle2AfterDesc": "Legendas removidas"
+    },
+    "freeTrial": {
+      "title": "Teste Gratuito",
+      "description": "Novos usuários obtêm 30 segundos gratuitos após fazer login"
+    },
+    "shareToX": "Compartilhar no X",
+    "shareText": "Descobri o serviço de remoção de marcas d'água! #RemoçãoMarcaAgua #EdiçãoVídeo"
+  },
+  "footer": {
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "refund": "Política de Reembolso",
+    "disclaimer": "Isenção de Responsabilidade",
+    "copyright": "Aviso de Direitos Autorais",
+    "legal": "Aviso Legal",
+    "ip": "Propriedade Intelectual",
+    "contact": "Contato",
+    "address": "Endereço",
+    "addressValue": "Edifício 130, Avenida Longhua, Distrito Longhua, Shenzhen, China",
+    "phone": "Telefone",
+    "email": "E-mail",
+    "quickLinks": "Links Rápidos",
+    "home": "Início",
+    "about": "Sobre Nós",
+    "contactUs": "Entre em Contato",
+    "description": "Serviço profissional de remoção de marcas d'água de vídeo. Remova marcas d'água, logos e legendas dos seus vídeos."
+  },
+  "about": {
+    "title": "Sobre Nós",
+    "subtitle": "Provedor de Serviços Profissionais de Processamento de Vídeo",
+    "description": "Somos um provedor de serviços profissionais de processamento de vídeo dedicado a ajudar criadores de conteúdo, empresas e indivíduos a remover elementos indesejados de seus vídeos.",
+    "mission": {
+      "title": "Nossa Missão",
+      "content": "Estamos dedicados a fornecer serviços de processamento de vídeo de alta qualidade que ajudam criadores de conteúdo, empresas e indivíduos a remover elementos indesejados de seus vídeos. Nossa tecnologia avançada impulsionada por IA garante remoção precisa e eficiente de marcas d'água, logos e legendas."
+    },
+    "whyChooseUs": {
+      "title": "Por Que Escolher-nos",
+      "items": {
+        "ai": "Tecnologia AI avançada para remoção precisa",
+        "fast": "Tempos de processamento rápidos",
+        "secure": "Manuseio seguro e confidencial de seus vídeos",
+        "formats": "Suporte para múltiplos formatos de vídeo",
+        "support": "Suporte ao cliente profissional",
+        "quality": "Resultados de alta qualidade garantidos"
+      }
+    },
+    "technology": {
+      "title": "Nossa Tecnologia",
+      "content": "Utilizamos algoritmos avançados de inteligência artificial e aprendizado de máquina para identificar e remover marcas d'água, logos e legendas de vídeos. Nossa tecnologia é continuamente aprimorada para fornecer os melhores resultados para nossos clientes."
+    },
+    "team": {
+      "title": "Nossa Equipe",
+      "content": "Nossa equipe é composta por especialistas em processamento de vídeo e engenheiros de IA apaixonados por entregar o melhor serviço possível aos nossos clientes."
+    },
+    "values": {
+      "title": "Nossos Valores",
+      "quality": "Qualidade em Primeiro Lugar",
+      "qualityDesc": "Priorizamos a qualidade em todos os aspectos do nosso serviço",
+      "innovation": "Inovação",
+      "innovationDesc": "Continuamente inovamos para melhorar nossa tecnologia",
+      "customer": "Foco no Cliente",
+      "customerDesc": "A satisfação dos nossos clientes é nossa prioridade máxima",
+      "integrity": "Integridade",
+      "integrityDesc": "Operamos com honestidade e transparência"
+    },
+    "history": {
+      "title": "Nossa História",
+      "content": "Fundados com uma visão de tornar a edição de vídeo acessível a todos, temos servido milhares de clientes em todo o mundo. Nosso compromisso com a excelência e a inovação nos tornou um nome confiável em serviços de processamento de vídeo."
+    }
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "subtitle": "Entre em Contato",
+    "description": "Estamos aqui para ajudar! Entre em contato conosco através de qualquer um dos seguintes métodos.",
+    "info": {
+      "title": "Informações de Contato",
+      "email": "E-mail",
+      "address": "Endereço",
+      "addressValue": "Edifício 130, Avenida Longhua, Distrito Longhua, Shenzhen, China",
+      "phone": "Telefone"
+    },
+    "form": {
+      "title": "Envie-nos uma Mensagem",
+      "name": "Nome",
+      "email": "E-mail",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "submit": "Enviar",
+      "sending": "Enviando...",
+      "success": "Mensagem enviada com sucesso!",
+      "error": "Falha ao enviar mensagem. Tente novamente."
+    }
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "lastUpdated": "Última atualização",
+    "intro": "Esta Política de Privacidade descreve como coletamos, usamos e protegemos suas informações pessoais quando você usa nosso serviço de remoção de marcas d'água de vídeo.",
+    "section1": {
+      "title": "1. Informações que Coletamos",
+      "content": "Coletamos informações que você nos fornece diretamente, incluindo quando você envia vídeos, cria uma conta ou nos contacta para suporte. Isso pode incluir seu nome, endereço de e-mail, informações de pagamento e qualquer vídeo que você envie para nosso serviço. Também coletamos automaticamente certas informações sobre seu dispositivo e como você interage com nosso serviço, incluindo endereço IP, tipo de navegador e padrões de uso."
+    },
+    "section2": {
+      "title": "2. Como Usamos suas Informações",
+      "content": "Usamos as informações que coletamos para fornecer, manter e melhorar nossos serviços, processar suas solicitações de remoção de vídeo, nos comunicar com você sobre sua conta e nossos serviços, enviar notificações técnicas e mensagens de suporte, responder a seus comentários e perguntas, e assegurar a segurança de nossa plataforma. Também podemos usar suas informações para fins analíticos para entender como nosso serviço é usado."
+    },
+    "section3": {
+      "title": "3. Segurança de Dados",
+      "content": "Implementamos medidas técnicas e organizacionais apropriadas para proteger suas informações pessoais e vídeos. Isso inclui criptografia de dados em trânsito e em repouso, servidores seguros, e auditorias de segurança regulares. Todos os vídeos enviados são automaticamente excluídos após 24 horas de conclusão do processamento. Não armazenamos seus vídeos permanentemente nem os compartilhamos com terceiros."
+    },
+    "section4": {
+      "title": "4. Retenção de Dados",
+      "content": "Retemos suas informações pessoais apenas pelo tempo necessário para fornecer nossos serviços e cumprir os propósitos descritos nesta política. Os arquivos de vídeo são automaticamente excluídos dentro de 24 horas após o processamento. As informações da conta são retidas até que você solicite exclusão ou feche sua conta."
+    },
+    "section5": {
+      "title": "5. Serviços de Terceiros",
+      "content": "Podemos usar serviços de terceiros para nos ajudar a operar nossa plataforma e fornecer serviços a você, como processadores de pagamento, provedores de armazenamento em nuvem e serviços de análise. Esses terceiros têm acesso às suas informações apenas para realizar tarefas específicas em nosso nome e são obrigados a não divulgar ou usar para qualquer outro propósito."
+    },
+    "section6": {
+      "title": "6. Seus Direitos",
+      "content": "Você tem o direito de acessar, atualizar ou excluir suas informações pessoais a qualquer momento. Você também pode solicitar uma cópia de seus dados, retirar seu consentimento para processamento de dados, objetar certos tipos de processamento e solicitar portabilidade de dados. Para exercer esses direitos, entre em contato conosco usando as informações fornecidas abaixo."
+    },
+    "section7": {
+      "title": "7. Cookies e Rastreamento",
+      "content": "Usamos cookies e tecnologias de rastreamento similares para rastrear atividade em nosso serviço e manter certas informações. Você pode instruir seu navegador a rejeitar todos os cookies ou a indicar quando um cookie está sendo enviado. No entanto, se você não aceitar cookies, pode não conseguir usar algumas partes do nosso serviço."
+    },
+    "section8": {
+      "title": "8. Privacidade de Crianças",
+      "content": "Nosso serviço não é destinado a crianças menores de 18 anos. Não coletamos conscientemente informações pessoais de crianças. Se você for pai ou tutor e acreditar que seu filho nos forneceu informações pessoais, entre em contato conosco imediatamente."
+    },
+    "section9": {
+      "title": "9. Alterações a Esta Política",
+      "content": "Podemos atualizar esta Política de Privacidade de tempos em tempos. Notificaremos você de quaisquer alterações publicando a nova Política de Privacidade nesta página e atualizando a data de 'Última atualização'. Você é aconselhado a revisar esta Política de Privacidade periodicamente para quaisquer alterações."
+    },
+    "section10": {
+      "title": "10. Entre em Contato Conosco",
+      "content": "Se você tiver dúvidas sobre esta Política de Privacidade, entre em contato conosco em:",
+      "email": "E-mail: support@removewatermarker.com",
+      "address": "Endereço: Edifício 130, Avenida Longhua, Distrito Longhua, Shenzhen, China"
+    },
+    "contact": {
+      "title": "Entre em Contato",
+      "content": "Se você tiver perguntas sobre esta Política de Privacidade ou desejar exercer seus direitos, entre em contato conosco usando as seguintes informações:",
+      "email": "E-mail: support@removewatermarker.com",
+      "address": "Endereço: Edifício 130, Avenida Longhua, Distrito Longhua, Shenzhen, China"
+    }
+  },
+  "terms": {
+    "title": "Termos de Serviço",
+    "lastUpdated": "Última atualização",
+    "intro": "Por favor leia estes Termos de Serviço cuidadosamente antes de usar nosso serviço de remoção de marcas d'água de vídeo.",
+    "section1": {
+      "title": "1. Aceitação dos Termos",
+      "content": "Ao acessar e usar nosso serviço, você aceita e concorda em cumprir estes Termos de Serviço e todas as leis e regulamentos aplicáveis. Se você não concordar com algum destes termos, está proibido de usar ou acessar este serviço."
+    },
+    "section2": {
+      "title": "2. Descrição do Serviço",
+      "content": "Fornecemos serviços de processamento de vídeo para remover marcas d'água, logos e legendas de vídeos. Nosso serviço utiliza tecnologia automatizada de IA para processar seus vídeos enviados. Reservamo-nos o direito de modificar, suspender ou descontinuar qualquer aspecto do serviço a qualquer momento sem aviso prévio."
+    },
+    "section3": {
+      "title": "3. Conta do Usuário",
+      "content": "Para usar certas funções do nosso serviço, você pode precisar criar uma conta. Você é responsável por manter a confidencialidade de suas credenciais de conta e por todas as atividades que ocorram sob sua conta. Você concorda em nos notificar imediatamente sobre qualquer uso não autorizado de sua conta."
+    },
+    "section4": {
+      "title": "4. Responsabilidades do Usuário",
+      "content": "Você é responsável por assegurar que tenha o direito legal de modificar os vídeos que envia. Você não deve enviar conteúdo que viole leis, infrinja direitos de outros, contenha malware ou vírus, ou seja de outro modo prejudicial ou ilegal. Você concorda em usar nosso serviço apenas para fins lícitos."
+    },
+    "section5": {
+      "title": "5. Propriedade Intelectual",
+      "content": "Você retém todos os direitos sobre seus vídeos enviados. Ao usar nosso serviço, você nos concede uma licença limitada, não exclusiva para processar seus vídeos unicamente com o propósito de fornecer o serviço. Todo o conteúdo em nosso site, incluindo texto, gráficos, logos e software, é propriedade de RemoveWatermark e está protegido por leis de direitos autorais e propriedade intelectual."
+    },
+    "section6": {
+      "title": "6. Termos de Pagamento",
+      "content": "Algumas funções do nosso serviço podem exigir pagamento. Todas as taxas não são reembolsáveis a menos que especificado o contrário. Reservamo-nos o direito de alterar nossos preços a qualquer momento. Você é responsável por todos os impostos aplicáveis."
+    },
+    "section7": {
+      "title": "7. Disponibilidade do Serviço",
+      "content": "Não garantimos que nosso serviço estará disponível o tempo todo ou que será ininterrupto, seguro, sem erros ou que os defeitos serão corrigidos. Podemos experimentar tempo de inatividade devido a manutenção, atualizações ou circunstâncias imprevistas."
+    },
+    "section8": {
+      "title": "8. Limitação de Responsabilidade",
+      "content": "Até o máximo permitido por lei, não seremos responsáveis por danos indiretos, incidentais, especiais, consequenciais ou punitivos, ou qualquer perda de lucros ou receitas, seja incorrida direta ou indiretamente, ou qualquer perda de dados, uso, boa vontade ou outras perdas intangíveis resultantes do seu uso do nosso serviço."
+    },
+    "section9": {
+      "title": "9. Indenização",
+      "content": "Você concorda em indenizar e manter indene RemoveWatermark e seus funcionários, diretores, empregados e agentes de qualquer reivindicação, danos, perdas, responsabilidades e despesas decorrentes do seu uso do nosso serviço ou violação destes Termos."
+    },
+    "section10": {
+      "title": "10. Encerramento",
+      "content": "Podemos encerrar ou suspender sua conta e acesso ao nosso serviço imediatamente, sem aviso prévio, por qualquer motivo, incluindo violação destes Termos. Após o encerramento, seu direito de usar o serviço cessará imediatamente."
+    },
+    "section11": {
+      "title": "11. Lei Aplicável",
+      "content": "Estes Termos serão regidos e interpretados de acordo com as leis da jurisdição em que operamos, sem considerar sua conflito de disposições legais."
+    },
+    "section12": {
+      "title": "12. Informações de Contato",
+      "content": "Se você tiver perguntas sobre estes Termos, entre em contato conosco usando as seguintes informações:",
+      "email": "E-mail: support@removewatermarker.com",
+      "address": "Endereço: Edifício 130, Avenida Longhua, Distrito Longhua, Shenzhen, China"
+    }
+  },
+  "refund": {
+    "title": "Política de Reembolso",
+    "lastUpdated": "Última atualização",
+    "intro": "Esta Política de Reembolso descreve os termos e condições para reembolsos em nossos serviços de processamento de vídeo.",
+    "section1": {
+      "title": "1. Elegibilidade para Reembolso",
+      "content": "Oferecemos reembolsos por serviços que não atendam aos nossos padrões de qualidade, se houver um erro técnico de nossa parte que impeça que o serviço seja entregue, ou se o serviço não for fornecido dentro do tempo prometido. Os reembolsos são considerados caso a caso."
+    },
+    "section2": {
+      "title": "2. Processo de Reembolso",
+      "content": "Para solicitar um reembolso, entre em contato conosco dentro de 7 dias da sua compra ou conclusão do serviço. Você deve fornecer seu número de pedido e uma explicação detalhada do motivo pelo qual está solicitando o reembolso. Revisaremos sua solicitação e responderemos dentro de 5 dias úteis. Se aprovado, os reembolsos serão processados dentro de 14 dias úteis ao seu método de pagamento original."
+    },
+    "section3": {
+      "title": "3. Itens Não Reembolsáveis",
+      "content": "Os reembolsos não estão disponíveis por serviços que tenham sido concluídos e entregues com sucesso, se o problema for devido a erro do usuário (como enviar arquivos incorretos ou formatos incompatíveis), se você mudar de ideia após o serviço ter sido concluído, ou se o serviço foi usado para fins ilegais."
+    },
+    "section4": {
+      "title": "4. Reembolsos Parciais",
+      "content": "Em alguns casos, podemos oferecer reembolsos parciais se apenas uma porção do serviço foi insatisfatória. O valor do reembolso parcial será determinado baseado nas circunstâncias específicas do seu caso."
+    },
+    "section5": {
+      "title": "5. Tempo de Processamento",
+      "content": "As solicitações de reembolso geralmente são processadas dentro de 5-10 dias úteis. Após aprovadas, o reembolso aparecerá em sua conta dentro de 14 dias úteis, dependendo do seu método de pagamento e instituição financeira."
+    },
+    "section6": {
+      "title": "6. Estornos",
+      "content": "Se você iniciar um estorno através do seu banco ou companhia de cartão de crédito, reservamo-nos o direito de disputar o estorno e fornecer evidência de entrega do serviço. Recomendamos contactar-nos diretamente primeiro para resolver qualquer problema."
+    },
+    "section7": {
+      "title": "7. Contato para Reembolsos",
+      "content": "Para solicitar um reembolso, entre em contato conosco em:",
+      "email": "E-mail: support@removewatermarker.com",
+      "address": "Endereço: Edifício 130, Avenida Longhua, Distrito Longhua, Shenzhen, China",
+      "note": "Por favor inclua seu número de pedido e motivo de reembolso em sua solicitação."
+    }
+  },
+  "disclaimer": {
+    "title": "Isenção de Responsabilidade",
+    "lastUpdated": "Última atualização",
+    "intro": "Por favor leia este descargo de responsabilidade cuidadosamente antes de usar nosso serviço de remoção de marcas d'água de vídeo.",
+    "section1": {
+      "title": "1. Descargo do Serviço",
+      "content": "Nosso serviço de processamento de vídeo é fornecido 'como está' e 'como está disponível' sem garantias de qualquer tipo, sejam expressas ou implícitas. Não garantimos que o serviço será ininterrupto, seguro, sem erros ou que os defeitos serão corrigidos. Reservamo-nos o direito de modificar ou descontinuar o serviço a qualquer momento sem aviso."
+    },
+    "section2": {
+      "title": "2. Descargo de Resultados",
+      "content": "Embora nos esforcemos para fornecer os melhores resultados, a qualidade de remoção de marcas d'água, logos ou legendas pode variar dependendo de vários fatores incluindo conteúdo do vídeo, características da marca d'água, qualidade do vídeo, compressão e outros fatores técnicos fora do nosso controle. Não garantimos resultados específicos ou que todas as marcas d'água, logos ou legendas sejam completamente removidas."
+    },
+    "section3": {
+      "title": "3. Descargo Legal",
+      "content": "Os usuários são totalmente responsáveis por assegurar que tenham o direito legal de modificar vídeos, incluindo obter permissões e licenças necessárias. Não somos responsáveis por consequências legais resultantes do uso do nosso serviço, incluindo violação de direitos autorais, violações de marca registrada ou outros problemas legais. Os usuários devem cumprir com todas as leis e regulamentos aplicáveis."
+    },
+    "section4": {
+      "title": "4. Descargo de Conteúdo",
+      "content": "Não revisamos, monitoramos ou controlamos o conteúdo de vídeos enviados por usuários. Não somos responsáveis por qualquer conteúdo que viole leis ou infrinja direitos. Os usuários são totalmente responsáveis pelo conteúdo que enviam e pelo uso de vídeos processados."
+    },
+    "section5": {
+      "title": "5. Limitação de Responsabilidade",
+      "content": "Até o máximo permitido por lei, não seremos responsáveis por danos indiretos, incidentais, especiais, consequenciais ou punitivos, incluindo mas não limitado a perda de lucros, dados ou oportunidades de negócio, decorrentes do uso ou incapacidade de usar nosso serviço, mesmo se formos advertidos da possibilidade de tais danos."
+    },
+    "section6": {
+      "title": "6. Sem Conselho Profissional",
+      "content": "As informações e serviços fornecidos em nossa plataforma são para fins informativos gerais apenas e não constituem conselho profissional, legal ou técnico. Você deve consultar profissionais apropriados para conselho específico para sua situação."
+    },
+    "section7": {
+      "title": "7. Links de Terceiros",
+      "content": "Nosso serviço pode conter links para sites ou serviços de terceiros. Não somos responsáveis pelo conteúdo, políticas de privacidade ou práticas de qualquer site ou serviço de terceiros. Seu uso de sites de terceiros é sob seu próprio risco."
+    },
+    "section8": {
+      "title": "8. Força Maior",
+      "content": "Não seremos responsáveis por qualquer falha ou atraso no desempenho sob estes termos que seja devido a incêndio, inundação, terremoto, elementos da natureza ou atos de Deus, atos de guerra, terrorismo, tumultos, desordens civis, rebeliões ou revoluções, ou qualquer outra causa além do nosso controle razoável."
+    }
+  },
+  "copyright": {
+    "title": "Aviso de Direitos Autorais",
+    "lastUpdated": "Última atualização",
+    "intro": "Este Aviso de Direitos Autorais descreve a propriedade de direitos autorais e direitos de uso para o conteúdo em nossa plataforma.",
+    "section1": {
+      "title": "1. Propriedade de Direitos Autorais",
+      "content": "Todo o conteúdo neste site, incluindo mas não limitado a texto, gráficos, logos, ícones, imagens, clipes de áudio, downloads digitais, compilações de dados e software, é propriedade de RemoveWatermark ou seus fornecedores de conteúdo e está protegido por leis internacionais de direitos autorais. A compilação de todo o conteúdo neste site é propriedade exclusiva de RemoveWatermark."
+    },
+    "section2": {
+      "title": "2. Conteúdo do Usuário",
+      "content": "Os usuários retêm todos os direitos de direitos autorais e propriedade intelectual sobre vídeos e outro conteúdo que enviam para nosso serviço. Não reivindicamos propriedade do conteúdo enviado por usuários. Ao enviar conteúdo, você representa e garante que possui ou tem os direitos necessários sobre o conteúdo e que não infringe direitos de terceiros."
+    },
+    "section3": {
+      "title": "3. Usos Proibidos",
+      "content": "Você não pode reproduzir, distribuir, modificar, criar obras derivadas de, exibir publicamente, realizar publicamente, republicar, baixar, armazenar ou transmitir qualquer material de nosso site sem nossa permissão escrita expressa. Isso inclui mas não se limita a copiar, raspar ou baixar conteúdo para fins comerciais ou não comerciais."
+    },
+    "section4": {
+      "title": "4. Uso Justo",
+      "content": "Você pode usar o conteúdo do nosso site para fins pessoais, não comerciais de acordo com princípios de uso justo. No entanto, qualquer uso comercial requer nossa permissão escrita expressa."
+    },
+    "section5": {
+      "title": "5. Marcas Registradas",
+      "content": "Todas as marcas registradas, marcas de serviço e nomes comerciais de RemoveWatermark usados neste site são marcas ou marcas registradas de RemoveWatermark. Você não pode usar nenhuma de nossas marcas sem nossa permissão escrita prévia."
+    },
+    "section6": {
+      "title": "6. Política DMCA",
+      "content": "Respeitamos os direitos de propriedade intelectual de outros e esperamos que nossos usuários façam o mesmo. Se você acreditar que sua obra protegida por direitos autorais foi copiada de uma maneira que constitua violação de direitos autorais, entre em contato conosco com as seguintes informações: (1) uma descrição da obra protegida por direitos autorais; (2) a localização do material infrator; (3) suas informações de contato; (4) uma declaração de boa fé; (5) sua assinatura.",
+      "email": "E-mail: support@removewatermarker.com",
+      "address": "Endereço: Edifício 130, Avenida Longhua, Distrito Longhua, Shenzhen, China"
+    },
+    "section7": {
+      "title": "7. Reivindicações de Violação de Direitos Autorais",
+      "content": "Ao receber um aviso DMCA válido, removeremos ou desabilitaremos o acesso ao conteúdo presumivelmente infrator imediatamente e notificaremos o usuário que publicou o conteúdo. Podemos encerrar contas de infratores repetidos."
+    },
+    "section8": {
+      "title": "8. Contra-Notificação",
+      "content": "Se você acreditar que seu conteúdo foi removido por engano, pode enviar uma contra-notificação com uma declaração sob pena de perjúrio de que o conteúdo foi removido por engano ou identificação errada."
+    }
+  },
+  "legal": {
+    "title": "Aviso Legal",
+    "lastUpdated": "Última atualização",
+    "intro": "Este Aviso Legal fornece informações importantes sobre nossa empresa e a estrutura legal que rege nossos serviços.",
+    "section1": {
+      "title": "1. Informações da Empresa",
+      "content": "Este site é operado por RemoveWatermark, um provedor profissional de serviços de processamento de vídeo.",
+      "address": "Endereço: Edifício 130, Avenida Longhua, Distrito Longhua, Shenzhen, China",
+      "email": "E-mail: support@removewatermarker.com",
+      "website": "Site: https://www.removewatermarker.com"
+    },
+    "section2": {
+      "title": "2. Lei Aplicável",
+      "content": "Estes termos e condições são regidos e interpretados de acordo com as leis da jurisdição em que operamos. Qualquer disputa decorrente ou relacionada a estes termos ou nossos serviços estará sujeita à jurisdição exclusiva dos tribunais nessa jurisdição."
+    },
+    "section3": {
+      "title": "3. Conformidade",
+      "content": "Os usuários são responsáveis por assegurar que seu uso do nosso serviço cumpra com todas as leis e regulamentos aplicáveis em sua jurisdição, incluindo mas não limitado a leis de direitos autorais, leis de privacidade e regulamentos de conteúdo. Reservamo-nos o direito de recusar serviço a qualquer pessoa que viole leis aplicáveis."
+    },
+    "section4": {
+      "title": "4. Disponibilidade do Serviço",
+      "content": "Não fazemos representações ou garantias sobre a disponibilidade, precisão ou confiabilidade do nosso serviço. Reservamo-nos o direito de modificar, suspender ou descontinuar qualquer parte do nosso serviço a qualquer momento sem aviso."
+    },
+    "section5": {
+      "title": "5. Limitação de Responsabilidade",
+      "content": "Até o máximo permitido por lei, excluímos todas as representações, garantias e condições relacionadas ao nosso site e ao uso do nosso serviço. Nada neste aviso limitará ou excluirá nossa responsabilidade por morte ou lesão pessoal, fraude ou qualquer outra responsabilidade que não possa ser excluída por lei."
+    },
+    "section6": {
+      "title": "6. Separabilidade",
+      "content": "Se qualquer disposição deste Aviso Legal for considerada inexequível ou inválida, essa disposição será limitada ou eliminada ao mínimo necessário para que este aviso continue em pleno vigor e efeito."
+    },
+    "section7": {
+      "title": "7. Acordo Completo",
+      "content": "Este Aviso Legal, junto com nossos Termos de Serviço e Política de Privacidade, constitui o acordo completo entre você e RemoveWatermark sobre seu uso do nosso serviço."
+    },
+    "section8": {
+      "title": "8. Mudanças neste Aviso",
+      "content": "Reservamo-nos o direito de modificar este Aviso Legal a qualquer momento. As mudanças terão efeito imediato ao serem publicadas nesta página. Seu uso continuado do nosso serviço após as mudanças serem publicadas constitui aceitação do aviso modificado."
+    },
+    "section9": {
+      "title": "9. Contato",
+      "content": "Para consultas legais ou perguntas sobre este Aviso Legal, entre em contato conosco em:",
+      "email": "E-mail: support@removewatermarker.com",
+      "address": "Endereço: Edifício 130, Avenida Longhua, Distrito Longhua, Shenzhen, China"
+    }
+  },
+  "ip": {
+    "title": "Declaração de Propriedade Intelectual",
+    "lastUpdated": "Última atualização",
+    "intro": "Esta Declaração de Propriedade Intelectual descreve os direitos de propriedade intelectual e proteções relacionadas ao nosso serviço.",
+    "section1": {
+      "title": "1. Nossa Propriedade Intelectual",
+      "content": "Todos os direitos de propriedade intelectual sobre nosso site, tecnologia, algoritmos, software, designs, marcas registradas, marcas de serviço, nomes comerciais e serviço pertencem a RemoveWatermark ou seus licenciadores. Isso inclui mas não se limita a patentes, marcas registradas, direitos autorais, segredos comerciais e algoritmos proprietários utilizados em nossa tecnologia de processamento de vídeo."
+    },
+    "section2": {
+      "title": "2. Propriedade Intelectual do Usuário",
+      "content": "Os usuários retêm todos os direitos de propriedade intelectual sobre seus vídeos enviados e outro conteúdo. Não reivindicamos propriedade do conteúdo enviado por usuários e apenas usamos para fornecer nosso serviço. Ao enviar conteúdo, você nos concede uma licença limitada, não exclusiva para processar seu conteúdo unicamente com o propósito de fornecer o serviço."
+    },
+    "section3": {
+      "title": "3. Atividades Proibidas",
+      "content": "Os usuários não podem fazer engenharia reversa, descompilar, desmontar ou tentar extrair nossos algoritmos proprietários, código fonte ou tecnologia. Qualquer uso não autorizado, reprodução ou distribuição de nossa propriedade intelectual é estritamente proibido e pode resultar em ação legal."
+    },
+    "section4": {
+      "title": "4. Licença de Uso",
+      "content": "Concedemos a você uma licença limitada, não exclusiva, não transferível para acessar e usar nosso serviço para seu propósito pretendido. Esta licença não inclui o direito de revender, redistribuir ou criar obras derivadas baseadas em nossa tecnologia ou serviço."
+    },
+    "section5": {
+      "title": "5. Propriedade Intelectual de Terceiros",
+      "content": "Respeitamos os direitos de propriedade intelectual de outros e esperamos que nossos usuários façam o mesmo. Se você acreditar que seus direitos de propriedade intelectual foram infringidos, entre em contato conosco imediatamente com detalhes da infração alegada."
+    },
+    "section6": {
+      "title": "6. Marcas Registradas",
+      "content": "RemoveWatermark e marcas relacionadas são marcas de RemoveWatermark. Você não pode usar nossas marcas sem nosso consentimento escrito prévio. Todas as outras marcas registradas, marcas de serviço e nomes comerciais são propriedade de seus respectivos proprietários."
+    },
+    "section7": {
+      "title": "7. Aplicação",
+      "content": "Tomamos os direitos de propriedade intelectual seriamente e tomaremos as medidas legais apropriadas contra qualquer infração de nossos direitos de propriedade intelectual. Isso pode incluir buscar alívio de injunção, danos e honorários advocatícios."
+    },
+    "section8": {
+      "title": "8. Relato de Infrações",
+      "content": "Se você acreditar que nosso serviço ou usuários estão infringindo seus direitos de propriedade intelectual, entre em contato conosco com: (1) identificação da propriedade intelectual; (2) descrição da infração; (3) suas informações de contato; (4) uma declaração de boa fé; (5) sua assinatura.",
+      "email": "E-mail: support@removewatermarker.com",
+      "address": "Endereço: Edifício 130, Avenida Longhua, Distrito Longhua, Shenzhen, China"
+    }
+  }
+}
