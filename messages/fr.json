@@ -5,6 +5,10 @@
     "subscription": "Abonnement",
     "profile": "Mon compte"
   },
+  "auth": {
+    "signInWithGoogle": "Se connecter avec Google",
+    "signOut": "Se déconnecter"
+  },
   "imageWatermarkRemoval": {
     "title": "Suppression des filigranes d'images",
     "description": "Téléchargez une image, cliquez sur les emplacements des filigranes et supprimez-les en un clic",
@@ -55,6 +59,7 @@
       "q5": "Que faire si je n'ai pas assez de crédits?",
       "a5": "Vous pouvez acheter des packs de crédits, ou utiliser le quota d'essai gratuit (une opportunité gratuite pour chaque nouvel utilisateur)."
     },
+    "pleaseLoginToUse": "Veuillez vous connecter pour utiliser cette fonctionnalité",
     "examples": {
       "title": "Exemples de Traitement",
       "subtitle": "Découvrez comment notre technologie IA supprime précisément les filigranes et logos",
@@ -64,12 +69,6 @@
       "watermarkExample": "Exemple de Suppression de Filigrane",
       "combinedExample": "Exemple de Traitement Combiné"
     }
-  },
-  "auth": {
-    "signInWithGoogle": "Se connecter avec Google",
-    "signOut": "Se déconnecter",
-    "signingIn": "Connexion...",
-    "signingOut": "Déconnexion..."
   },
   "subscription": {
     "title": "Plans d'abonnement",
@@ -300,6 +299,14 @@
       "subtitle2BeforeDesc": "Vidéo avec sous-titres",
       "subtitle2AfterTitle": "Exemple de suppression de sous-titres - Après",
       "subtitle2AfterDesc": "Sous-titres supprimés"
+    },
+    "auth": {
+      "signInWithGoogle": "Se connecter avec Google",
+      "backToHome": "Retour à l'accueil"
+    },
+    "authRequired": {
+      "title": "Connexion requise",
+      "subtitle": "Vous devez vous connecter pour accéder à cette fonctionnalité"
     }
   },
   "footer": {

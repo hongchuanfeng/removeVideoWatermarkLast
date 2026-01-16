@@ -5,6 +5,10 @@
     "subscription": "订阅套餐",
     "profile": "个人中心"
   },
+  "auth": {
+    "signInWithGoogle": "使用 Google 登录",
+    "signOut": "退出登录"
+  },
   "imageWatermarkRemoval": {
     "title": "图片去水印",
     "description": "上传图片，点击水印位置，一键去除水印",
@@ -94,13 +98,8 @@
       "a5": "可以在订阅套餐页面购买更多积分，1积分可处理1张图片。",
       "q6": "图片质量会下降吗？",
       "a6": "不会，AI修复技术会保持图片的原始分辨率和质量。"
-    }
-  },
-  "auth": {
-    "signInWithGoogle": "使用 Google 登录",
-    "signOut": "退出登录",
-    "signingIn": "登录中...",
-    "signingOut": "退出中..."
+    },
+    "pleaseLoginToUse": "请先登录后再使用"
   },
   "subscription": {
     "title": "订阅套餐",
@@ -307,6 +306,14 @@
         "title": "视频安全吗？",
         "desc": "使用安全加密，视频会在 24 小时后自动删除。"
       }
+    },
+    "auth": {
+      "signInWithGoogle": "使用 Google 登录",
+      "backToHome": "返回首页"
+    },
+    "authRequired": {
+      "title": "需要登录",
+      "subtitle": "您需要登录才能访问此功能"
     },
     "caseStudies": {
       "title": "案例展示",

@@ -5,6 +5,10 @@
     "subscription": "Subscription",
     "profile": "My Account"
   },
+  "auth": {
+    "signInWithGoogle": "Sign in with Google",
+    "signOut": "Sign Out"
+  },
   "imageWatermarkRemoval": {
     "title": "Image Watermark Removal",
     "description": "Upload an image, click on watermark locations, and remove watermarks with one click",
@@ -55,6 +59,7 @@
       "q5": "What if I don't have enough credits?",
       "a5": "You can purchase credit packages, or use the free trial quota (one free opportunity for each new user)."
     },
+    "pleaseLoginToUse": "Please login to use this feature",
     "examples": {
       "title": "Processing Examples",
       "subtitle": "See how our AI technology precisely removes watermarks and logos",
@@ -64,12 +69,6 @@
       "watermarkExample": "Watermark Removal Example",
       "combinedExample": "Comprehensive Processing Example"
     }
-  },
-  "auth": {
-    "signInWithGoogle": "Sign in with Google",
-    "signOut": "Sign Out",
-    "signingIn": "Signing in...",
-    "signingOut": "Signing out..."
   },
   "subscription": {
     "title": "Subscription Plans",
@@ -300,6 +299,14 @@
       "subtitle2BeforeDesc": "Video with subtitles",
       "subtitle2AfterTitle": "Subtitle Removal Example - After",
       "subtitle2AfterDesc": "Subtitles removed"
+    },
+    "auth": {
+      "signInWithGoogle": "Sign in with Google",
+      "backToHome": "Back to Home"
+    },
+    "authRequired": {
+      "title": "Login Required",
+      "subtitle": "You need to sign in to access this feature"
     }
   },
   "about": {

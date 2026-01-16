@@ -21,6 +21,7 @@ export default function ImageWatermarkRemovalPage() {
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState<{x: number, y: number} | null>(null);
   const [previewRegion, setPreviewRegion] = useState<{x: number, y: number, w: number, h: number} | null>(null);
+  const [loginPrompt, setLoginPrompt] = useState<string>('');
  
 
   // 调试regions变化
@@ -83,12 +84,8 @@ export default function ImageWatermarkRemovalPage() {
     console.log('fileInputRef:', fileInputRef);
   }, []);
 
-  // Redirect if not authenticated
-  useEffect(() => {
-    if (!authLoading && !user) {
-      router.push('/');
-    }
-  }, [user, authLoading, router]);
+  // Allow anonymous users to view the page; do not redirect here.
+  // When user attempts to process an image, we'll require login and prompt then.
 
   // Handle image upload
   const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -96,6 +93,13 @@ export default function ImageWatermarkRemovalPage() {
     console.log('事件对象:', event);
     console.log('目标元素:', event.target);
     console.log('文件列表:', event.target.files);
+
+    // Require login when attempting to upload an image
+    if (!user) {
+      setLoginPrompt(t('pleaseLoginToUse') || '请先登录后再使用');
+      router.push('/?next=' + encodeURIComponent(window.location.pathname));
+      return;
+    }
 
     const file = event.target.files?.[0];
     console.log('选择的文件:', file);
@@ -235,8 +239,17 @@ export default function ImageWatermarkRemovalPage() {
       return;
     }
 
+    // Require login when attempting to process an image
+    if (!user) {
+      setLoginPrompt(t('pleaseLoginToUse') || '请先登录后再使用');
+      // Redirect to home page and preserve current path so user can return after login
+      const currentPath = typeof window !== 'undefined' ? window.location.pathname : '/';
+      router.push(`/?next=${encodeURIComponent(currentPath)}`);
+      return;
+    }
+
     // Check credits
-    if (credits < 1) {
+    if ((credits ?? 0) < 1) {
       console.log('积分不足:', credits);
       alert(t('insufficientCredits'));
       return;
@@ -331,9 +344,8 @@ export default function ImageWatermarkRemovalPage() {
     );
   }
 
-  if (!user) {
-    return null; // Will redirect
-  }
+  // Note: do not block rendering for anonymous users here. The actual processing
+  // action will check authentication and prompt login if needed.
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12">
@@ -351,6 +363,28 @@ export default function ImageWatermarkRemovalPage() {
               {t('imageCreditsInfo', { credits })}
             </div>
           </div>
+
+          {/* Login Prompt */}
+          {loginPrompt && (
+            <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4 mb-8">
+              <div className="flex items-center">
+                <svg className="w-5 h-5 text-yellow-600 dark:text-yellow-400 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                </svg>
+                <p className="text-yellow-800 dark:text-yellow-200 font-medium">
+                  {loginPrompt}
+                </p>
+                <button
+                  onClick={() => setLoginPrompt('')}
+                  className="ml-auto text-yellow-600 dark:text-yellow-400 hover:text-yellow-800 dark:hover:text-yellow-200"
+                >
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          )}
 
           {/* Upload Section */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
@@ -501,7 +535,7 @@ export default function ImageWatermarkRemovalPage() {
                 </p>
                 <button
                   onClick={processImage}
-                  disabled={isProcessing || credits < 1}
+                  disabled={isProcessing || ((credits ?? 0) < 1)}
                   className="bg-green-600 hover:bg-green-700 disabled:bg-gray-400 text-white px-8 py-3 rounded-lg transition-colors text-lg font-semibold"
                 >
                   {isProcessing ? t('processing') : t('processImage')}

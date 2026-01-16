@@ -5,6 +5,10 @@
     "subscription": "Abonnement",
     "profile": "Mein Konto"
   },
+  "auth": {
+    "signInWithGoogle": "Mit Google anmelden",
+    "signOut": "Abmelden"
+  },
   "imageWatermarkRemoval": {
     "title": "Bildwasserzeichen entfernen",
     "description": "Laden Sie ein Bild hoch, klicken Sie auf Wasserzeichen-Positionen und entfernen Sie sie mit einem Klick",
@@ -55,6 +59,7 @@
       "q5": "Was tun, wenn ich nicht genug Credits habe?",
       "a5": "Sie können Credit-Pakete kaufen oder das kostenlose Testguthaben verwenden (eine kostenlose Gelegenheit für jeden neuen Benutzer)."
     },
+    "pleaseLoginToUse": "Bitte melden Sie sich an, um diese Funktion zu verwenden",
     "examples": {
       "title": "Verarbeitungsbeispiele",
       "subtitle": "Sehen Sie, wie unsere KI-Technologie Wasserzeichen und Logos präzise entfernt",
@@ -64,12 +69,6 @@
       "watermarkExample": "Wasserzeichen-Entfernungsbeispiel",
       "combinedExample": "Kombinierte Verarbeitungsbeispiel"
     }
-  },
-  "auth": {
-    "signInWithGoogle": "Mit Google anmelden",
-    "signOut": "Abmelden",
-    "signingIn": "Wird angemeldet...",
-    "signingOut": "Wird abgemeldet..."
   },
   "subscription": {
     "title": "Abonnementpläne",
@@ -300,6 +299,14 @@
       "subtitle2BeforeDesc": "Video mit Untertiteln",
       "subtitle2AfterTitle": "Untertitel-Entfernung Beispiel - Nachher",
       "subtitle2AfterDesc": "Untertitel entfernt"
+    },
+    "auth": {
+      "signInWithGoogle": "Mit Google anmelden",
+      "backToHome": "Zurück zur Startseite"
+    },
+    "authRequired": {
+      "title": "Anmeldung erforderlich",
+      "subtitle": "Sie müssen sich anmelden, um auf diese Funktion zuzugreifen"
     }
   },
   "footer": {

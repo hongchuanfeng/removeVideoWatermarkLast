@@ -5,6 +5,10 @@
     "subscription": "Assinatura",
     "profile": "Minha Conta"
   },
+  "auth": {
+    "signInWithGoogle": "Entrar com Google",
+    "signOut": "Sair"
+  },
   "imageWatermarkRemoval": {
     "title": "Remover marcas d'água de imagens",
     "description": "Faça upload de uma imagem, clique nas posições das marcas d'água e remova-as com um clique",
@@ -55,6 +59,7 @@
       "q5": "O que fazer se não tenho créditos suficientes?",
       "a5": "Você pode comprar pacotes de créditos, ou usar a cota de teste gratuita (uma oportunidade gratuita para cada novo usuário)."
     },
+    "pleaseLoginToUse": "Por favor, faça login para usar esta funcionalidade",
     "examples": {
       "title": "Exemplos de Processamento",
       "subtitle": "Veja como nossa tecnologia IA remove precisamente marcas d'água e logos",
@@ -64,12 +69,6 @@
       "watermarkExample": "Exemplo de Remoção de Marca d'Água",
       "combinedExample": "Exemplo de Processamento Combinado"
     }
-  },
-  "auth": {
-    "signInWithGoogle": "Entrar com Google",
-    "signOut": "Sair",
-    "signingIn": "Entrando...",
-    "signingOut": "Saindo..."
   },
   "subscription": {
     "title": "Planos de Assinatura",
@@ -300,6 +299,14 @@
       "subtitle2BeforeDesc": "Vídeo com legendas",
       "subtitle2AfterTitle": "Exemplo de Remoção de Legendas - Depois",
       "subtitle2AfterDesc": "Legendas removidas"
+    },
+    "auth": {
+      "signInWithGoogle": "Entrar com Google",
+      "backToHome": "Voltar ao início"
+    },
+    "authRequired": {
+      "title": "Login necessário",
+      "subtitle": "Você precisa fazer login para acessar esta funcionalidade"
     },
     "freeTrial": {
       "title": "Teste Gratuito",

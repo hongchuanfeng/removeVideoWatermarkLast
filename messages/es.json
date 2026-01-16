@@ -5,6 +5,10 @@
     "subscription": "Suscripción",
     "profile": "Mi Cuenta"
   },
+  "auth": {
+    "signInWithGoogle": "Iniciar sesión con Google",
+    "signOut": "Cerrar Sesión"
+  },
   "imageWatermarkRemoval": {
     "title": "Eliminar marcas de agua de imágenes",
     "description": "Suba una imagen, haga clic en las posiciones de las marcas de agua y elimínelas con un clic",
@@ -55,6 +59,7 @@
       "q5": "¿Qué hacer si no tengo suficientes créditos?",
       "a5": "Puede comprar paquetes de créditos, o usar la cuota de prueba gratuita (una oportunidad gratuita para cada nuevo usuario)."
     },
+    "pleaseLoginToUse": "Por favor, inicia sesión para usar esta función",
     "examples": {
       "title": "Ejemplos de Procesamiento",
       "subtitle": "Vea cómo nuestra tecnología de IA elimina con precisión marcas de agua y logos",
@@ -64,12 +69,6 @@
       "watermarkExample": "Ejemplo de Eliminación de Marca de Agua",
       "combinedExample": "Ejemplo de Procesamiento Combinado"
     }
-  },
-  "auth": {
-    "signInWithGoogle": "Iniciar sesión con Google",
-    "signOut": "Cerrar Sesión",
-    "signingIn": "Iniciando sesión...",
-    "signingOut": "Cerrando sesión..."
   },
   "subscription": {
     "title": "Planes de Suscripción",
@@ -300,6 +299,14 @@
       "subtitle2BeforeDesc": "Video con subtítulos",
       "subtitle2AfterTitle": "Ejemplo de Eliminación de Subtítulos - Después",
       "subtitle2AfterDesc": "Subtítulos eliminados"
+    },
+    "auth": {
+      "signInWithGoogle": "Iniciar sesión con Google",
+      "backToHome": "Volver al inicio"
+    },
+    "authRequired": {
+      "title": "Inicio de sesión requerido",
+      "subtitle": "Necesitas iniciar sesión para acceder a esta función"
     },
     "freeTrial": {
       "title": "Prueba Gratuita",

@@ -5,6 +5,10 @@
     "subscription": "サブスクリプション",
     "profile": "マイアカウント"
   },
+  "auth": {
+    "signInWithGoogle": "Googleでサインイン",
+    "signOut": "サインアウト"
+  },
   "imageWatermarkRemoval": {
     "title": "画像ウォーターマーク除去",
     "description": "画像をアップロードし、ウォーターマークの位置をクリックしてワンクリックで除去",
@@ -55,6 +59,7 @@
       "q5": "クレジットが不足している場合はどうすればいいですか？",
       "a5": "クレジットパックを購入するか、無料トライアルクォータをご利用ください（新規ユーザー様につき1回無料）。"
     },
+    "pleaseLoginToUse": "この機能を使用するにはログインしてください",
     "examples": {
       "title": "処理例",
       "subtitle": "AI技術が透かしとロゴを正確に除去する方法をご覧ください",
@@ -64,12 +69,6 @@
       "watermarkExample": "透かし除去例",
       "combinedExample": "複合処理例"
     }
-  },
-  "auth": {
-    "signInWithGoogle": "Googleでサインイン",
-    "signOut": "サインアウト",
-    "signingIn": "サインイン中...",
-    "signingOut": "サインアウト中..."
   },
   "subscription": {
     "title": "サブスクリプションプラン",
@@ -300,6 +299,14 @@
       "subtitle2BeforeDesc": "字幕付きビデオ",
       "subtitle2AfterTitle": "字幕削除例 - 削除後",
       "subtitle2AfterDesc": "字幕を削除"
+    },
+    "auth": {
+      "signInWithGoogle": "Googleでサインイン",
+      "backToHome": "ホームに戻る"
+    },
+    "authRequired": {
+      "title": "ログインが必要です",
+      "subtitle": "この機能にアクセスするにはログインが必要です"
     }
   },
   "footer": {
