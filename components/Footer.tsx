@@ -88,6 +88,16 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
           <p>&copy; {new Date().getFullYear()} RemoveWatermark. All rights reserved.</p>
+          <p className="mt-2">
+            <a
+              href="https://beian.miit.gov.cn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+            >
+              {t('icp')}
+            </a>
+          </p>
         </div>
       </div>
     </footer>
