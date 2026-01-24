@@ -2,6 +2,8 @@
   "nav": {
     "home": "Accueil",
     "imageWatermarkRemoval": "Suppression des filigranes d'images",
+    "otherRemovals": "Autres suppressions",
+    "pdfWatermarkRemoval": "Suppression de filigrane PDF",
     "subscription": "Abonnement",
     "profile": "Mon compte"
   },
@@ -68,6 +70,109 @@
       "logoExample": "Exemple de Suppression de Logo",
       "watermarkExample": "Exemple de Suppression de Filigrane",
       "combinedExample": "Exemple de Traitement Combiné"
+    }
+  },
+  "pdfWatermarkRemoval": {
+    "title": "Suppression de filigrane PDF",
+    "description": "Téléchargez des documents PDF, l'IA détecte et supprime automatiquement les filigranes textuels et image",
+    "pdfCreditsInfo": "Chaque document PDF nécessite 1 crédit. Vous disposez actuellement de {credits} crédits.",
+    "uploadTitle": "Télécharger un document PDF",
+    "uploadPrompt": "Glissez-déposez le fichier PDF ici ou cliquez pour sélectionner le fichier",
+    "selectPDF": "Sélectionner le PDF",
+    "changePDF": "Changer le PDF",
+    "readyToProcess": "Le PDF est prêt à être traité",
+    "processPDF": "Supprimer les filigranes",
+    "processing": "Traitement en cours...",
+    "resultTitle": "Résultat du traitement",
+    "downloadPDF": "Télécharger le PDF",
+    "loading": "Chargement...",
+    "insufficientCredits": "Crédits insuffisants, veuillez recharger",
+    "processingError": "Échec du traitement, veuillez réessayer",
+    "processingComplete": "Traitement terminé",
+    "downloadReady": "Votre PDF a été traité et est prêt au téléchargement",
+    "pleaseLoginToUse": "Veuillez vous connecter pour utiliser cette fonctionnalité",
+    "features": {
+      "title": "Fonctionnalités",
+      "aiDetection": "Détection intelligente IA : identifie automatiquement les filigranes textuels et image dans les PDFs",
+      "textWatermark": "Suppression de filigranes textuels : supprime précisément les filigranes textuels et identifiants",
+      "imageWatermark": "Suppression de filigranes image : supprime intelligemment les logos et filigranes image",
+      "quality": "Préservation de la qualité : conserve la qualité et la mise en page d'origine après traitement"
+    },
+    "instructions": {
+      "title": "Instructions",
+      "step1": "Téléchargez le PDF : cliquez pour sélectionner un PDF ou faites glisser le fichier dans la zone de téléchargement",
+      "step2": "Traitement automatique : le système détecte et supprime automatiquement les filigranes",
+      "step3": "Téléchargez le résultat : récupérez le PDF nettoyé après achèvement"
+    },
+    "faq": {
+      "title": "Questions Fréquemment Posées",
+      "q1": "Quels formats PDF sont pris en charge ?",
+      "a1": "Le format PDF standard est pris en charge, jusqu'à 20 Mo.",
+      "q2": "Quelle est l'efficacité de la suppression des filigranes ?",
+      "a2": "Utilise une technologie IA pour détecter et supprimer automatiquement différentes formes de filigranes de manière naturelle.",
+      "q3": "Le contenu du PDF est-il perdu ?",
+      "a3": "Non, seuls les filigranes sont retirés, le contenu et le format restent intacts.",
+      "q4": "Combien de temps prend le traitement ?",
+      "a4": "Généralement entre 30 secondes et 2 minutes, selon la taille et la complexité.",
+      "q5": "Que faire si je n'ai pas assez de crédits ?",
+      "a5": "Achetez des packs de crédits ou passez à un plan supérieur."
+    },
+    "examples": {
+      "title": "Exemples de traitement",
+      "subtitle": "Exemples avant / après suppression de filigrane",
+      "before": "Avant",
+      "after": "Après"
+    },
+    "selectLanguagesLabel": "Sélectionnez les langues à traiter",
+    "batchNotice": "Pour éviter les timeouts, nous traiterons les langues par lots de deux. Après chaque lot, vous serez invité à continuer.",
+    "continuePrompt": "{processed}/{total} langues traitées. Continuer le traitement des restantes ?"
+  },
+  "ebookWatermarkRemoval": {
+    "title": "Suppression de filigrane d'eBook",
+    "description": "Téléchargez votre eBook (EPUB) et notre IA détectera et supprimera les filigranes texte et image tout en préservant autant que possible la mise en page.",
+    "ebookCreditsInfo": "Le traitement d'un eBook nécessite 1 crédit. Votre solde actuel est de {credits} crédits.",
+    "uploadTitle": "Télécharger l'eBook",
+    "uploadPrompt": "Glissez-déposez un fichier EPUB ici ou cliquez pour sélectionner",
+    "selectFile": "Sélectionner le fichier",
+    "changeFile": "Changer",
+    "readyToProcess": "Prêt à traiter",
+    "processEbook": "Supprimer le filigrane",
+    "processing": "Traitement en cours...",
+    "resultTitle": "Résultat du traitement",
+    "downloadEbook": "Télécharger l'eBook",
+    "loading": "Chargement...",
+    "insufficientCredits": "Crédits insuffisants. Veuillez recharger.",
+    "processingError": "Le traitement a échoué. Veuillez réessayer.",
+    "processingComplete": "Traitement terminé",
+    "downloadReady": "L'eBook traité est prêt au téléchargement",
+    "pleaseLoginToUse": "Veuillez vous connecter pour utiliser cette fonctionnalité",
+    "features": {
+      "title": "Fonctionnalités",
+      "textRemoval": "Suppression de filigranes texte : supprime les tampons répétitifs, en-têtes/pieds de page et superpositions textuelles",
+      "imageRemoval": "Suppression de filigranes image : supprime les logos et superpositions d'image",
+      "quality": "Préservation de la mise en page : conserve polices, sauts de page et formatage autant que possible",
+      "batch": "Traitement par lots : prise en charge de plusieurs fichiers"
+    },
+    "instructions": {
+      "title": "Instructions",
+      "step1": "Préparez un fichier EPUB (les fichiers volumineux peuvent prendre plus de temps).",
+      "step2": "Téléchargez le fichier et sélectionnez les options si nécessaire.",
+      "step3": "Démarrez le traitement et attendez que les résultats soient disponibles.",
+      "step4": "Téléchargez l'eBook traité et vérifiez la mise en page."
+    },
+    "examples": {
+      "title": "Exemples",
+      "before": "Avant",
+      "after": "Après"
+    },
+    "faq": {
+      "title": "Questions Fréquentes",
+      "q1": "Quels formats sont pris en charge ?",
+      "a1": "Seul le format EPUB est pris en charge (max. 50 Mo).",
+      "q2": "La mise en page est-elle modifiée ?",
+      "a2": "Nous tentons de préserver la mise en page ; de légères différences peuvent apparaître sur des documents complexes.",
+      "q3": "Combien de temps prend le traitement ?",
+      "a3": "Selon la taille et la complexité du fichier, cela peut prendre de quelques secondes à plusieurs minutes."
     }
   },
   "subscription": {

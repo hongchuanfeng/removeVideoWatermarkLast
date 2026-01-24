@@ -249,7 +249,7 @@ export default function HomePage() {
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
             <div className="aspect-video relative rounded-lg mb-4 overflow-hidden bg-gray-200 dark:bg-gray-700">
               <Image
-                src="/image/logo-before.png"
+                src="/image/logo-before.jpg"
                 alt={t('caseStudies.beforeTitle')}
                 fill
                 className="object-contain"
@@ -263,7 +263,7 @@ export default function HomePage() {
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
             <div className="aspect-video relative rounded-lg mb-4 overflow-hidden bg-gray-200 dark:bg-gray-700">
               <Image
-                src="/image/logo-after.png"
+                src="/image/logo-after.jpg"
                 alt={t('caseStudies.afterTitle')}
                 fill
                 className="object-contain"
@@ -277,7 +277,7 @@ export default function HomePage() {
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
             <div className="aspect-video relative rounded-lg mb-4 overflow-hidden bg-gray-200 dark:bg-gray-700">
               <Image
-                src="/image/srt-before.jpeg"
+                src="/image/srt-before.jpg"
                 alt={t('caseStudies.subtitleBeforeTitle')}
                 fill
                 className="object-contain"

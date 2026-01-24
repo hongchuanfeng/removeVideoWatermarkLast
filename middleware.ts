@@ -22,6 +22,8 @@ export async function middleware(request: NextRequest) {
     return await updateSession(request);
   }
 
+  // (no special-case redirects here to avoid redirect loops with intlMiddleware)
+
   // Apply i18n middleware first - it handles locale routing automatically
   // With localePrefix: 'as-needed', '/' maps to default locale automatically
   console.log('[Middleware] Calling intlMiddleware...');
@@ -46,7 +48,7 @@ export async function middleware(request: NextRequest) {
   
   // If intl middleware returns a redirect, return it immediately
   if (response.status === 307 || response.status === 308 || response.status === 301 || response.status === 302) {
-    console.log('[Middleware] Returning redirect response');
+    console.log('[Middleware] Returning redirect response, location:', response.headers.get('location'));
     return response;
   }
   

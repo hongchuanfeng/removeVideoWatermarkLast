@@ -2,8 +2,56 @@
   "nav": {
     "home": "Home",
     "imageWatermarkRemoval": "Image Watermark Removal",
+    "otherRemovals": "Other Watermark Removal",
+    "pdfWatermarkRemoval": "PDF Watermark Removal",
+    "ebookWatermarkRemoval": "eBook Watermark Removal",
     "subscription": "Subscription",
     "profile": "My Account"
+  },
+  "ebookWatermarkRemoval": {
+    "title": "eBook Watermark Removal",
+    "description": "Upload eBooks (PDF / EPUB). Our AI can detect and remove text and image watermarks while preserving layout.",
+    "features": {
+      "title": "Features",
+      "textRemoval": "Text watermark removal: detect and remove repeated text stamps, headers, footers",
+      "imageRemoval": "Image watermark removal: remove logos and image overlays",
+      "quality": "Layout preservation: keep fonts, pagination and formatting intact where possible",
+      "batch": "Batch processing: handle multiple files in one job"
+    },
+    "instructions": {
+      "title": "Instructions",
+      "step1": "Prepare your eBook (PDF or EPUB). Large files may be slower.",
+      "step2": "Upload the file and choose whether to remove text watermarks, image watermarks, or both.",
+      "step3": "Start processing and wait for the result. We'll show before/after previews where applicable.",
+      "step4": "Download the cleaned eBook and verify layout."
+    },
+    "examples": {
+      "title": "Examples",
+      "subtitle": "Before / After watermark removal examples",
+      "before": "Before",
+      "after": "After"
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "What file types are supported?",
+      "a1": "We support PDF and EPUB formats (up to 50MB by default).",
+      "q2": "Will formatting be lost?",
+      "a2": "We aim to preserve formatting; in complex cases small layout shifts may occur.",
+      "q3": "How long does processing take?",
+      "a3": "Depends on file size and complexity — typically 30s to a few minutes."
+    }
+  ,
+    "selectFile": "Select file",
+    "changeFile": "Change",
+    "uploadTitle": "Upload eBook",
+    "uploadPrompt": "Drag and drop EPUB here, or click to select",
+    "processing": "Processing...",
+    "processPDF": "Remove Watermarks",
+    "processingComplete": "Processing Complete",
+    "processingError": "Processing failed, please try again",
+    "downloadPDF": "Download",
+    "insufficientCredits": "Insufficient credits, please recharge",
+    "pleaseLoginToUse": "Please login to use this feature"
   },
   "auth": {
     "signInWithGoogle": "Sign in with Google",
@@ -69,6 +117,63 @@
       "watermarkExample": "Watermark Removal Example",
       "combinedExample": "Comprehensive Processing Example"
     }
+  },
+  "pdfWatermarkRemoval": {
+    "title": "PDF Watermark Removal",
+    "description": "Upload PDF documents, AI automatically detects and removes text and image watermarks",
+    "pdfCreditsInfo": "Each PDF document requires 1 credit. You currently have {credits} credits.",
+    "uploadTitle": "Upload PDF Document",
+    "uploadPrompt": "Drag and drop PDF file here, or click to select file",
+    "selectPDF": "Select PDF File",
+    "changePDF": "Change PDF",
+    "readyToProcess": "PDF is ready for processing",
+    "processPDF": "Remove Watermarks",
+    "processing": "Processing...",
+    "resultTitle": "Processing Result",
+    "downloadPDF": "Download PDF",
+    "loading": "Loading...",
+    "insufficientCredits": "Insufficient credits, please recharge",
+    "processingError": "Processing failed, please try again",
+    "processingComplete": "Processing Complete",
+    "downloadReady": "Your PDF has been processed and is ready for download",
+    "pleaseLoginToUse": "Please login to use this feature",
+    "features": {
+      "title": "Features",
+      "aiDetection": "AI Smart Detection: Automatically identifies text and image watermarks in PDFs",
+      "textWatermark": "Text Watermark Removal: Precisely removes text-based watermarks and identifiers",
+      "imageWatermark": "Image Watermark Removal: Intelligently removes image-based watermarks and logos",
+      "quality": "Quality Preservation: Maintains original PDF quality and layout after processing"
+    },
+    "instructions": {
+      "title": "Instructions",
+      "step1": "Upload PDF: Click to select PDF file or drag file to upload area",
+      "step2": "Automatic Processing: System will automatically detect and remove watermark content",
+      "step3": "Download Result: Download the clean PDF document after processing is complete"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "What PDF formats are supported?",
+      "a1": "Standard PDF format is supported, up to 20MB in size.",
+      "q2": "How effective is watermark removal?",
+      "a2": "Uses AI technology to automatically detect and remove various types of text and image watermarks with natural results.",
+      "q3": "Will PDF content be lost?",
+      "a3": "No, the process only removes watermarks while keeping original content and format intact.",
+      "q4": "How long does processing take?",
+      "a4": "Usually completes within 30 seconds to 2 minutes, depending on PDF size and complexity.",
+      "q5": "What if I don't have enough credits?",
+      "a5": "You can purchase credit packages or upgrade to a higher-tier subscription plan."
+    }
+    ,
+    "examples": {
+      "title": "Processing Examples",
+      "subtitle": "Before / After watermark removal examples",
+      "before": "Before",
+      "after": "After"
+    }
+    ,
+    "selectLanguagesLabel": "Select languages to process",
+    "batchNotice": "To avoid timeout, we'll process languages in batches of two. After each batch you'll be asked whether to continue.",
+    "continuePrompt": "Processed {processed}/{total} languages. Continue processing the remaining?"
   },
   "subscription": {
     "title": "Subscription Plans",

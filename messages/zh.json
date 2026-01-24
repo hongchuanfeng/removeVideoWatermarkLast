@@ -2,8 +2,56 @@
   "nav": {
     "home": "首页",
     "imageWatermarkRemoval": "图片去水印",
+    "otherRemovals": "其他去水印",
+    "pdfWatermarkRemoval": "PDF去水印",
+    "ebookWatermarkRemoval": "电子书去水印",
     "subscription": "订阅套餐",
     "profile": "个人中心"
+  },
+  "ebookWatermarkRemoval": {
+    "title": "电子书去水印",
+    "description": "上传电子书（PDF / EPUB），我们的AI可检测并去除文字及图片类水印，同时尽量保持排版。",
+    "features": {
+      "title": "功能",
+      "textRemoval": "文字水印去除：检测并去除重复的文字印章、页眉页脚等",
+      "imageRemoval": "图片水印去除：去除书籍中的logo与图片叠加",
+      "quality": "保留排版：处理后尽量保留字体、分页与格式",
+      "batch": "批量处理：支持一次处理多个文件"
+    },
+    "instructions": {
+      "title": "使用说明",
+      "step1": "准备电子书（PDF或EPUB）。较大的文件可能处理较慢。",
+      "step2": "上传文件并选择去除文字水印、图片水印或同时去除两者。",
+      "step3": "开始处理并等待结果。可在适用时查看前后对比预览。",
+      "step4": "下载处理后的电子书并检查排版。"
+    },
+    "examples": {
+      "title": "示例展示",
+      "subtitle": "去水印前 / 去水印后 示例",
+      "before": "去水印前",
+      "after": "去水印后"
+    },
+    "faq": {
+      "title": "常见问题",
+      "q1": "支持哪些文件类型？",
+      "a1": "支持PDF和EPUB（默认大小上限50MB）。",
+      "q2": "会丢失排版吗？",
+      "a2": "我们会尽量保留排版；复杂文档可能出现小幅布局变化。",
+      "q3": "处理需要多久？",
+      "a3": "取决于文件大小与复杂度，通常30秒到几分钟。"
+    }
+    ,
+    "selectFile": "选择文件",
+    "changeFile": "更换",
+    "uploadTitle": "上传电子书",
+    "uploadPrompt": "将 EPUB 拖拽到此处，或点击选择文件",
+    "processing": "处理中...",
+    "processPDF": "去除水印",
+    "processingComplete": "处理完成",
+    "processingError": "处理失败，请重试",
+    "downloadPDF": "下载",
+    "insufficientCredits": "积分不足，请先充值",
+    "pleaseLoginToUse": "请先登录后使用"
   },
   "auth": {
     "signInWithGoogle": "使用 Google 登录",
@@ -100,6 +148,63 @@
       "a6": "不会，AI修复技术会保持图片的原始分辨率和质量。"
     },
     "pleaseLoginToUse": "请先登录后再使用"
+  },
+  "pdfWatermarkRemoval": {
+    "title": "PDF去水印",
+    "description": "上传PDF文档，AI自动检测并去除文字和图片水印",
+    "pdfCreditsInfo": "每处理一个PDF文档需要 1 个积分。您当前有 {credits} 个积分。",
+    "uploadTitle": "上传PDF文档",
+    "uploadPrompt": "拖拽PDF文件到此处，或点击选择文件",
+    "selectPDF": "选择PDF文件",
+    "changePDF": "更换PDF",
+    "readyToProcess": "PDF已准备好处理",
+    "processPDF": "去除水印",
+    "processing": "处理中...",
+    "resultTitle": "处理结果",
+    "downloadPDF": "下载PDF",
+    "loading": "加载中...",
+    "insufficientCredits": "积分不足，请先充值",
+    "processingError": "处理失败，请重试",
+    "processingComplete": "处理完成",
+    "downloadReady": "您的PDF已处理完成，可以下载",
+    "pleaseLoginToUse": "请先登录后再使用",
+    "features": {
+      "title": "功能特点",
+      "aiDetection": "AI智能检测：自动识别PDF中的文字和图片水印",
+      "textWatermark": "文字水印去除：精确去除文字型水印和标识",
+      "imageWatermark": "图片水印去除：智能移除图片型水印和Logo",
+      "quality": "质量保持：处理后保持PDF原有质量和布局"
+    },
+    "instructions": {
+      "title": "使用说明",
+      "step1": "上传PDF：点击选择PDF文件或拖拽文件到上传区域",
+      "step2": "自动处理：系统将自动检测并去除水印内容",
+      "step3": "下载结果：处理完成后下载干净的PDF文档"
+    },
+    "faq": {
+      "title": "常见问题",
+      "q1": "支持哪些PDF格式？",
+      "a1": "支持标准PDF格式，大小不超过20MB。",
+      "q2": "水印去除效果怎么样？",
+      "a2": "使用AI技术自动检测和去除各种类型的文字和图片水印，效果自然。",
+      "q3": "PDF内容会丢失吗？",
+      "a3": "不会，处理过程只去除水印，保持原有内容和格式完整。",
+      "q4": "处理需要多长时间？",
+      "a4": "通常在30秒到2分钟内完成，取决于PDF大小和复杂度。",
+      "q5": "积分不够怎么办？",
+      "a5": "可以购买积分套餐，或升级到更高等级的订阅计划。"
+    }
+    ,
+    "examples": {
+      "title": "处理示例",
+      "subtitle": "去水印前 / 去水印后 示例展示",
+      "before": "去水印前",
+      "after": "去水印后"
+    }
+    ,
+    "selectLanguagesLabel": "选择要处理的语言",
+    "batchNotice": "为防止超时，每次会分批处理两种语言。处理完每批后会询问是否继续处理剩余语言。",
+    "continuePrompt": "已处理 {processed}/{total} 语言，是否继续处理剩余语言？"
   },
   "subscription": {
     "title": "订阅套餐",

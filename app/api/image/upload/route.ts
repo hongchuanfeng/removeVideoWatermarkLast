@@ -105,7 +105,7 @@ export async function POST(request: NextRequest) {
     });
 
     // Generate public URL
-    const publicUrl = `https://${bucket}.cos.${region}.myqcloud.com/${fileName}`;
+    const publicUrl = `https://accelerate.removewatermarker.com/${fileName}`;
 
     console.log('\n5. 上传结果:');
     console.log('生成的文件名:', fileName);

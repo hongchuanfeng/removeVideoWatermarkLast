@@ -2,6 +2,8 @@
   "nav": {
     "home": "Início",
     "imageWatermarkRemoval": "Remover marcas d'água de imagens",
+    "otherRemovals": "Outras remoções",
+    "pdfWatermarkRemoval": "Remoção de Marcas d'Água PDF",
     "subscription": "Assinatura",
     "profile": "Minha Conta"
   },
@@ -68,6 +70,109 @@
       "logoExample": "Exemplo de Remoção de Logo",
       "watermarkExample": "Exemplo de Remoção de Marca d'Água",
       "combinedExample": "Exemplo de Processamento Combinado"
+    }
+  },
+  "pdfWatermarkRemoval": {
+    "title": "Remoção de Marcas d'Água em PDF",
+    "description": "Envie documentos PDF; a IA detecta e remove automaticamente marcas d'água de texto e imagem",
+    "pdfCreditsInfo": "Cada documento PDF requer 1 crédito. Atualmente você tem {credits} créditos.",
+    "uploadTitle": "Enviar documento PDF",
+    "uploadPrompt": "Arraste e solte o PDF aqui, ou clique para selecionar o arquivo",
+    "selectPDF": "Selecionar arquivo PDF",
+    "changePDF": "Alterar PDF",
+    "readyToProcess": "O PDF está pronto para processamento",
+    "processPDF": "Remover marcas d'água",
+    "processing": "Processando...",
+    "resultTitle": "Resultado do processamento",
+    "downloadPDF": "Baixar PDF",
+    "loading": "Carregando...",
+    "insufficientCredits": "Créditos insuficientes, por favor recarregue",
+    "processingError": "Erro no processamento, por favor tente novamente",
+    "processingComplete": "Processamento concluído",
+    "downloadReady": "Seu PDF foi processado e está pronto para download",
+    "pleaseLoginToUse": "Por favor faça login para usar esta funcionalidade",
+    "features": {
+      "title": "Recursos",
+      "aiDetection": "Detecção inteligente por IA: identifica automaticamente marcas d'água de texto e imagem em PDFs",
+      "textWatermark": "Remoção de marcas de texto: remove com precisão marcas baseadas em texto",
+      "imageWatermark": "Remoção de marcas de imagem: remove logos e marcas de imagem de forma inteligente",
+      "quality": "Preservação de qualidade: mantém layout e qualidade originais após o processamento"
+    },
+    "instructions": {
+      "title": "Instruções",
+      "step1": "Envie o PDF: clique para selecionar um PDF ou arraste o arquivo para a área de upload",
+      "step2": "Processamento automático: o sistema detectará e removerá as marcas automaticamente",
+      "step3": "Baixe o resultado: faça o download do PDF limpo ao concluir o processamento"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "q1": "Quais formatos PDF são suportados?",
+      "a1": "Suporta o formato PDF padrão, até 20MB.",
+      "q2": "Qual a eficácia da remoção?",
+      "a2": "Usa IA para detectar e remover vários tipos de marcas com resultados naturais.",
+      "q3": "O conteúdo do PDF é perdido?",
+      "a3": "Não, apenas as marcas são removidas; conteúdo e formatação permanecem.",
+      "q4": "Quanto tempo demora?",
+      "a4": "Normalmente entre 30s e 2 minutos, dependendo do tamanho e complexidade.",
+      "q5": "E se eu não tiver créditos suficientes?",
+      "a5": "Compre pacotes de créditos ou atualize seu plano."
+    },
+    "examples": {
+      "title": "Exemplos de processamento",
+      "subtitle": "Exemplos antes / depois da remoção de marcas d'água",
+      "before": "Antes",
+      "after": "Depois"
+    },
+    "selectLanguagesLabel": "Selecione os idiomas a processar",
+    "batchNotice": "Para evitar timeouts, processaremos idiomas em lotes de dois. Após cada lote será perguntado se deseja continuar.",
+    "continuePrompt": "{processed}/{total} idiomas processados. Continuar com os restantes?"
+  },
+  "ebookWatermarkRemoval": {
+    "title": "Remoção de marcas d'água de eBooks",
+    "description": "Envie seu eBook (EPUB) y nossa IA detectará e removerá marcas d'água de texto e imagem preservando, sempre que possível, o layout original.",
+    "ebookCreditsInfo": "Processar um eBook requer 1 crédito. Seu saldo atual é {credits} créditos.",
+    "uploadTitle": "Enviar eBook",
+    "uploadPrompt": "Arraste e solte um arquivo EPUB aqui ou clique para selecionar",
+    "selectFile": "Selecionar arquivo",
+    "changeFile": "Alterar",
+    "readyToProcess": "Pronto para processar",
+    "processEbook": "Remover marca d'água",
+    "processing": "Processando...",
+    "resultTitle": "Resultado do processamento",
+    "downloadEbook": "Baixar eBook",
+    "loading": "Carregando...",
+    "insufficientCredits": "Créditos insuficientes. Por favor recarregue.",
+    "processingError": "Erro no processamento. Por favor tente novamente.",
+    "processingComplete": "Processamento concluído",
+    "downloadReady": "O eBook processado está pronto para download",
+    "pleaseLoginToUse": "Por favor faça login para usar esta funcionalidade",
+    "features": {
+      "title": "Recursos",
+      "textRemoval": "Remoção de marcas de texto: remove carimbos repetidos, cabeçalhos/rodapés e sobreposições de texto",
+      "imageRemoval": "Remoção de marcas de imagem: remove logos e sobreposições gráficas",
+      "quality": "Preservação de layout: mantém fontes, quebras de página e formatação tanto quanto possível",
+      "batch": "Processamento em lote: suporte para múltiplos arquivos"
+    },
+    "instructions": {
+      "title": "Instruções",
+      "step1": "Prepare um arquivo EPUB (arquivos grandes podem demorar mais).",
+      "step2": "Envie o arquivo e selecione opções se necessário.",
+      "step3": "Inicie o processamento e aguarde a conclusão.",
+      "step4": "Baixe o eBook processado e verifique o layout."
+    },
+    "examples": {
+      "title": "Exemplos",
+      "before": "Antes",
+      "after": "Depois"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "q1": "Quais formatos são suportados?",
+      "a1": "Apenas EPUB é suportado (máx. 50MB).",
+      "q2": "O layout é perdido?",
+      "a2": "Tentamos preservar; em documentos complexos podem ocorrer pequenas alterações.",
+      "q3": "Quanto tempo leva o processamento?",
+      "a3": "Depende do tamanho e complexidade; pode variar de segundos a minutos."
     }
   },
   "subscription": {

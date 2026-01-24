@@ -3,7 +3,7 @@
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import AuthButton from './AuthButton';
 
 export default function Header() {
@@ -14,15 +14,58 @@ export default function Header() {
   const [isLangOpen, setIsLangOpen] = useState(false);
 
   const toggleLanguage = (newLocale: string) => {
-    const pathWithoutLocale = pathname.replace(`/${locale}`, '') || '/';
-    window.location.href = `/${newLocale}${pathWithoutLocale}`;
+    const currentPath = pathname || '/';
+    let pathWithoutLocale = currentPath;
+
+    // Remove locale prefix only if it's the leading segment
+    if (currentPath === `/${locale}`) {
+      pathWithoutLocale = '/';
+    } else if (currentPath.startsWith(`/${locale}/`)) {
+      pathWithoutLocale = currentPath.slice(locale.length + 1); // remove leading '/{locale}'
+    }
+
+    const target = pathWithoutLocale === '/' ? `/${newLocale}` : `/${newLocale}${pathWithoutLocale}`;
+    try {
+      // Persist choice to reduce server-side locale negotiation surprises
+      if (typeof document !== 'undefined') {
+        // Set cookie for next requests
+        document.cookie = `NEXT_LOCALE=${encodeURIComponent(newLocale)};path=/;max-age=${60 * 60 * 24 * 365}`;
+        // Also set localStorage for client-side checks
+        try {
+          localStorage.setItem('locale', newLocale);
+        } catch {}
+      }
+    } catch (e) {
+      // ignore
+    }
+    // Navigate to the target locale path
+    window.location.href = target;
   };
+
+  // language dropdown open state handled above
 
   const navItems = [
     { href: `/${locale}`, label: t('home') },
-    { href: `/${locale}/image-watermark-removal`, label: t('imageWatermarkRemoval') },
     { href: `/${locale}/subscription`, label: t('subscription') },
   ];
+  const removalItems = [
+    { href: `/${locale}/image-watermark-removal`, label: t('imageWatermarkRemoval') },
+    { href: `/${locale}/pdf-watermark-removal`, label: t('pdfWatermarkRemoval') },
+    { href: `/${locale}/ebook-watermark-removal`, label: t('ebookWatermarkRemoval') },
+  ];
+  const [isRemovalsOpen, setIsRemovalsOpen] = useState(false);
+  const removalsRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const onDocClick = (e: MouseEvent) => {
+      if (!removalsRef.current) return;
+      if (!removalsRef.current.contains(e.target as Node)) {
+        setIsRemovalsOpen(false);
+      }
+    };
+    document.addEventListener('click', onDocClick);
+    return () => document.removeEventListener('click', onDocClick);
+  }, []);
 
   return (
     <header className="bg-white dark:bg-gray-900 shadow-md sticky top-0 z-50">
@@ -39,12 +82,49 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium whitespace-nowrap"
               >
                 {item.label}
               </Link>
             ))}
-            
+
+            {/* Other removals dropdown (click to open) */}
+            <div className="relative" ref={removalsRef}>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setIsRemovalsOpen((s) => !s);
+                }}
+                aria-expanded={isRemovalsOpen}
+                className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium whitespace-nowrap px-2 py-1 rounded-md"
+                type="button"
+              >
+                <span>{t('otherRemovals')}</span>
+                <svg
+                  className={`w-4 h-4 ml-2 transition-transform ${isRemovalsOpen ? 'rotate-180' : ''}`}
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 8l4 4 4-4" />
+                </svg>
+              </button>
+              {isRemovalsOpen && (
+                <div className="absolute left-0 mt-2 min-w-[12rem] w-56 bg-white dark:bg-gray-800 rounded-lg shadow-lg py-2 z-50">
+                  {removalItems.map((sub) => (
+                    <Link
+                      key={sub.href}
+                      href={sub.href}
+                      className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors break-words"
+                      onClick={() => setIsRemovalsOpen(false)}
+                    >
+                      {sub.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
             {/* Language Selector */}
             <div 
               className="relative"
@@ -72,66 +152,116 @@ export default function Header() {
                     onMouseEnter={() => setIsLangOpen(true)}
                     onMouseLeave={() => setIsLangOpen(false)}
                   >
-                    <button
-                      onClick={() => toggleLanguage('en')}
-                      className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                    >
-                      English
-                    </button>
-                    <button
-                      onClick={() => toggleLanguage('zh')}
-                      className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                    >
-                      中文
-                    </button>
-                    <button
-                      onClick={() => toggleLanguage('ru')}
-                      className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                    >
-                      Русский
-                    </button>
-                    <button
-                      onClick={() => toggleLanguage('fr')}
-                      className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                    >
-                      Français
-                    </button>
-                    <button
-                      onClick={() => toggleLanguage('de')}
-                      className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                    >
-                      Deutsch
-                    </button>
-                    <button
-                      onClick={() => toggleLanguage('ar')}
-                      className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                    >
-                      العربية
-                    </button>
-                    <button
-                      onClick={() => toggleLanguage('ja')}
-                      className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                    >
-                      日本語
-                    </button>
-                    <button
-                      onClick={() => toggleLanguage('ko')}
-                      className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                    >
-                      한국어
-                    </button>
-                    <button
-                      onClick={() => toggleLanguage('es')}
-                      className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                    >
-                      Español
-                    </button>
-                    <button
-                      onClick={() => toggleLanguage('pt')}
-                      className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                    >
-                      Português
-                    </button>
+                    <div className="px-2 py-1">
+                      <button
+                        onClick={() => {
+                          setIsLangOpen(false);
+                          toggleLanguage('en');
+                        }}
+                        className={`w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${locale === 'en' ? 'font-semibold text-blue-600' : ''}`}
+                      >
+                        English
+                      </button>
+                    </div>
+                    <div className="px-2 py-1">
+                      <button
+                        onClick={() => {
+                          setIsLangOpen(false);
+                          toggleLanguage('zh');
+                        }}
+                        className={`w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${locale === 'zh' ? 'font-semibold text-blue-600' : ''}`}
+                      >
+                        中文
+                      </button>
+                    </div>
+                    <div className="px-2 py-1">
+                      <button
+                        onClick={() => {
+                          setIsLangOpen(false);
+                          toggleLanguage('ru');
+                        }}
+                        className={`w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${locale === 'ru' ? 'font-semibold text-blue-600' : ''}`}
+                      >
+                        Русский
+                      </button>
+                    </div>
+                    <div className="px-2 py-1">
+                      <button
+                        onClick={() => {
+                          setIsLangOpen(false);
+                          toggleLanguage('fr');
+                        }}
+                        className={`w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${locale === 'fr' ? 'font-semibold text-blue-600' : ''}`}
+                      >
+                        Français
+                      </button>
+                    </div>
+                    <div className="px-2 py-1">
+                      <button
+                        onClick={() => {
+                          setIsLangOpen(false);
+                          toggleLanguage('de');
+                        }}
+                        className={`w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${locale === 'de' ? 'font-semibold text-blue-600' : ''}`}
+                      >
+                        Deutsch
+                      </button>
+                    </div>
+                    <div className="px-2 py-1">
+                      <button
+                        onClick={() => {
+                          setIsLangOpen(false);
+                          toggleLanguage('ar');
+                        }}
+                        className={`w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${locale === 'ar' ? 'font-semibold text-blue-600' : ''}`}
+                      >
+                        العربية
+                      </button>
+                    </div>
+                    <div className="px-2 py-1">
+                      <button
+                        onClick={() => {
+                          setIsLangOpen(false);
+                          toggleLanguage('ja');
+                        }}
+                        className={`w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${locale === 'ja' ? 'font-semibold text-blue-600' : ''}`}
+                      >
+                        日本語
+                      </button>
+                    </div>
+                    <div className="px-2 py-1">
+                      <button
+                        onClick={() => {
+                          setIsLangOpen(false);
+                          toggleLanguage('ko');
+                        }}
+                        className={`w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${locale === 'ko' ? 'font-semibold text-blue-600' : ''}`}
+                      >
+                        한국어
+                      </button>
+                    </div>
+                    <div className="px-2 py-1">
+                      <button
+                        onClick={() => {
+                          setIsLangOpen(false);
+                          toggleLanguage('es');
+                        }}
+                        className={`w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${locale === 'es' ? 'font-semibold text-blue-600' : ''}`}
+                      >
+                        Español
+                      </button>
+                    </div>
+                    <div className="px-2 py-1">
+                      <button
+                        onClick={() => {
+                          setIsLangOpen(false);
+                          toggleLanguage('pt');
+                        }}
+                        className={`w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${locale === 'pt' ? 'font-semibold text-blue-600' : ''}`}
+                      >
+                        Português
+                      </button>
+                    </div>
                   </div>
                 </>
               )}
@@ -248,17 +378,30 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-2">
+          <div className="md:hidden mt-4 pb-4 space-y-1">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
+                className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors whitespace-nowrap"
               >
                 {item.label}
               </Link>
             ))}
+            <div className="border-t border-gray-200 dark:border-gray-700 pt-2">
+              <div className="px-4 py-2 text-gray-600 dark:text-gray-400 text-sm">{t('otherRemovals')}</div>
+              {removalItems.map((sub) => (
+                <Link
+                  key={sub.href}
+                  href={sub.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors whitespace-nowrap"
+                >
+                  {sub.label}
+                </Link>
+              ))}
+            </div>
           </div>
         )}
       </nav>

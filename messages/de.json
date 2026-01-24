@@ -2,6 +2,8 @@
   "nav": {
     "home": "Startseite",
     "imageWatermarkRemoval": "Bildwasserzeichen entfernen",
+    "otherRemovals": "Weitere Entferner",
+    "pdfWatermarkRemoval": "PDF-Wasserzeichen entfernen",
     "subscription": "Abonnement",
     "profile": "Mein Konto"
   },
@@ -68,6 +70,109 @@
       "logoExample": "Logo-Entfernungsbeispiel",
       "watermarkExample": "Wasserzeichen-Entfernungsbeispiel",
       "combinedExample": "Kombinierte Verarbeitungsbeispiel"
+    }
+  },
+  "pdfWatermarkRemoval": {
+    "title": "PDF-Wasserzeichen entfernen",
+    "description": "Laden Sie PDF-Dokumente hoch, AI erkennt und entfernt automatisch Text- und Bildwasserzeichen",
+    "pdfCreditsInfo": "Für jedes PDF-Dokument wird 1 Guthaben benötigt. Sie haben derzeit {credits} Guthaben.",
+    "uploadTitle": "PDF-Dokument hochladen",
+    "uploadPrompt": "Ziehen Sie eine PDF-Datei hierher oder klicken Sie, um eine Datei auszuwählen",
+    "selectPDF": "PDF-Datei auswählen",
+    "changePDF": "PDF ändern",
+    "readyToProcess": "PDF ist zur Verarbeitung bereit",
+    "processPDF": "Wasserzeichen entfernen",
+    "processing": "Verarbeitung...",
+    "resultTitle": "Verarbeitungsergebnis",
+    "downloadPDF": "PDF herunterladen",
+    "loading": "Laden...",
+    "insufficientCredits": "Unzureichende Guthaben, bitte laden Sie auf",
+    "processingError": "Verarbeitung fehlgeschlagen, bitte versuchen Sie es erneut",
+    "processingComplete": "Verarbeitung abgeschlossen",
+    "downloadReady": "Ihr PDF wurde verarbeitet und steht zum Download bereit",
+    "pleaseLoginToUse": "Bitte melden Sie sich an, um diese Funktion zu nutzen",
+    "features": {
+      "title": "Funktionen",
+      "aiDetection": "AI-Erkennung: Erkennt automatisch Text- und Bildwasserzeichen in PDFs",
+      "textWatermark": "Text-Wasserzeichen entfernen: Entfernt präzise textbasierte Wasserzeichen und Kennungen",
+      "imageWatermark": "Bild-Wasserzeichen entfernen: Entfernt intelligent bildbasierte Wasserzeichen und Logos",
+      "quality": "Qualität erhalten: Bewahrt Layout und Qualität des Originals nach der Verarbeitung"
+    },
+    "instructions": {
+      "title": "Anleitung",
+      "step1": "PDF hochladen: Klicken Sie, um eine PDF-Datei auszuwählen oder ziehen Sie die Datei in den Upload-Bereich",
+      "step2": "Automatische Verarbeitung: Das System erkennt und entfernt Wasserzeichen automatisch",
+      "step3": "Ergebnis herunterladen: Laden Sie das bereinigte PDF nach Abschluss herunter"
+    },
+    "faq": {
+      "title": "Häufige Fragen",
+      "q1": "Welche PDF-Formate werden unterstützt?",
+      "a1": "Standard-PDF-Format wird unterstützt, bis zu 20 MB.",
+      "q2": "Wie effektiv ist die Wasserzeichenentfernung?",
+      "a2": "Verwendet AI-Technologie zur automatischen Erkennung und natürlichen Entfernung verschiedener Wasserzeichenarten.",
+      "q3": "Geht Inhalt im PDF verloren?",
+      "a3": "Nein, es werden nur Wasserzeichen entfernt und Inhalt sowie Format bleiben erhalten.",
+      "q4": "Wie lange dauert die Verarbeitung?",
+      "a4": "In der Regel 30 Sekunden bis 2 Minuten, abhängig von Größe und Komplexität.",
+      "q5": "Was, wenn ich nicht genug Guthaben habe?",
+      "a5": "Sie können Guthabenpakete kaufen oder auf einen höheren Plan upgraden."
+    },
+    "examples": {
+      "title": "Verarbeitungsbeispiele",
+      "subtitle": "Vorher / Nachher Beispiele",
+      "before": "Vorher",
+      "after": "Nachher"
+    },
+    "selectLanguagesLabel": "Zu verarbeitende Sprachen auswählen",
+    "batchNotice": "Um Timeouts zu vermeiden, verarbeiten wir Sprachen in Chargen von zwei. Nach jeder Charge werden Sie gefragt, ob Sie fortfahren möchten.",
+    "continuePrompt": "{processed}/{total} Sprachen verarbeitet. Möchten Sie mit den verbleibenden fortfahren?"
+  },
+  "ebookWatermarkRemoval": {
+    "title": "E-Book Wasserzeichen entfernen",
+    "description": "Laden Sie Ihre E-Books (EPUB) hoch und unsere KI erkennt und entfernt Text- und Bildwasserzeichen, wobei das Layout so weit wie möglich erhalten bleibt.",
+    "ebookCreditsInfo": "Die Verarbeitung eines E-Books benötigt 1 Guthaben. Ihr aktueller Kontostand beträgt {credits} Guthaben.",
+    "uploadTitle": "E-Book hochladen",
+    "uploadPrompt": "Ziehen Sie eine EPUB-Datei hierher oder klicken Sie, um eine Datei auszuwählen",
+    "selectFile": "Datei auswählen",
+    "changeFile": "Ändern",
+    "readyToProcess": "Bereit zur Verarbeitung",
+    "processEbook": "Wasserzeichen entfernen",
+    "processing": "Verarbeitung...",
+    "resultTitle": "Verarbeitungsergebnis",
+    "downloadEbook": "E-Book herunterladen",
+    "loading": "Laden...",
+    "insufficientCredits": "Unzureichende Guthaben. Bitte laden Sie Guthaben auf.",
+    "processingError": "Verarbeitung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "processingComplete": "Verarbeitung abgeschlossen",
+    "downloadReady": "Das verarbeitete E-Book ist jetzt zum Download verfügbar",
+    "pleaseLoginToUse": "Bitte melden Sie sich an, um diese Funktion zu nutzen",
+    "features": {
+      "title": "Funktionen",
+      "textRemoval": "Textwasserzeichen entfernen: Entfernt wiederkehrende Stempel, Header/Footers und sichtbare Textüberlagerungen",
+      "imageRemoval": "Bildwasserzeichen entfernen: Entfernt Logos und Bildüberlagerungen",
+      "quality": "Layout-Erhaltung: Schriftarten, Seitenumbrüche und Formatierung werden möglichst beibehalten",
+      "batch": "Stapelverarbeitung: Unterstützung für mehrere Dateien"
+    },
+    "instructions": {
+      "title": "Anleitung",
+      "step1": "Bereiten Sie eine EPUB-Datei vor (große Dateien können länger dauern).",
+      "step2": "Laden Sie die Datei hoch und wählen Sie gegebenenfalls zusätzliche Optionen.",
+      "step3": "Starten Sie die Verarbeitung und warten Sie, bis die Ergebnisse verfügbar sind.",
+      "step4": "Laden Sie das verarbeitete E-Book herunter und überprüfen Sie das Layout."
+    },
+    "examples": {
+      "title": "Beispiele",
+      "before": "Vorher",
+      "after": "Nachher"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": "Welche Formate werden unterstützt?",
+      "a1": "Es wird nur das EPUB-Format unterstützt (Max. 50MB).",
+      "q2": "Geht das Layout verloren?",
+      "a2": "Wir bemühen uns, das Layout zu erhalten; bei komplexen Dokumenten können kleine Änderungen auftreten.",
+      "q3": "Wie lange dauert die Verarbeitung?",
+      "a3": "Je nach Dateigröße und Komplexität kann dies einige Sekunden bis mehrere Minuten dauern."
     }
   },
   "subscription": {

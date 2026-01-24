@@ -47,3 +47,117 @@ https://www.removewatermarker.com
 在首页的版权下面添加下面的内容，使用 a 标签，另外打开一个窗口，地址：https://beian.miit.gov.cn/
 
 工业和信息化部 粤ICP备18041392号-4
+
+
+image-1308733829.cos.ap-guangzhou.myqcloud.com
+
+
+accelerate
+
+
+image-1308733829.cos.accelerate.myqcloud.com
+
+
+
+
+
+test-1308733829.cos.ap-guangzhou.myqcloud.com
+
+
+test-1308733829.cos.accelerate.myqcloud.com
+
+
+image-1308733829.cos.ap-shanghai.myqcloud.com
+
+
+image-1308733829.cos.accelerate.myqcloud.com
+
+
+
+使用next.js 实现对pdf 进行去水印功能，
+
+去除水印包括有：文字，图片。
+
+在导航栏的”图片去水印“后面加上导航栏，先实现中文和英文版本，
+功能：
+功能说明，使用说明，示例展示，常见问题，这些内容越丰富越好，请实现
+
+
+
+pdf去水印加上示例展示，如下：
+
+去水印前：public/pdf/b1.jpg，去水印后：public/pdf/a1.jpg
+去水印前：public/pdf/b2.jpg，去水印后：public/pdf/a2.jpg
+去水印前：public/pdf/b3.jpg，去水印后：public/pdf/a3.jpg
+去水印前：public/pdf/b4.jpg，去水印后：public/pdf/a4.jpg
+去水印前：public/pdf/b5.jpg，去水印后：public/pdf/a5.jpg
+
+
+
+pdf去水印实现其他的多语言，为了防止超时，
+每两个一组处理，处理完后咨询是否继续处理其他多语言，请实现
+
+
+
+pdf去水印页面请实现韩语和日语。
+
+
+pdf去水印页面请实现德语和法语。
+
+
+pdf去水印页面请实现西班牙语和俄语。
+
+pdf去水印页面请实现葡萄牙语和阿拉伯语。
+
+
+导航栏中的其他去水印和pdf去水印的菜单 没实现多语言，请实现。
+
+
+把首页的 Before Video with watermark 图片改为 public/image/logo-before.jpg 
+
+把首页的 After Watermark removed 图片改为 public/image/logo-after.jpg
+
+
+
+把首页的Subtitle Removal - Before Video with subtitles 图片改为 public/image/srt-before.jpg
+
+把首页的Subtitle Removal - After Subtitles removed 图片改为 public/image/srt-after.jpg
+
+
+
+其他去水印的下面的下拉框时 ，下面的菜单里面的文字有些超过显示下拉框的长度，请修改这个bug
+
+
+
+使用next.js 实现对电子书ebook去水印功能，
+
+去除水印包括有：文字，图片。
+
+在导航栏的”其他去水印“下拉框后面加上导航栏，先实现中文和英文版本，
+功能：
+功能说明，使用说明，示例展示，常见问题，这些内容越丰富越好，请实现
+
+电子书ebook去水印 上传按钮都没有，请添加上传功能，然后实现去水印功能
+
+电子书ebook去水印 示例展示：
+
+去水印前：public/ebook/b1.jpg，去水印后：public/ebook/a1.jpg
+去水印前：public/ebook/b2.jpg，去水印后：public/ebook/a2.jpg
+去水印前：public/ebook/b3.jpg，去水印后：public/ebook/a3.jpg
+去水印前：public/ebook/b4.jpg，去水印后：public/ebook/a4.jpg
+去水印前：public/ebook/b5.jpg，去水印后：public/ebook/a5.jpg
+
+一组作为一行，请实现，去水印前和去水印后是一组，在一行，去水印前在前面，去水印后在后面，请修改
+
+
+
+电子书ebook去水印 ，请实现日语和韩语多语言功能，
+
+
+电子书ebook去水印 ，请实现德语和法语言功能，
+
+
+电子书ebook去水印 ，请实现西班牙语和葡萄牙语言功能，
+
+
+电子书ebook去水印 ，请实现俄语和阿拉伯语言功能，

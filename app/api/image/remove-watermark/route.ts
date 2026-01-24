@@ -247,7 +247,7 @@ export async function POST(request: NextRequest) {
       console.log('Tencent Cloud CI image processing completed successfully');
 
       // Construct the processed image URL
-      const processedImageUrl = `https://${cosBucket}.cos.${cosRegion}.myqcloud.com/${outputKey}`;
+      const processedImageUrl = `https://accelerate.removewatermarker.com/${outputKey}`;
 
       console.log('Processed image URL:', processedImageUrl);
 

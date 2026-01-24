@@ -2,6 +2,8 @@
   "nav": {
     "home": "Inicio",
     "imageWatermarkRemoval": "Eliminar marcas de agua de imágenes",
+    "otherRemovals": "Otras eliminaciones",
+    "pdfWatermarkRemoval": "Eliminación de marcas de agua PDF",
     "subscription": "Suscripción",
     "profile": "Mi Cuenta"
   },
@@ -68,6 +70,109 @@
       "logoExample": "Ejemplo de Eliminación de Logo",
       "watermarkExample": "Ejemplo de Eliminación de Marca de Agua",
       "combinedExample": "Ejemplo de Procesamiento Combinado"
+    }
+  },
+  "pdfWatermarkRemoval": {
+    "title": "Eliminación de marcas de agua en PDF",
+    "description": "Sube documentos PDF; la IA detecta y elimina automáticamente marcas de agua de texto e imagen",
+    "pdfCreditsInfo": "Cada documento PDF requiere 1 crédito. Actualmente tienes {credits} créditos.",
+    "uploadTitle": "Subir documento PDF",
+    "uploadPrompt": "Arrastra y suelta el archivo PDF aquí, o haz clic para seleccionar un archivo",
+    "selectPDF": "Seleccionar archivo PDF",
+    "changePDF": "Cambiar PDF",
+    "readyToProcess": "El PDF está listo para procesar",
+    "processPDF": "Eliminar marcas de agua",
+    "processing": "Procesando...",
+    "resultTitle": "Resultado del procesamiento",
+    "downloadPDF": "Descargar PDF",
+    "loading": "Cargando...",
+    "insufficientCredits": "Créditos insuficientes, por favor recarga",
+    "processingError": "Error en el procesamiento, por favor inténtalo de nuevo",
+    "processingComplete": "Procesamiento completado",
+    "downloadReady": "Tu PDF ha sido procesado y está listo para descargar",
+    "pleaseLoginToUse": "Por favor inicia sesión para usar esta función",
+    "features": {
+      "title": "Características",
+      "aiDetection": "Detección inteligente IA: identifica automáticamente marcas de agua de texto e imagen en PDFs",
+      "textWatermark": "Eliminación de marcas de agua de texto: elimina con precisión marcas de agua basadas en texto",
+      "imageWatermark": "Eliminación de marcas de agua de imagen: elimina inteligentemente logos y marcas de imagen",
+      "quality": "Preservación de calidad: mantiene el diseño y la calidad original tras el procesamiento"
+    },
+    "instructions": {
+      "title": "Instrucciones",
+      "step1": "Sube el PDF: haz clic para seleccionar un PDF o arrastra el archivo al área de carga",
+      "step2": "Procesamiento automático: el sistema detectará y eliminará las marcas de agua automáticamente",
+      "step3": "Descarga el resultado: descarga el PDF limpio una vez completado el procesamiento"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "q1": "¿Qué formatos PDF son compatibles?",
+      "a1": "Se admite el formato PDF estándar, hasta 20 MB.",
+      "q2": "¿Qué tan eficaz es la eliminación?",
+      "a2": "Usa IA para detectar y eliminar distintos tipos de marcas de agua con resultados naturales.",
+      "q3": "¿Se pierde contenido del PDF?",
+      "a3": "No, solo se eliminan las marcas de agua; el contenido y el formato se mantienen.",
+      "q4": "¿Cuánto tarda?",
+      "a4": "Normalmente entre 30 segundos y 2 minutos, según tamaño y complejidad.",
+      "q5": "¿Qué hago si no tengo suficientes créditos?",
+      "a5": "Compra paquetes de créditos o actualiza a un plan superior."
+    },
+    "examples": {
+      "title": "Ejemplos de procesamiento",
+      "subtitle": "Ejemplos antes / después de la eliminación de marcas de agua",
+      "before": "Antes",
+      "after": "Después"
+    },
+    "selectLanguagesLabel": "Selecciona los idiomas a procesar",
+    "batchNotice": "Para evitar timeouts, procesaremos los idiomas en lotes de dos. Tras cada lote se te preguntará si deseas continuar.",
+    "continuePrompt": "{processed}/{total} idiomas procesados. ¿Continuar con los restantes?"
+  },
+  "ebookWatermarkRemoval": {
+    "title": "Eliminación de marcas de agua en eBooks",
+    "description": "Sube tu eBook (EPUB) y nuestra IA detectará y eliminará marcas de agua de texto e imagen manteniendo, en la medida de lo posible, el diseño original.",
+    "ebookCreditsInfo": "Procesar un eBook requiere 1 crédito. Tu saldo actual es {credits} créditos.",
+    "uploadTitle": "Subir eBook",
+    "uploadPrompt": "Arrastra y suelta un archivo EPUB aquí o haz clic para seleccionar",
+    "selectFile": "Seleccionar archivo",
+    "changeFile": "Cambiar",
+    "readyToProcess": "Listo para procesar",
+    "processEbook": "Eliminar marca de agua",
+    "processing": "Procesando...",
+    "resultTitle": "Resultado del procesamiento",
+    "downloadEbook": "Descargar eBook",
+    "loading": "Cargando...",
+    "insufficientCredits": "Créditos insuficientes. Por favor recarga.",
+    "processingError": "Error en el procesamiento. Por favor inténtalo de nuevo.",
+    "processingComplete": "Procesamiento completado",
+    "downloadReady": "El eBook procesado está listo para su descarga",
+    "pleaseLoginToUse": "Por favor inicia sesión para usar esta función",
+    "features": {
+      "title": "Características",
+      "textRemoval": "Eliminación de marcas de texto: elimina sellos repetitivos, encabezados/pies y superposiciones de texto",
+      "imageRemoval": "Eliminación de marcas de imagen: elimina logos y superposiciones gráficas",
+      "quality": "Preservación de diseño: mantiene fuentes, saltos de página y formato tanto como sea posible",
+      "batch": "Procesamiento por lotes: soporte para múltiples archivos"
+    },
+    "instructions": {
+      "title": "Instrucciones",
+      "step1": "Prepara un archivo EPUB (los archivos grandes pueden tardar más).",
+      "step2": "Sube el archivo y selecciona opciones si es necesario.",
+      "step3": "Inicia el procesamiento y espera a que finalice.",
+      "step4": "Descarga el eBook procesado y verifica el diseño."
+    },
+    "examples": {
+      "title": "Ejemplos",
+      "before": "Antes",
+      "after": "Después"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "q1": "¿Qué formatos se admiten?",
+      "a1": "Solo se admite el formato EPUB (máx. 50MB).",
+      "q2": "¿Se pierde el diseño?",
+      "a2": "Intentamos mantenerlo; en documentos complejos puede haber pequeños cambios.",
+      "q3": "¿Cuánto tarda el procesamiento?",
+      "a3": "Depende del tamaño y la complejidad; puede tardar desde segundos hasta minutos."
     }
   },
   "subscription": {
