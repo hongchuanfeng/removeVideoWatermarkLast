@@ -54,7 +54,7 @@ export async function POST(request: NextRequest) {
 
     // Save conversion record
     try {
-      const supabase = createClient();
+      const supabase = await createClient();
       await supabase.from('conversions').insert({
         type: 'pdf_watermark_removal',
         status: 'completed',
