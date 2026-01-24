@@ -305,7 +305,7 @@ export default function HomePage() {
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
             <div className="aspect-video relative rounded-lg mb-4 overflow-hidden bg-gray-200 dark:bg-gray-700">
               <Image
-                src="/image/b1.png"
+                src="/image/b1.jpg"
                 alt={t('caseStudies.logo1BeforeTitle')}
                 fill
                 className="object-contain"
@@ -319,7 +319,7 @@ export default function HomePage() {
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
             <div className="aspect-video relative rounded-lg mb-4 overflow-hidden bg-gray-200 dark:bg-gray-700">
               <Image
-                src="/image/a1.png"
+                src="/image/a1.jpg"
                 alt={t('caseStudies.logo1AfterTitle')}
                 fill
                 className="object-contain"
@@ -333,7 +333,7 @@ export default function HomePage() {
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
             <div className="aspect-video relative rounded-lg mb-4 overflow-hidden bg-gray-200 dark:bg-gray-700">
               <Image
-                src="/image/b2.png"
+                src="/image/b2.jpg"
                 alt={t('caseStudies.logo2BeforeTitle')}
                 fill
                 className="object-contain"
@@ -347,7 +347,7 @@ export default function HomePage() {
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
             <div className="aspect-video relative rounded-lg mb-4 overflow-hidden bg-gray-200 dark:bg-gray-700">
               <Image
-                src="/image/a2.png"
+                src="/image/a2.jpg"
                 alt={t('caseStudies.logo2AfterTitle')}
                 fill
                 className="object-contain"
@@ -361,7 +361,7 @@ export default function HomePage() {
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
             <div className="aspect-video relative rounded-lg mb-4 overflow-hidden bg-gray-200 dark:bg-gray-700">
               <Image
-                src="/image/b3.png"
+                src="/image/b3.jpg"
                 alt={t('caseStudies.subtitle2BeforeTitle')}
                 fill
                 className="object-contain"
@@ -375,7 +375,7 @@ export default function HomePage() {
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
             <div className="aspect-video relative rounded-lg mb-4 overflow-hidden bg-gray-200 dark:bg-gray-700">
               <Image
-                src="/image/a3.png"
+                src="/image/a3.jpg"
                 alt={t('caseStudies.subtitle2AfterTitle')}
                 fill
                 className="object-contain"

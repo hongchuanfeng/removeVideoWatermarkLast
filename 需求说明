@@ -161,3 +161,15 @@ pdf去水印页面请实现葡萄牙语和阿拉伯语。
 
 
 电子书ebook去水印 ，请实现俄语和阿拉伯语言功能，
+
+
+首页视频去水印页面：修改如下：
+去Logo示例1 - 处理前图片： public/image/b1.jpg
+去Logo示例1 - 处理后图片： public/image/a1.jpg
+
+去Logo示例2 - 处理前 public/image/b2.jpg
+去Logo示例1 - 处理后图片： public/image/a2.jpg
+
+
+去字幕示例 - 处理前 public/image/b3.jpg
+去字幕示例 - 处理后 public/image/a3.jpg
