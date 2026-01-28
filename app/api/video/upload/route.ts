@@ -80,6 +80,15 @@ export async function POST(request: NextRequest) {
     let formData: FormData;
     try {
       formData = await request.formData();
+      // Debug: log headers and formData keys
+      try {
+        const hdrs: Record<string, string> = {};
+        request.headers.forEach((v, k) => { hdrs[k] = v; });
+        console.log('Upload request headers:', hdrs);
+      } catch (hdrErr) {
+        console.warn('Unable to enumerate request headers for logging:', hdrErr);
+      }
+      console.log('FormData keys:', Array.from(formData.keys()));
     } catch (error: any) {
       console.error('Error parsing formData:', error);
       // 如果是 403 或请求体相关的错误，提供更友好的错误信息
@@ -103,7 +112,18 @@ export async function POST(request: NextRequest) {
       removalTypeRaw === 'subtitle' ? 'subtitle' : 'watermark_logo';
 
     if (!file) {
+      console.log('No file provided in upload formData.');
       return NextResponse.json({ error: 'No file provided' }, { status: 400 });
+    } else {
+      try {
+        console.log('Received file metadata:', {
+          name: (file as File).name,
+          size: (file as File).size,
+          type: (file as File).type,
+        });
+      } catch (metaErr) {
+        console.warn('Failed to read file metadata for logging:', metaErr);
+      }
     }
 
     // 检查文件类型
@@ -301,25 +321,20 @@ export async function POST(request: NextRequest) {
       );
     });
 
-    // 构建 COS URL
-    // 腾讯云 COS URL 格式：https://<bucket-name>.cos.<region>.myqcloud.com/<object-key>
-    // 注意：bucket 名称应该就是配置的名称，不需要修改
-    // 如果上传成功，uploadResult.Location 可能包含正确的 URL
-    let cosUrl: string;
-    
-    if (uploadResult && uploadResult.Location) {
-      // 使用 SDK 返回的 Location
-      cosUrl = uploadResult.Location.startsWith('http') 
-        ? uploadResult.Location 
-        : `https://${uploadResult.Location}`;
-    } else {
-      // 手动构建 URL
-      // bucket 名称应该直接使用，不需要修改
-      cosUrl = `https://${bucket}.cos.${region}.myqcloud.com/${cosKey}`;
-    }
-    
-    console.log('COS URL:', cosUrl);
-    console.log('Upload result:', JSON.stringify(uploadResult, null, 2));
+    // 构建公开访问的 URL
+    // 改为使用加速域名 https://accelerate.removewatermarker.com/（上传返回的 URL 已经为完整 https URL）
+    // 不再拼接 COS 域名，保证后续接口收到的 original_file_url 是完整可访问的 URL
+    const cosUrl = `https://accelerate.removewatermarker.com/${cosKey}`;
+    console.log('Using accelerate URL for uploaded video:', cosUrl);
+    console.log('Upload result (uploadResult):', JSON.stringify(uploadResult, null, 2));
+    // Debug: full upload context
+    console.log('Upload debug:', {
+      bucket,
+      region,
+      cosKey,
+      cosUrl,
+      uploadResult,
+    });
 
     // 创建转换记录
     const { data: record, error: recordError } = await supabase
@@ -428,7 +443,7 @@ export async function POST(request: NextRequest) {
       // 调用API
       const taskResponse = await client.ProcessMedia(req);
 
-      console.log('MPS API response:', taskResponse);
+      console.log('MPS API response (taskResponse):', taskResponse);
 
       // 更新记录，保存任务ID
       await supabase
@@ -439,11 +454,13 @@ export async function POST(request: NextRequest) {
         })
         .eq('id', record.id);
 
-      return NextResponse.json({
+      const responseObj = {
         success: true,
         recordId: record.id,
         taskId: taskResponse.TaskId,
-      });
+      };
+      console.log('Returning response from /api/video/upload:', responseObj);
+      return NextResponse.json(responseObj);
     } catch (mpsError: any) {
       console.error('MPS API error:', mpsError);
       

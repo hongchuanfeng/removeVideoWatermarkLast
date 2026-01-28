@@ -173,3 +173,21 @@ pdf去水印页面请实现葡萄牙语和阿拉伯语。
 
 去字幕示例 - 处理前 public/image/b3.jpg
 去字幕示例 - 处理后 public/image/a3.jpg
+
+
+
+图片去水印功能，
+当图片上传成功后，返回的url含有https就是该图片的url，
+然后 /api/image/remove-watermark  这个接口时，url 就是上面上传成功返回的url，不需要再对url处理了，明白我的意思吗
+
+
+把视频去水印上传视频的域名还是改为存储桶cos的域名构建url把，
+然后处理视频返回的url，https://accelerate.removewatermarker.com/
+
+
+视频去水印功能逻辑修改下：
+1、先将视频上传到腾讯云的存储桶中
+2、然后使用上传好的视频调用视频去水印接口
+下面的逻辑不变。
+
+

@@ -17,6 +17,26 @@ try {
 
 export async function POST(request: NextRequest) {
   try {
+    console.log('=== [API] /api/video/create-task called ===');
+    try {
+      const hdrs: Record<string,string> = {};
+      request.headers.forEach((v,k) => { hdrs[k]=v; });
+      // redact cookies/authorization
+      if (hdrs.authorization) hdrs.authorization = '[REDACTED]';
+      if (hdrs.cookie) hdrs.cookie = '[REDACTED]';
+      console.log('Request headers (sanitized):', hdrs);
+    } catch (hdrErr) {
+      console.warn('Failed to enumerate request headers for logging:', hdrErr);
+    }
+    const rawBody = await request.text();
+    let body: any;
+    try {
+      body = rawBody ? JSON.parse(rawBody) : {};
+    } catch (parseErr) {
+      console.warn('Failed to parse JSON body, using raw text:', parseErr);
+      body = { raw: rawBody };
+    }
+    console.log('Request body for create-task:', body);
     const supabase = await createClient();
     const {
       data: { user },
@@ -25,8 +45,7 @@ export async function POST(request: NextRequest) {
     if (!user) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
-
-    const body = await request.json();
+    console.log('Authenticated user for create-task:', { id: user.id, email: user.email });
     const { cosUrl, cosKey, fileName, removalType: removalTypeRaw, videoDuration } = body;
     const durationSeconds = videoDuration ? Number(videoDuration) : undefined;
 
@@ -140,6 +159,7 @@ export async function POST(request: NextRequest) {
 
     if (recordError) {
       console.error('Error creating record:', recordError);
+      console.error('Error creating record:', recordError);
       return NextResponse.json(
         {
           error: 'Failed to create record',
@@ -149,6 +169,7 @@ export async function POST(request: NextRequest) {
         { status: 500 }
       );
     }
+    console.log('Created conversion record:', record);
 
     // 如果使用免费试用，立即标记已使用
     if (isFreeTrial) {
@@ -223,7 +244,7 @@ export async function POST(request: NextRequest) {
       // 调用API
       const taskResponse = await client.ProcessMedia(req);
 
-      console.log('MPS API response:', taskResponse);
+      console.log('MPS API response (taskResponse):', taskResponse);
 
       // 更新记录，保存任务ID
       await supabase

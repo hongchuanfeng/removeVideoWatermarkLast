@@ -127,6 +127,15 @@ export default function VideoUpload() {
     });
 
     try {
+      console.log('handleUpload called with:', {
+        selectedFile: selectedFile ? {
+          name: selectedFile.name,
+          size: selectedFile.size,
+          type: selectedFile.type,
+        } : null,
+        removalType,
+        videoDuration,
+      });
       // 检查登录状态
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) {
@@ -148,136 +157,43 @@ export default function VideoUpload() {
 
       console.log('User authenticated:', user.id);
 
-      // 步骤1: 获取预签名URL
-      console.log('Step 1: Requesting presigned URL...');
-      console.log('Request payload:', {
-        fileName: selectedFile.name,
-        fileSize: selectedFile.size,
-        contentType: selectedFile.type,
-        videoDuration: videoDuration ? Math.ceil(videoDuration) : undefined,
-      });
+      // 步骤：将视频上传到后端，由服务器负责上传到 COS（与图片上传一致）
+      console.log('Step: Uploading video to server endpoint /api/video/upload (server will put to COS)');
+      const formDataUpload = new FormData();
+      formDataUpload.append('file', selectedFile);
+      formDataUpload.append('type', removalType);
+      if (videoDuration) formDataUpload.append('videoDuration', String(Math.ceil(videoDuration)));
+      console.log('FormData keys for /api/video/upload:', Array.from(formDataUpload.keys()));
 
-      const presignedResponse = await fetch('/api/video/presigned-url', {
+      const uploadResponse = await fetch('/api/video/upload', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          fileName: selectedFile.name,
-          fileSize: selectedFile.size,
-          contentType: selectedFile.type,
-          videoDuration: videoDuration ? Math.ceil(videoDuration) : undefined,
-        }),
+        body: formDataUpload,
         credentials: 'include',
       });
 
-      console.log('Presigned URL response status:', presignedResponse.status);
-      console.log('Presigned URL response headers:', Object.fromEntries(presignedResponse.headers.entries()));
-
-      const presignedData = await presignedResponse.json();
-      console.log('Presigned URL response data:', presignedData);
-
-      if (!presignedResponse.ok) {
-        const errorMessage = presignedData.error || 'Failed to get upload URL';
-        const errorDetails = presignedData.details || '';
-
-        console.error('Presigned URL error:', {
-          status: presignedResponse.status,
-          error: errorMessage,
-          details: errorDetails,
-          fullResponse: presignedData
-        });
-
-        const isCreditsError = errorMessage.includes('积分不足') ||
-                              errorMessage.includes('积分') &&
-                              (errorMessage.includes('不足') || errorMessage.includes('insufficient'));
-        setIsInsufficientCredits(isCreditsError);
-
-        // 如果是认证错误，提供更清晰的信息
-        if (presignedResponse.status === 401) {
-          throw new Error('Authentication required. Please refresh the page and log in again.');
-        }
-
-        throw new Error(`${errorMessage}${errorDetails ? ` (${errorDetails})` : ''}`);
-      }
-
-      const { presignedUrl, cosKey, bucket, region } = presignedData;
-      console.log('Step 1: Got presigned URL', { cosKey, bucket, region });
-
-      // 步骤2: 直接上传文件到COS
-      console.log('Step 2: Uploading file to COS...');
-      console.log('Upload details:', {
-        presignedUrl: presignedUrl.substring(0, 100) + '...',
-        fileName: selectedFile.name,
-        fileSize: selectedFile.size,
-        contentType: selectedFile.type,
-      });
-
-      const uploadResponse = await fetch(presignedUrl, {
-        method: 'PUT',
-        body: selectedFile,
-        headers: {
-          'Content-Type': selectedFile.type || 'video/mp4',
-        },
-      });
-
-      console.log('Upload response status:', uploadResponse.status);
-      console.log('Upload response statusText:', uploadResponse.statusText);
+      console.log('Server upload response status:', uploadResponse.status);
+      const uploadResult = await uploadResponse.json();
+      console.log('Server upload response (uploadResult):', uploadResult);
 
       if (!uploadResponse.ok) {
-        const errorText = await uploadResponse.text();
-        console.error('Upload error response:', errorText);
-        throw new Error(`Failed to upload file to COS: ${uploadResponse.status} ${uploadResponse.statusText}. ${errorText}`);
-      }
-
-      console.log('Step 2: File uploaded to COS successfully');
-
-      // 构建COS URL
-      const cosUrl = `https://${bucket}.cos.${region}.myqcloud.com/${cosKey}`;
-
-      // 步骤3: 创建处理任务
-      console.log('Step 3: Creating processing task...');
-      const taskResponse = await fetch('/api/video/create-task', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          cosUrl,
-          cosKey,
-          fileName: selectedFile.name,
-          removalType,
-          videoDuration: videoDuration ? Math.ceil(videoDuration) : undefined,
-        }),
-        credentials: 'include',
-      });
-
-      const taskData = await taskResponse.json();
-
-      if (!taskResponse.ok) {
-        const errorMessage = taskData.error || 'Failed to create task';
-        const isCreditsError = errorMessage.includes('积分不足') || 
-                              errorMessage.includes('积分') && 
-                              (errorMessage.includes('不足') || errorMessage.includes('insufficient'));
-        setIsInsufficientCredits(isCreditsError);
+        const errorMessage = uploadResult.error || 'Failed to upload file to server';
+        const isCreditsError = (errorMessage && (errorMessage.includes('积分不足') || (errorMessage.includes('积分') && (errorMessage.includes('不足') || errorMessage.includes('insufficient')))));
+        setIsInsufficientCredits(Boolean(isCreditsError));
         throw new Error(errorMessage);
       }
 
-      console.log('Step 3: Task created successfully', taskData);
-
-      // 成功时重置积分不足状态
+      // 上传成功：服务器已将文件放入 COS，并已创建处理记录或开始处理
       setIsInsufficientCredits(false);
 
       setUploadProgress({
-        recordId: taskData.recordId,
+        recordId: uploadResult.recordId || null,
         progress: 10,
-        status: 'processing',
+        status: uploadResult.taskId ? 'processing' : 'uploading',
         resultUrl: null,
       });
 
-      // 开始轮询进度
-      if (taskData.recordId) {
-        startProgressPolling(taskData.recordId);
+      if (uploadResult.recordId) {
+        startProgressPolling(uploadResult.recordId);
       }
     } catch (err: any) {
       const errorMessage = err.message || 'Upload failed';

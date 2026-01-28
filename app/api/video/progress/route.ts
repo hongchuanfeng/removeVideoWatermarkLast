@@ -120,7 +120,7 @@ export async function GET(request: NextRequest) {
           const buildUrl = (path: string) =>
             path.startsWith('http')
               ? path
-              : `https://${bucket}.cos.${region}.myqcloud.com/${path.replace(/^\/+/, '')}`;
+              : `https://accelerate.removewatermarker.com/${path.replace(/^\/+/, '')}`;
 
           const pickOutputPath = () => {
             // 优先遍历所有结果，寻找 SmartEraseTask 输出

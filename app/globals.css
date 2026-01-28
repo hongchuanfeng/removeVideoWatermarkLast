@@ -30,5 +30,10 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  /* Override Tailwind's .px-4 to use 0.5rem (8px) on left/right as requested */
+  .px-4 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 

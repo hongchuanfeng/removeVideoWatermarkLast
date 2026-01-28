@@ -264,9 +264,21 @@ export async function POST(request: NextRequest) {
       expiresIn: 3600,
       contentType: contentType || 'video/mp4',
     });
+    // Also provide an accelerate domain variant (same path/query but with accelerate host).
+    // Note: signature is usually tied to host; ensure accelerate domain is configured as a proxy if you intend to PUT to it.
+    let acceleratePresignedUrl = presignedUrl;
+    try {
+      const u = new URL(presignedUrl);
+      u.hostname = 'accelerate.removewatermarker.com';
+      acceleratePresignedUrl = u.toString();
+      console.log('Generated acceleratePresignedUrl (host replaced):', acceleratePresignedUrl);
+    } catch (err) {
+      console.warn('Failed to construct acceleratePresignedUrl, will return original presignedUrl:', err);
+    }
 
     return NextResponse.json({
       presignedUrl,
+      acceleratePresignedUrl,
       cosKey,
       bucket,
       region,

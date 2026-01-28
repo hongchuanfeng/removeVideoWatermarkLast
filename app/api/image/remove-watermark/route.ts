@@ -92,8 +92,37 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'COS configuration missing' }, { status: 500 });
     }
 
-    // Extract object key from image URL
-    const imageObjectKey = imageUrl.replace(`https://${cosBucket}.cos.${cosRegion}.myqcloud.com/`, '');
+    // Extract object key from image URL.
+    // If the upload returned a public https URL (e.g. accelerate.removewatermarker.com or the COS domain),
+    // use the path part as the object key. If it's an unexpected external URL, attempt to use its pathname.
+    let imageObjectKey: string;
+    try {
+      const cosDomainPrefix = `https://${cosBucket}.cos.${cosRegion}.myqcloud.com/`;
+      const acceleratePrefix = 'https://accelerate.removewatermarker.com/';
+
+      if (imageUrl.startsWith(cosDomainPrefix)) {
+        imageObjectKey = imageUrl.replace(cosDomainPrefix, '');
+      } else if (imageUrl.startsWith(acceleratePrefix)) {
+        // Our upload endpoint returns accelerate.removewatermarker.com URLs — strip that prefix
+        imageObjectKey = imageUrl.replace(acceleratePrefix, '');
+      } else if (imageUrl.startsWith('https://')) {
+        // Generic https URL: use pathname as object key (strip leading slash)
+        try {
+          const parsed = new URL(imageUrl);
+          imageObjectKey = parsed.pathname.replace(/^\//, '');
+          console.log('Using pathname from external HTTPS URL as object key:', imageObjectKey);
+        } catch (urlErr) {
+          console.warn('Failed to parse imageUrl as URL, will use raw value as object key:', urlErr);
+          imageObjectKey = imageUrl;
+        }
+      } else {
+        // Fallback: treat the provided value as an object key already
+        imageObjectKey = imageUrl;
+      }
+    } catch (keyErr) {
+      console.error('Failed to determine image object key from imageUrl:', keyErr);
+      return NextResponse.json({ error: 'Invalid image URL' }, { status: 400 });
+    }
 
     // Convert regions to Tencent Cloud MaskPoly format
     // regions format: [{x, y, w, h}, ...]
