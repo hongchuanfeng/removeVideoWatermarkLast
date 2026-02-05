@@ -49,7 +49,80 @@ accelerate.removewatermarker.com
 
 
 
+在图片去水印菜单下面加上一个图片修复菜单功能，下面是接口文档：
+
+https://cloud.tencent.com/document/product/460/79042?from=console_document_search
+
+上面图片的接口域名是accelerate.removewatermarker.com，
+上传成功图片的域名也是accelerate.removewatermarker.com，
+该页面还有功能说明，使用帮助，示例展示，常见问题，
+先实现中文和英文版本，请实现。
 
 
 
+
+
+实现其他的去水印功能，请实现，为了网络超时，每二个一组，一组处理完后，要咨询是否继续处理其他多语言，请实现。
+
+图片修复页面实现法语与德语，西班牙语与俄语，葡萄牙语与阿拉伯语，韩语与日语，请实现。
+
+
+图片修复的示例图片路径是 public/repair/1.jpg,
+public/repair/2.jpg,
+public/repair/3.jpg,
+public/repair/4.jpg,
+
+每两张一行显示，请修改页面，显示效果。
+
+上面的图片大小要一致，还是改为一行一张图片，然后让图片居中，请修改
+
+处理前：public/cutout/b1.jpg，处理后：public/cutout/a1.jpg，
+处理前：public/cutout/b2.jpg，处理后：public/cutout/a2.jpg，
+处理前：public/cutout/b3.jpg，处理后：public/cutout/a3.jpg，
+处理前：public/cutout/b4.jpg，处理后：public/cutout/a4.jpg，
+处理前：public/cutout/b5.jpg，处理后：public/cutout/a5.jpg，
+处理前：public/cutout/b6.jpg，处理后：public/cutout/a6.jpg，
+处理前：public/cutout/b7.jpg，处理后：public/cutout/a7.jpg，
+处理前：public/cutout/b8.jpg，处理后：public/cutout/a8.jpg，
+
+
+
+
+
+
+在图片修复菜单下面加上一个智能抠图菜单功能，下面是接口文档：
+https://cloud.tencent.com/document/product/460/106750
+上面图片的接口域名是accelerate.removewatermarker.com，
+上传成功图片的域名也是accelerate.removewatermarker.com，
+该页面还有功能说明，使用帮助，示例展示，常见问题，
+先实现中文和英文版本，请实现。
+
+
+
+智能抠图页面的 示例图片：
+处理前：public/cutout/b1.jpg，处理后：public/cutout/a1.png
+处理前：public/cutout/b2.jpg，处理后：public/cutout/a2.png
+处理前：public/cutout/b3.jpg，处理后：public/cutout/a3.png
+处理前：public/cutout/b4.jpg，处理后：public/cutout/a4.png
+处理前：public/cutout/b5.jpg，处理后：public/cutout/a5.png
+处理前：public/cutout/b6.jpg，处理后：public/cutout/a6.png
+
+每一组作为一行显示，请实现，处理前和处理后是一组，在一行，处理前在前面，处理后在后面，请修改。
+
+
+将智能抠图页面实现剩下的多语言功能，
+为了防止超时，每二个一组，一组处理完后，要咨询是否继续处理其他多语言，请实现。
+将智能抠图页面实现韩语和日语。
+将智能抠图页面实现德语和法语。
+将智能抠图页面实现西班牙语和俄语。
+将智能抠图页面实现葡萄牙语和阿拉伯语。
+
+
+
+
+
+
+
+将智能抠图页面的功能说明的文字实现其他语言功能，除了中文和英文实现外，
+其他都语言都没实现，请实现这个功能。
 

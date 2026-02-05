@@ -2,11 +2,123 @@
   "nav": {
     "home": "首页",
     "imageWatermarkRemoval": "图片去水印",
+    "imageRestoration": "图片修复",
+    "imageCutout": "智能抠图",
     "otherRemovals": "其他去水印",
     "pdfWatermarkRemoval": "PDF去水印",
     "ebookWatermarkRemoval": "电子书去水印",
     "subscription": "订阅套餐",
     "profile": "个人中心"
+  },
+  "imageRestoration": {
+    "title": "图片修复",
+    "description": "上传图片，标记需要修复的区域，AI 将自然修复覆盖/破损部分。",
+    "imageCreditsInfo": "每处理一张图片需要 1 个积分。您当前有 {credits} 个积分。",
+    "uploadTitle": "上传图片",
+    "uploadPrompt": "拖拽图片到此处，或点击选择文件",
+    "selectImage": "选择图片",
+    "changeImage": "更换图片",
+    "clearPoints": "清除标记",
+    "removeLastPoint": "删除最后标记",
+    "markedPoints": "已标记 {count} 个区域",
+    "processImage": "开始修复",
+    "processing": "处理中...",
+    "resultTitle": "处理结果",
+    "downloadImage": "下载图片",
+    "loading": "加载中...",
+    "insufficientCredits": "积分不足，请先充值",
+    "processingError": "处理失败，请重试",
+    "pleaseLoginToUse": "请先登录后再使用",
+    "promptTitle": "拖拽选择需要修复的区域",
+    "promptDesc": "在图片上框选需要修复的位置（划痕、遮挡、水印覆盖等）",
+    "promptHint": "提示：支持多区域同时修复",
+    "features": {
+      "title": "功能说明",
+      "intelligent": "AI 智能修复：自然填充修复遮挡/破损区域",
+      "precision": "区域修复：只处理你框选的区域，精确可控",
+      "batch": "多区域：一次可修复多个区域",
+      "quality": "高质量输出：尽量保持原始分辨率与细节"
+    },
+    "instructions": {
+      "title": "使用帮助",
+      "step1": "上传图片（JPG/PNG）。",
+      "step2": "用鼠标拖拽框选需要修复的区域。",
+      "step3": "点击「开始修复」，等待处理完成。",
+      "step4": "下载修复后的图片。"
+    },
+    "examples": {
+      "title": "示例展示",
+      "subtitle": "修复前 / 修复后 示例",
+      "before": "修复前",
+      "after": "修复后",
+      "example1": "修复示例 1",
+      "example2": "修复示例 2"
+    },
+    "faq": {
+      "title": "常见问题",
+      "q1": "支持哪些图片格式？",
+      "a1": "支持 JPG/PNG/JPEG 等常见格式，大小不超过 10MB。",
+      "q2": "可以修复什么内容？",
+      "a2": "划痕、污渍、遮挡、水印覆盖等，效果取决于图片内容与遮挡复杂度。",
+      "q3": "处理需要多久？",
+      "a3": "一般 10-30 秒，取决于图片大小和选区数量。",
+      "q4": "一次可以选多少个区域？",
+      "a4": "支持多个区域同时修复。"
+    }
+  },
+  "imageCutout": {
+    "title": "智能抠图",
+    "description": "上传图片，调用腾讯云智能抠图能力，一键分离前景与背景。",
+    "imageCreditsInfo": "每处理一张图片需要 1 个积分，当前剩余 {credits} 个积分。",
+    "uploadTitle": "上传图片",
+    "uploadPrompt": "将图片拖拽到此处，或点击选择文件",
+    "selectImage": "选择图片",
+    "changeImage": "更换图片",
+    "processImage": "开始智能抠图",
+    "processing": "处理中...",
+    "resultTitle": "抠图结果",
+    "downloadImage": "下载图片",
+    "loading": "加载中...",
+    "insufficientCredits": "积分不足，请先充值。",
+    "processingError": "处理失败，请稍后重试。",
+    "pleaseLoginToUse": "请先登录后再使用该功能",
+    "features": {
+      "title": "功能说明",
+      "intelligent": "AI 智能抠图：自动识别前景主体，一键去除复杂背景，边缘自然平滑",
+      "precision": "细节保留：尽可能保留头发、边缘等细节纹理，减少锯齿与破损",
+      "batch": "多场景适用：支持人物、商品、电商主图、海报素材等多种场景",
+      "quality": "高质量输出：默认输出带透明通道的 PNG，可直接用于设计排版"
+    },
+    "instructions": {
+      "title": "使用帮助",
+      "step1": "上传图片（JPG/PNG，建议主体与背景对比清晰）。",
+      "step2": "确认预览后，点击「开始智能抠图」。",
+      "step3": "等待 AI 抠图完成（通常只需数秒）。",
+      "step4": "下载带透明背景的 PNG 图片，用于海报、电商主图、证件照换底等场景。"
+    },
+    "examples": {
+      "title": "示例展示",
+      "subtitle": "智能抠图典型应用场景",
+      "before": "处理前",
+      "after": "处理后",
+      "example1": "人物抠图示例 1",
+      "example2": "商品抠图示例 2",
+      "example3": "物品抠图示例 3",
+      "example4": "场景抠图示例 4",
+      "example5": "动物抠图示例 5",
+      "example6": "其他抠图示例 6"
+    },
+    "faq": {
+      "title": "常见问题",
+      "q1": "支持哪些图片格式？",
+      "a1": "支持 JPG/PNG/JPEG 等常见图片格式，大小不超过 10MB。",
+      "q2": "什么样的图片抠图效果更好？",
+      "a2": "主体与背景对比清晰、光线均匀的图片效果更好；过于模糊或噪点很多的图像效果可能受影响。",
+      "q3": "输出是什么格式？",
+      "a3": "默认输出带透明背景的 PNG，方便在任意背景上二次合成使用。",
+      "q4": "一般需要多长时间？",
+      "a4": "通常 5～20 秒即可完成，具体取决于图片大小和当前服务器负载。"
+    }
   },
   "ebookWatermarkRemoval": {
     "title": "电子书去水印",

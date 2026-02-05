@@ -48,8 +48,20 @@ export default function Header() {
     { href: `/${locale}`, label: t('home') },
     { href: `/${locale}/subscription`, label: t('subscription') },
   ];
-  const removalItems = [
+
+  const removalItemsBase = [
     { href: `/${locale}/image-watermark-removal`, label: t('imageWatermarkRemoval') },
+    { href: `/${locale}/image-restoration`, label: t('imageRestoration') },
+  ];
+
+  const removalItemsExtra =
+    locale === 'zh' || locale === 'en'
+      ? [{ href: `/${locale}/image-cutout`, label: t('imageCutout') }]
+      : [];
+
+  const removalItems = [
+    ...removalItemsBase,
+    ...removalItemsExtra,
     { href: `/${locale}/pdf-watermark-removal`, label: t('pdfWatermarkRemoval') },
     { href: `/${locale}/ebook-watermark-removal`, label: t('ebookWatermarkRemoval') },
   ];

@@ -2,6 +2,7 @@
   "nav": {
     "home": "Inicio",
     "imageWatermarkRemoval": "Eliminar marcas de agua de imágenes",
+    "imageRestoration": "Restauración de imágenes",
     "otherRemovals": "Otras eliminaciones",
     "pdfWatermarkRemoval": "Eliminación de marcas de agua PDF",
     "subscription": "Suscripción",
@@ -10,6 +11,116 @@
   "auth": {
     "signInWithGoogle": "Iniciar sesión con Google",
     "signOut": "Cerrar Sesión"
+  },
+  "imageRestoration": {
+    "title": "Restauración de imágenes",
+    "description": "Sube una imagen, marca las zonas dañadas u ocultas y usa IA para restaurarlas de forma natural.",
+    "imageCreditsInfo": "Procesar una imagen requiere 1 crédito. Te quedan {credits} créditos.",
+    "uploadTitle": "Subir imagen",
+    "uploadPrompt": "Arrastra y suelta una imagen aquí, o haz clic para seleccionar un archivo",
+    "selectImage": "Seleccionar imagen",
+    "changeImage": "Cambiar imagen",
+    "clearPoints": "Limpiar marcas",
+    "removeLastPoint": "Eliminar última marca",
+    "markedPoints": "{count} zonas marcadas",
+    "processImage": "Restaurar imagen",
+    "processing": "Procesando...",
+    "resultTitle": "Resultado",
+    "downloadImage": "Descargar imagen",
+    "loading": "Cargando...",
+    "insufficientCredits": "Créditos insuficientes. Por favor recarga primero.",
+    "processingError": "Error en el procesamiento. Por favor inténtalo de nuevo.",
+    "pleaseLoginToUse": "Por favor inicia sesión para usar esta función",
+    "promptTitle": "Arrastra para seleccionar las zonas a restaurar",
+    "promptDesc": "Dibuja rectángulos sobre las zonas que quieras reparar (rayones, manchas, objetos tapando, etc.)",
+    "promptHint": "Consejo: puedes seleccionar varias zonas",
+    "features": {
+      "title": "Características",
+      "intelligent": "Restauración con IA: repara zonas dañadas u ocultas con resultados naturales",
+      "precision": "Reparación precisa: solo se procesan las zonas que marques",
+      "batch": "Varias zonas: restaura múltiples áreas en una sola ejecución",
+      "quality": "Alta calidad: mantiene al máximo la resolución y los detalles"
+    },
+    "instructions": {
+      "title": "Cómo usar",
+      "step1": "Sube una imagen (JPG/PNG).",
+      "step2": "Arrastra para marcar las zonas que quieres restaurar.",
+      "step3": "Haz clic en “Restaurar imagen” y espera a que termine el proceso.",
+      "step4": "Descarga la imagen restaurada."
+    },
+    "examples": {
+      "title": "Ejemplos",
+      "subtitle": "Ejemplos de restauración antes / después",
+      "before": "Antes",
+      "after": "Después",
+      "example1": "Ejemplo de restauración 1",
+      "example2": "Ejemplo de restauración 2"
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "q1": "¿Qué formatos de imagen son compatibles?",
+      "a1": "Formatos comunes JPG/PNG/JPEG de hasta 10 MB.",
+      "q2": "¿Qué tipo de cosas se pueden restaurar?",
+      "a2": "Rayones, manchas, zonas tapadas y otras imperfecciones; el efecto depende del contenido de la imagen.",
+      "q3": "¿Cuánto tiempo tarda el proceso?",
+      "a3": "Normalmente entre 10 y 30 segundos, según el tamaño de la imagen y las zonas marcadas.",
+      "q4": "¿Cuántas zonas puedo seleccionar?",
+      "a4": "Puedes marcar varias zonas; se procesarán todas juntas."
+    }
+  },
+  "imageCutout": {
+    "title": "Eliminación inteligente del fondo",
+    "description": "Suba una imagen y nuestra IA eliminará automáticamente el fondo para crear una imagen PNG transparente.",
+    "imageCreditsInfo": "Procesar una imagen requiere 1 crédito. Le quedan {credits} créditos.",
+    "uploadTitle": "Subir imagen",
+    "uploadPrompt": "Arrastre y suelte una imagen aquí o haga clic para seleccionar un archivo",
+    "selectImage": "Seleccionar imagen",
+    "changeImage": "Cambiar imagen",
+    "processImage": "Iniciar eliminación del fondo",
+    "processing": "Procesando...",
+    "resultTitle": "Resultado",
+    "downloadImage": "Descargar imagen PNG transparente",
+    "loading": "Cargando...",
+    "insufficientCredits": "Créditos insuficientes. Por favor recargue primero.",
+    "processingError": "El procesamiento ha fallado. Por favor intente de nuevo.",
+    "pleaseLoginToUse": "Por favor inicie sesión para usar esta función",
+    "features": {
+      "title": "Funciones",
+      "intelligent": "Eliminación de fondo por IA: Reconocimiento y eliminación automática del sujeto principal con un clic, bordes naturalmente suaves",
+      "precision": "Preservación de detalles: El cabello, los bordes y otros detalles finos se conservan al máximo, reduciendo deshilachados y daños",
+      "batch": "Soporte multi-escenas: Adecuado para retratos, productos, imágenes principales de comercio electrónico, materiales de carteles y más",
+      "quality": "Salida de alta calidad: Salida predeterminada como PNG con canal transparente, directamente utilizable para diseños"
+    },
+    "instructions": {
+      "title": "Instrucciones",
+      "step1": "Suba una imagen (JPG/PNG).",
+      "step2": "Haga clic en «Iniciar eliminación del fondo» y espere el procesamiento por IA.",
+      "step3": "Vista previa del resultado con fondo transparente.",
+      "step4": "Descargue la imagen PNG transparente."
+    },
+    "examples": {
+      "title": "Ejemplos",
+      "subtitle": "Ejemplos antes / después de eliminación del fondo",
+      "before": "Antes",
+      "after": "Después",
+      "example1": "Ejemplo de eliminación del fondo de retrato 1",
+      "example2": "Ejemplo de eliminación del fondo de producto 2",
+      "example3": "Ejemplo de eliminación del fondo de objeto 3",
+      "example4": "Ejemplo de eliminación del fondo de escena 4",
+      "example5": "Ejemplo de eliminación del fondo de animal 5",
+      "example6": "Ejemplo de eliminación del fondo otros 6"
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "q1": "¿Qué formatos de imagen son compatibles?",
+      "a1": "Se admiten formatos comunes como JPG/PNG/JPEG de hasta 10 MB.",
+      "q2": "¿Qué tipos de imágenes son adecuadas para la eliminación del fondo?",
+      "a2": "Las imágenes con un sujeto y fondo claramente distinguibles funcionan mejor. Se admiten retratos, productos, objetos y más.",
+      "q3": "¿Qué formato de salida se utiliza?",
+      "a3": "El resultado se proporciona como imagen PNG con fondo transparente.",
+      "q4": "¿Cuánto tiempo tarda el procesamiento?",
+      "a4": "Normalmente entre 10 y 30 segundos, según el tamaño y la complejidad de la imagen."
+    }
   },
   "imageWatermarkRemoval": {
     "title": "Eliminar marcas de agua de imágenes",

@@ -2,11 +2,123 @@
   "nav": {
     "home": "Home",
     "imageWatermarkRemoval": "Image Watermark Removal",
+    "imageRestoration": "Image Restoration",
+    "imageCutout": "Smart Cutout",
     "otherRemovals": "Other Watermark Removal",
     "pdfWatermarkRemoval": "PDF Watermark Removal",
     "ebookWatermarkRemoval": "eBook Watermark Removal",
     "subscription": "Subscription",
     "profile": "My Account"
+  },
+  "imageRestoration": {
+    "title": "Image Restoration",
+    "description": "Upload an image, mark damaged/covered areas, and use AI to restore them naturally.",
+    "imageCreditsInfo": "Processing one image requires 1 credit. You have {credits} credits remaining.",
+    "uploadTitle": "Upload Image",
+    "uploadPrompt": "Drag and drop an image here, or click to select a file",
+    "selectImage": "Select Image",
+    "changeImage": "Change Image",
+    "clearPoints": "Clear Marks",
+    "removeLastPoint": "Remove Last Mark",
+    "markedPoints": "Marked {count} areas",
+    "processImage": "Restore Image",
+    "processing": "Processing...",
+    "resultTitle": "Result",
+    "downloadImage": "Download Image",
+    "loading": "Loading...",
+    "insufficientCredits": "Insufficient credits. Please recharge first.",
+    "processingError": "Processing failed. Please try again.",
+    "pleaseLoginToUse": "Please login to use this feature",
+    "promptTitle": "Drag to select areas to restore",
+    "promptDesc": "Draw rectangles over the areas you want to repair (scratches, occlusions, watermarks, etc.)",
+    "promptHint": "Tip: You can select multiple areas",
+    "features": {
+      "title": "Features",
+      "intelligent": "AI Restoration: Repair occluded/damaged areas with natural results",
+      "precision": "Region-based repair: Select exactly what you want to restore",
+      "batch": "Multi-region: Restore multiple areas in one run",
+      "quality": "High quality: Preserve resolution and details as much as possible"
+    },
+    "instructions": {
+      "title": "How to Use",
+      "step1": "Upload an image (JPG/PNG).",
+      "step2": "Drag to mark the areas to restore.",
+      "step3": "Click “Restore Image” and wait for processing.",
+      "step4": "Download the restored image."
+    },
+    "examples": {
+      "title": "Examples",
+      "subtitle": "Before / After restoration examples",
+      "before": "Before",
+      "after": "After",
+      "example1": "Restoration Example 1",
+      "example2": "Restoration Example 2"
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "What image formats are supported?",
+      "a1": "Common formats like JPG/PNG/JPEG, up to 10MB.",
+      "q2": "What can be restored?",
+      "a2": "Scratches, stains, occlusions, and other covered areas. Results depend on the image content.",
+      "q3": "How long does it take?",
+      "a3": "Usually 10–30 seconds, depending on image size and selected areas.",
+      "q4": "How many areas can I select?",
+      "a4": "You can select multiple areas; we’ll process them together."
+    }
+  },
+  "imageCutout": {
+    "title": "Smart Cutout",
+    "description": "Upload an image and use Tencent Cloud AI matting to intelligently separate the foreground from the background.",
+    "imageCreditsInfo": "Processing one image requires 1 credit. You have {credits} credits remaining.",
+    "uploadTitle": "Upload Image",
+    "uploadPrompt": "Drag and drop an image here, or click to select a file",
+    "selectImage": "Select Image",
+    "changeImage": "Change Image",
+    "processImage": "Start Smart Cutout",
+    "processing": "Processing...",
+    "resultTitle": "Cutout Result",
+    "downloadImage": "Download Image",
+    "loading": "Loading...",
+    "insufficientCredits": "Insufficient credits. Please recharge first.",
+    "processingError": "Processing failed. Please try again.",
+    "pleaseLoginToUse": "Please login to use this feature",
+    "features": {
+      "title": "Features",
+      "intelligent": "AI Matting: Automatically separates foreground from background with natural edges",
+      "precision": "Fine Details: Preserves hair and edge details as much as possible",
+      "batch": "Multiple Scenarios: Suitable for portraits, products, e‑commerce images and more",
+      "quality": "High Quality: Output with high resolution and transparent background (PNG)"
+    },
+    "instructions": {
+      "title": "How to Use",
+      "step1": "Upload an image (JPG/PNG), preferably with clear foreground and background.",
+      "step2": "Confirm the preview and click “Start Smart Cutout”.",
+      "step3": "Wait for AI matting to finish (usually a few seconds).",
+      "step4": "Download the cutout PNG and use it in design, posters, e‑commerce, etc."
+    },
+    "examples": {
+      "title": "Examples",
+      "subtitle": "Typical scenarios for intelligent cutout",
+      "before": "Before",
+      "after": "After",
+      "example1": "Portrait Cutout Example 1",
+      "example2": "Product Cutout Example 2",
+      "example3": "Object Cutout Example 3",
+      "example4": "Scene Cutout Example 4",
+      "example5": "Animal Cutout Example 5",
+      "example6": "Other Cutout Example 6"
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "What image formats are supported?",
+      "a1": "Common formats like JPG/PNG/JPEG up to 10MB.",
+      "q2": "What kind of images work best?",
+      "a2": "Images with clear subject and background separation (e.g. portraits, products). Extremely blurred or noisy images may be harder to process.",
+      "q3": "What is the output format?",
+      "a3": "By default we export PNG with transparent background so you can place it on any background.",
+      "q4": "How long does it take?",
+      "a4": "Usually 5–20 seconds, depending on image size and server load."
+    }
   },
   "ebookWatermarkRemoval": {
     "title": "eBook Watermark Removal",

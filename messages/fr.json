@@ -2,6 +2,8 @@
   "nav": {
     "home": "Accueil",
     "imageWatermarkRemoval": "Suppression des filigranes d'images",
+    "imageRestoration": "Restauration d'image",
+    "imageCutout": "Suppression intelligente du fond",
     "otherRemovals": "Autres suppressions",
     "pdfWatermarkRemoval": "Suppression de filigrane PDF",
     "subscription": "Abonnement",
@@ -10,6 +12,116 @@
   "auth": {
     "signInWithGoogle": "Se connecter avec Google",
     "signOut": "Se déconnecter"
+  },
+  "imageRestoration": {
+    "title": "Restauration d'image",
+    "description": "Téléchargez une image, marquez les zones endommagées ou masquées, et utilisez l'IA pour les restaurer naturellement.",
+    "imageCreditsInfo": "Le traitement d'une image nécessite 1 crédit. Il vous reste {credits} crédits.",
+    "uploadTitle": "Télécharger une image",
+    "uploadPrompt": "Glissez-déposez une image ici, ou cliquez pour sélectionner un fichier",
+    "selectImage": "Sélectionner l'image",
+    "changeImage": "Changer d'image",
+    "clearPoints": "Effacer les marques",
+    "removeLastPoint": "Supprimer la dernière marque",
+    "markedPoints": "{count} zones marquées",
+    "processImage": "Restaurer l'image",
+    "processing": "Traitement...",
+    "resultTitle": "Résultat",
+    "downloadImage": "Télécharger l'image",
+    "loading": "Chargement...",
+    "insufficientCredits": "Crédits insuffisants. Veuillez recharger d'abord.",
+    "processingError": "Échec du traitement. Veuillez réessayer.",
+    "pleaseLoginToUse": "Veuillez vous connecter pour utiliser cette fonctionnalité",
+    "promptTitle": "Faites glisser pour sélectionner les zones à restaurer",
+    "promptDesc": "Tracez des rectangles sur les zones à réparer (rayures, occlusions, marques, etc.)",
+    "promptHint": "Astuce : vous pouvez sélectionner plusieurs zones",
+    "features": {
+      "title": "Fonctionnalités",
+      "intelligent": "Restauration IA : répare les zones masquées ou abîmées avec un rendu naturel",
+      "precision": "Restauration ciblée : ne traite que les zones que vous avez sélectionnées",
+      "batch": "Multi-zones : restaure plusieurs zones en une seule passe",
+      "quality": "Haute qualité : préserve autant que possible la résolution et les détails"
+    },
+    "instructions": {
+      "title": "Mode d'emploi",
+      "step1": "Téléchargez une image (JPG/PNG).",
+      "step2": "Faites glisser pour entourer les zones à restaurer.",
+      "step3": "Cliquez sur « Restaurer l'image » et attendez la fin du traitement.",
+      "step4": "Téléchargez l'image restaurée."
+    },
+    "examples": {
+      "title": "Exemples",
+      "subtitle": "Exemples de restauration avant / après",
+      "before": "Avant",
+      "after": "Après",
+      "example1": "Exemple de restauration 1",
+      "example2": "Exemple de restauration 2"
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "q1": "Quels formats d'image sont pris en charge ?",
+      "a1": "Formats courants JPG/PNG/JPEG jusqu'à 10 Mo.",
+      "q2": "Que peut-on restaurer ?",
+      "a2": "Rayures, taches, zones masquées, etc. Le résultat dépend du contenu de l'image.",
+      "q3": "Combien de temps dure le traitement ?",
+      "a3": "En général 10 à 30 secondes, selon la taille et le nombre de zones.",
+      "q4": "Combien de zones puis-je sélectionner ?",
+      "a4": "Vous pouvez sélectionner plusieurs zones, elles seront traitées en une fois."
+    }
+  },
+  "imageCutout": {
+    "title": "Suppression intelligente du fond",
+    "description": "TéléchargeZ une image et notre IA supprimera automatiquement le fond pour créer une image PNG transparente.",
+    "imageCreditsInfo": "Le traitement d'une image nécessite 1 crédit. Il vous reste {credits} crédits.",
+    "uploadTitle": "Télécharger une image",
+    "uploadPrompt": "Glissez-déposez une image ici, ou cliquez pour sélectionner un fichier",
+    "selectImage": "Sélectionner l'image",
+    "changeImage": "Changer d'image",
+    "processImage": "Démarrer la suppression du fond",
+    "processing": "Traitement...",
+    "resultTitle": "Résultat",
+    "downloadImage": "Télécharger l'image PNG transparente",
+    "loading": "Chargement...",
+    "insufficientCredits": "Crédits insuffisants. Veuillez recharger d'abord.",
+    "processingError": "Échec du traitement. Veuillez réessayer.",
+    "pleaseLoginToUse": "Veuillez vous connecter pour utiliser cette fonctionnalité",
+    "features": {
+      "title": "Fonctionnalités",
+      "intelligent": "Suppression du fond par IA : Reconnaissance et suppression automatique du sujet principal avec des bords naturels",
+      "precision": "Préservation des détails : Les cheveux, les bords et autres détails fins sont conservés au maximum, réduisant les effilochures et les dommages",
+      "batch": "Support multi-scènes : Convient aux portraits, produits, images principales e-commerce, supports d'affiches et plus encore",
+      "quality": "Sortie haute qualité : Sortie par défaut en PNG avec canal transparent, directement utilisable pour les mises en page de conception"
+    },
+    "instructions": {
+      "title": "Mode d'emploi",
+      "step1": "TéléchargeZ une image (JPG/PNG).",
+      "step2": "Cliquez sur « Démarrer la suppression du fond » et attendez le traitement par IA.",
+      "step3": "Prévisualisez le résultat avec un fond transparent.",
+      "step4": "Téléchargez l'image PNG transparente."
+    },
+    "examples": {
+      "title": "Exemples",
+      "subtitle": "Exemples avant / après suppression du fond",
+      "before": "Avant",
+      "after": "Après",
+      "example1": "Exemple de suppression du fond de portrait 1",
+      "example2": "Exemple de suppression du fond de produit 2",
+      "example3": "Exemple de suppression du fond d'objet 3",
+      "example4": "Exemple de suppression du fond de scène 4",
+      "example5": "Exemple de suppression du fond d'animal 5",
+      "example6": "Exemple de suppression du fond autre 6"
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "q1": "Quels formats d'image sont pris en charge ?",
+      "a1": "Les formats courants comme JPG/PNG/JPEG jusqu'à 10 Mo sont pris en charge.",
+      "q2": "Quels types d'images conviennent à la suppression du fond ?",
+      "a2": "Les images avec un sujet et un fond clairement distinguables fonctionnent le mieux. Les portraits, produits, objets et plus sont pris en charge.",
+      "q3": "Quel format de sortie est utilisé ?",
+      "a3": "Le résultat est fourni sous forme d'image PNG avec un fond transparent.",
+      "q4": "Combien de temps prend le traitement ?",
+      "a4": "En général 10 à 30 secondes, selon la taille et la complexité de l'image."
+    }
   },
   "imageWatermarkRemoval": {
     "title": "Suppression des filigranes d'images",

@@ -2,6 +2,8 @@
   "nav": {
     "home": "Startseite",
     "imageWatermarkRemoval": "Bildwasserzeichen entfernen",
+    "imageRestoration": "Bildreparatur",
+    "imageCutout": "Intelligenter Hintergrundentferner",
     "otherRemovals": "Weitere Entferner",
     "pdfWatermarkRemoval": "PDF-Wasserzeichen entfernen",
     "subscription": "Abonnement",
@@ -10,6 +12,116 @@
   "auth": {
     "signInWithGoogle": "Mit Google anmelden",
     "signOut": "Abmelden"
+  },
+  "imageRestoration": {
+    "title": "Bildreparatur",
+    "description": "Laden Sie ein Bild hoch, markieren Sie beschädigte oder verdeckte Bereiche und lassen Sie die KI diese natürlich wiederherstellen.",
+    "imageCreditsInfo": "Die Verarbeitung eines Bildes erfordert 1 Guthaben. Ihnen bleiben {credits} Guthaben.",
+    "uploadTitle": "Bild hochladen",
+    "uploadPrompt": "Ziehen Sie ein Bild hierher oder klicken Sie, um eine Datei auszuwählen",
+    "selectImage": "Bild auswählen",
+    "changeImage": "Bild ändern",
+    "clearPoints": "Markierungen löschen",
+    "removeLastPoint": "Letzte Markierung entfernen",
+    "markedPoints": "{count} Bereiche markiert",
+    "processImage": "Bild reparieren",
+    "processing": "Verarbeitung...",
+    "resultTitle": "Ergebnis",
+    "downloadImage": "Bild herunterladen",
+    "loading": "Wird geladen...",
+    "insufficientCredits": "Unzureichende Guthaben. Bitte zuerst aufladen.",
+    "processingError": "Verarbeitung fehlgeschlagen. Bitte erneut versuchen.",
+    "pleaseLoginToUse": "Bitte melden Sie sich an, um diese Funktion zu verwenden",
+    "promptTitle": "Ziehen Sie, um zu reparierende Bereiche zu markieren",
+    "promptDesc": "Ziehen Sie Rechtecke über Kratzer, Flecken oder verdeckte Bereiche, die repariert werden sollen",
+    "promptHint": "Tipp: Sie können mehrere Bereiche auswählen",
+    "features": {
+      "title": "Funktionen",
+      "intelligent": "KI‑Reparatur: Füllt verdeckte/beschädigte Bereiche mit natürlichen Ergebnissen auf",
+      "precision": "Zielgenaue Reparatur: Es werden nur die von Ihnen markierten Bereiche verarbeitet",
+      "batch": "Mehrere Bereiche: Mehrere Regionen in einem Durchgang reparieren",
+      "quality": "Hohe Qualität: Auflösung und Details bleiben möglichst erhalten"
+    },
+    "instructions": {
+      "title": "Anleitung",
+      "step1": "Bild (JPG/PNG) hochladen.",
+      "step2": "Mit der Maus ziehen, um die zu reparierenden Bereiche zu markieren.",
+      "step3": "Auf „Bild reparieren“ klicken und auf die Fertigstellung warten.",
+      "step4": "Das reparierte Bild herunterladen."
+    },
+    "examples": {
+      "title": "Beispiele",
+      "subtitle": "Vorher-/Nachher‑Beispiele für Bildreparatur",
+      "before": "Vorher",
+      "after": "Nachher",
+      "example1": "Reparaturbeispiel 1",
+      "example2": "Reparaturbeispiel 2"
+    },
+    "faq": {
+      "title": "Häufige Fragen",
+      "q1": "Welche Bildformate werden unterstützt?",
+      "a1": "Gängige Formate wie JPG/PNG/JPEG bis 10 MB.",
+      "q2": "Was kann repariert werden?",
+      "a2": "Kratzer, Flecken, verdeckte Bereiche und andere Störungen – das Ergebnis hängt vom Bildinhalt ab.",
+      "q3": "Wie lange dauert die Reparatur?",
+      "a3": "In der Regel 10–30 Sekunden, abhängig von Bildgröße und Anzahl der Bereiche.",
+      "q4": "Wie viele Bereiche kann ich auswählen?",
+      "a4": "Sie können mehrere Bereiche markieren; alle werden gemeinsam verarbeitet."
+    }
+  },
+  "imageCutout": {
+    "title": "Intelligenter Hintergrundentferner",
+    "description": "Laden Sie ein Bild hoch und unsere KI entfernt automatisch den Hintergrund und erstellt ein transparentes PNG-Bild.",
+    "imageCreditsInfo": "Die Verarbeitung eines Bildes erfordert 1 Guthaben. Ihnen bleiben {credits} Guthaben.",
+    "uploadTitle": "Bild hochladen",
+    "uploadPrompt": "Ziehen Sie ein Bild hierher oder klicken Sie, um eine Datei auszuwählen",
+    "selectImage": "Bild auswählen",
+    "changeImage": "Bild ändern",
+    "processImage": "Hintergrundentfernung starten",
+    "processing": "Verarbeitung...",
+    "resultTitle": "Ergebnis",
+    "downloadImage": "Transparentes PNG-Bild herunterladen",
+    "loading": "Wird geladen...",
+    "insufficientCredits": "Unzureichende Guthaben. Bitte zuerst aufladen.",
+    "processingError": "Verarbeitung fehlgeschlagen. Bitte erneut versuchen.",
+    "pleaseLoginToUse": "Bitte melden Sie sich an, um diese Funktion zu verwenden",
+    "features": {
+      "title": "Funktionen",
+      "intelligent": "KI-Hintergrundentfernung: Automatische Erkennung und Entfernung des Vordergrundmotivs mit einem Klick, natürlich glatte Kanten",
+      "precision": "Detailerhaltung: Haare, Kanten und andere Feinheiten werden bestmöglich erhalten, minimiert Ausfransungen und Beschädigungen",
+      "batch": "Vielszenen-Unterstützung: Geeignet für Porträts, Produkte, E-Commerce-Hauptbilder, Postermaterialien und mehr",
+      "quality": "Hochwertige Ausgabe: Standardmäßige Ausgabe als PNG mit transparentem Kanal, direkt für Design-Layouts verwendbar"
+    },
+    "instructions": {
+      "title": "Anleitung",
+      "step1": "Laden Sie ein Bild (JPG/PNG) hoch.",
+      "step2": "Klicken Sie auf \"Hintergrundentfernung starten\" und warten Sie auf die KI-Verarbeitung.",
+      "step3": "Vorschau des Ergebnisses mit transparentem Hintergrund.",
+      "step4": "Laden Sie das transparente PNG-Bild herunter."
+    },
+    "examples": {
+      "title": "Beispiele",
+      "subtitle": "Vorher-/Nachher-Beispiele für Hintergrundentfernung",
+      "before": "Vorher",
+      "after": "Nachher",
+      "example1": "Porträt-Hintergrundentfernung Beispiel 1",
+      "example2": "Produkt-Hintergrundentfernung Beispiel 2",
+      "example3": "Objekt-Hintergrundentfernung Beispiel 3",
+      "example4": "Szenen-Hintergrundentfernung Beispiel 4",
+      "example5": "Tier-Hintergrundentfernung Beispiel 5",
+      "example6": "Andere Hintergrundentfernung Beispiel 6"
+    },
+    "faq": {
+      "title": "Häufige Fragen",
+      "q1": "Welche Bildformate werden unterstützt?",
+      "a1": "Gängige Formate wie JPG/PNG/JPEG bis 10 MB werden unterstützt.",
+      "q2": "Welche Arten von Bildern eignen sich für die Hintergrundentfernung?",
+      "a2": "Bilder mit klar erkennbarem Motiv und Hintergrund funktionieren am besten. Porträts, Produkte, Objekte und mehr werden unterstützt.",
+      "q3": "Welches Ausgabeformat wird verwendet?",
+      "a3": "Das Ergebnis wird als PNG-Bild mit transparentem Hintergrund ausgegeben.",
+      "q4": "Wie lange dauert die Verarbeitung?",
+      "a4": "In der Regel 10–30 Sekunden, abhängig von Bildgröße und Komplexität."
+    }
   },
   "imageWatermarkRemoval": {
     "title": "Bildwasserzeichen entfernen",
