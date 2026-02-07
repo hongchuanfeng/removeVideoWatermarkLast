@@ -55,12 +55,12 @@ export default function Header() {
   ];
 
   const removalItemsColorization =
-    locale === 'zh' || locale === 'en'
+    locale === 'zh' || locale === 'en' || locale === 'ko' || locale === 'ja' || locale === 'de' || locale === 'fr' || locale === 'es' || locale === 'ru' || locale === 'pt' || locale === 'ar'
       ? [{ href: `/${locale}/image-colorization`, label: t('imageColorization') }]
       : [];
 
   const removalItemsExtra =
-    locale === 'zh' || locale === 'en'
+    locale === 'zh' || locale === 'en' || locale === 'ko' || locale === 'ja' || locale === 'de' || locale === 'fr' || locale === 'es' || locale === 'ru' || locale === 'pt' || locale === 'ar'
       ? [{ href: `/${locale}/image-cutout`, label: t('imageCutout') }]
       : [];
 

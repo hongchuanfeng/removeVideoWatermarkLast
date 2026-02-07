@@ -185,3 +185,6 @@ https://cloud.tencent.com/document/product/460/83794
 
 
 nav.ebookWatermarkRemoval和nav.audioWatermarkRemoval添加其他语言的文字，请实现。
+
+
+其他去水印下面的菜单栏，除了中文与英文之外，其他都少了两个菜单，请将少的菜单加上，请实现。
