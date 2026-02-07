@@ -3,10 +3,12 @@
     "home": "Home",
     "imageWatermarkRemoval": "Image Watermark Removal",
     "imageRestoration": "Image Restoration",
+    "imageColorization": "Image Colorization",
     "imageCutout": "Smart Cutout",
     "otherRemovals": "Other Watermark Removal",
     "pdfWatermarkRemoval": "PDF Watermark Removal",
     "ebookWatermarkRemoval": "eBook Watermark Removal",
+    "audioWatermarkRemoval": "Audio Watermark Removal",
     "subscription": "Subscription",
     "profile": "My Account"
   },
@@ -63,7 +65,63 @@
       "q3": "How long does it take?",
       "a3": "Usually 10–30 seconds, depending on image size and selected areas.",
       "q4": "How many areas can I select?",
-      "a4": "You can select multiple areas; we’ll process them together."
+      "a4": "You can select multiple areas; we'll process them together."
+    }
+  },
+  "imageColorization": {
+    "title": "Image Colorization",
+    "description": "Upload black and white photos or grayscale images. AI automatically adds natural, realistic colors to restore historical moments.",
+    "imageCreditsInfo": "Processing one image requires 1 credit. You have {credits} credits remaining.",
+    "uploadTitle": "Upload Image",
+    "uploadPrompt": "Drag and drop an image here, or click to select a file",
+    "selectImage": "Select Image",
+    "changeImage": "Change Image",
+    "colorizeImage": "Start Colorization",
+    "processImage": "Start Colorization",
+    "processing": "Processing...",
+    "resultTitle": "Result",
+    "downloadImage": "Download Colorized Image",
+    "loading": "Loading...",
+    "insufficientCredits": "Insufficient credits. Please recharge first.",
+    "processingError": "Processing failed. Please try again.",
+    "pleaseLoginToUse": "Please login to use this feature",
+    "features": {
+      "title": "Features",
+      "aiColorization": "AI-Powered Colorization: Automatically identifies image content and adds natural colors based on deep learning",
+      "naturalColors": "Natural Colors: Generates realistic color effects that highly match the original image content",
+      "qualityPreservation": "Quality Preservation: Maintains image texture and details without losing original quality",
+      "detailPreservation": "Detail Preservation: Maintains image texture and details without losing original quality",
+      "historyRestore": "History Restoration: Bring old black and white photos to life, restoring the true colors of historical moments",
+      "fastProcessing": "Fast Processing: Efficient algorithms complete image colorization in a short time"
+    },
+    "instructions": {
+      "title": "How to Use",
+      "step1": "Upload an image (JPG/PNG, black and white or grayscale recommended).",
+      "step2": "Click 'Start Colorization' and wait for AI processing.",
+      "step3": "Preview the colorized result; reprocess if needed.",
+      "step4": "Download the colorized image when satisfied."
+    },
+    "examples": {
+      "title": "Examples",
+      "subtitle": "Image colorization effect examples",
+      "before": "Before",
+      "after": "After",
+      "original": "Original",
+      "colorized": "Colorized",
+      "example1": "Portrait Photo Colorization Example",
+      "example2": "Landscape Photo Colorization Example",
+      "example3": "Old Photo Colorization Example"
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "What image formats are supported?",
+      "a1": "Common formats like JPG/PNG/JPEG, up to 10MB. Clear black and white or grayscale images are recommended.",
+      "q2": "How good is the colorization result?",
+      "a2": "AI generates natural, realistic colors based on extensive data learning. Results may vary depending on the image content.",
+      "q3": "How long does it take?",
+      "a3": "Usually 5-30 seconds, depending on image size and complexity.",
+      "q4": "Can I process color images?",
+      "a4": "This feature is mainly for black and white or grayscale images. Color images won't show significant changes."
     }
   },
   "imageCutout": {
@@ -168,6 +226,74 @@
   "auth": {
     "signInWithGoogle": "Sign in with Google",
     "signOut": "Sign Out"
+  },
+  "audioWatermarkRemoval": {
+    "title": "Audio Watermark Removal",
+    "description": "Upload audio files. AI automatically detects and removes watermarks and noise from audio, restoring clear sound quality.",
+    "whyWatermark": {
+      "title": "Why Does Audio Have Watermarks?",
+      "copyright": "Copyright Protection: Many audio platforms embed watermarks in audio to protect creator copyrights, which may or may not be audible.",
+      "branding": "Source Tracking: Watermarks can track the source of audio leaks.",
+      "promotion": "Commercial Branding: Some audio adds commercial advertisement watermarks at the beginning or end.",
+      "legal": "Legal Compliance: Some audio needs watermarks to comply with platform regulations."
+    },
+    "howToRemove": {
+      "title": "How to Remove Audio Watermarks?",
+      "ai": "Our AI audio watermark removal service uses advanced deep learning algorithms to intelligently identify watermark signals in audio and remove them from the original audio.",
+      "noise": "Noise Reduction: Effectively reduces background noise while removing watermarks, making audio clearer.",
+      "filter": "Smart Filtering: Filters out watermark frequencies without affecting the main audio content.",
+      "quality": "Quality Preservation: Maintains the original audio quality and clarity as much as possible."
+    },
+    "features": {
+      "title": "Features",
+      "aiRemoval": "AI-Powered Watermark Removal: Automatically identifies and removes various audio watermarks",
+      "quality": "Quality Preservation: Preserves original audio quality and clarity after processing",
+      "batch": "Batch Processing: Supports batch watermark removal for multiple audio files",
+      "fast": "Fast Processing: Efficient AI algorithms complete processing in a short time"
+    },
+    "instructions": {
+      "title": "How to Use",
+      "step1": "Upload Audio: Click to select file or drag audio to upload area",
+      "step2": "Start Processing: Click 'Start Processing' button; AI will automatically analyze and remove watermarks",
+      "step3": "Preview & Download: Preview the result after processing, download watermark-free audio when satisfied"
+    },
+    "examples": {
+      "title": "Examples",
+      "subtitle": "Audio watermark removal effect examples",
+      "before": "Before",
+      "after": "After",
+      "beforeDesc": "Audio with watermark",
+      "afterDesc": "Watermark removed",
+      "example1": "Recording Watermark Removal Example",
+      "example2": "Music Watermark Removal Example",
+      "example3": "Speech Watermark Removal Example"
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "What audio formats are supported?",
+      "a1": "Supports MP3, WAV, AAC, FLAC, OGG and other mainstream audio formats, single file up to 100MB.",
+      "q2": "Will watermark removal affect audio quality?",
+      "a2": "We use advanced AI algorithms to effectively remove watermarks while protecting original audio quality.",
+      "q3": "How long does processing take?",
+      "a3": "Typically, 1-3 minute audio files are processed within 30 seconds to 2 minutes, depending on file size and watermark complexity.",
+      "q4": "Can I batch process multiple files?",
+      "a4": "Current version supports single file processing. Contact customer service for enterprise batch processing solutions."
+    },
+    "uploadTitle": "Upload Audio",
+    "creditsInfo": "Processing one audio requires 1 credit. You have {credits} credits remaining.",
+    "uploadPrompt": "Drag and drop audio files here, or click to select files",
+    "selectAudio": "Select Audio",
+    "changeAudio": "Change Audio",
+    "removeWatermark": "Remove Watermark",
+    "selectFile": "Select File",
+    "uploading": "Uploading...",
+    "processing": "Processing...",
+    "processingComplete": "Processing complete! Your watermark-free audio is ready.",
+    "downloadAudio": "Download Watermark-Free Audio",
+    "loading": "Loading...",
+    "insufficientCredits": "Insufficient credits, please recharge first",
+    "processingError": "Processing failed, please try again",
+    "pleaseLoginToUse": "Please login to use this feature"
   },
   "imageWatermarkRemoval": {
     "title": "Image Watermark Removal",
@@ -629,7 +755,15 @@
     "about": "About Us",
     "contactUs": "Contact Us",
     "description": "Professional video watermark removal service. Remove watermarks, logos, and subtitles from your videos.",
-    "icp": "工业和信息化部 粤ICP备18041392号-4"
+    "icp": "工业和信息化部 粤ICP备18041392号-4",
+    "friendLinks": "Friend Links",
+    "friendLink1": "Free Image Processing",
+    "friendLink2": "iceBreakGame",
+    "friendLink3": "PDF Conversion Tool",
+    "friendLink4": "Online QR Code Generator",
+    "friendLink5": "Online Barcode Generator",
+    "friendLink6": "NBA Fun Facts",
+    "friendLink7": "Video to Text"
   },
   "privacy": {
     "title": "Privacy Policy",

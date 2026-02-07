@@ -3,10 +3,12 @@
     "home": "首页",
     "imageWatermarkRemoval": "图片去水印",
     "imageRestoration": "图片修复",
+    "imageColorization": "图片上色",
     "imageCutout": "智能抠图",
     "otherRemovals": "其他去水印",
     "pdfWatermarkRemoval": "PDF去水印",
     "ebookWatermarkRemoval": "电子书去水印",
+    "audioWatermarkRemoval": "音频去水印",
     "subscription": "订阅套餐",
     "profile": "个人中心"
   },
@@ -64,6 +66,62 @@
       "a3": "一般 10-30 秒，取决于图片大小和选区数量。",
       "q4": "一次可以选多少个区域？",
       "a4": "支持多个区域同时修复。"
+    }
+  },
+  "imageColorization": {
+    "title": "图片上色",
+    "description": "上传黑白老照片或灰度图片，AI自动为图片添加自然逼真的色彩，还原历史时刻。",
+    "imageCreditsInfo": "每处理一张图片需要 1 个积分。您当前有 {credits} 个积分。",
+    "uploadTitle": "上传图片",
+    "uploadPrompt": "拖拽图片到此处，或点击选择文件",
+    "selectImage": "选择图片",
+    "changeImage": "更换图片",
+    "colorizeImage": "开始上色",
+    "processImage": "开始上色",
+    "processing": "处理中...",
+    "resultTitle": "处理结果",
+    "downloadImage": "下载上色图片",
+    "loading": "加载中...",
+    "insufficientCredits": "积分不足，请先充值",
+    "processingError": "处理失败，请重试",
+    "pleaseLoginToUse": "请先登录后再使用",
+    "features": {
+      "title": "功能说明",
+      "aiColorization": "AI智能上色：基于深度学习算法，自动识别图像内容并添加自然色彩",
+      "naturalColors": "自然色彩：生成逼真的色彩效果，与原图内容高度匹配",
+      "qualityPreservation": "画质保持：上色同时保持图像纹理和细节，不损失原图质量",
+      "detailPreservation": "细节保持：上色同时保持图像纹理和细节，不损失原图质量",
+      "historyRestore": "历史还原：让黑白老照片重获新生，还原历史时刻的真实色彩",
+      "fastProcessing": "快速处理：高效算法，短时间内完成图片上色"
+    },
+    "instructions": {
+      "title": "使用帮助",
+      "step1": "上传图片（JPG/PNG，支持黑白照片或灰度图片）。",
+      "step2": "点击「开始上色」，等待AI处理。",
+      "step3": "预览上色效果，如需调整可重新处理。",
+      "step4": "满意后下载上色后的图片。"
+    },
+    "examples": {
+      "title": "示例展示",
+      "subtitle": "图片上色效果示例",
+      "before": "上色前",
+      "after": "上色后",
+      "original": "原图",
+      "colorized": "上色后",
+      "example1": "人物照片上色示例",
+      "example2": "风景照片上色示例",
+      "example3": "黑白老照片上色示例"
+    },
+    "faq": {
+      "title": "常见问题",
+      "q1": "支持哪些图片格式？",
+      "a1": "支持 JPG/PNG/JPEG 等常见格式，大小不超过 10MB，推荐使用清晰的黑白或灰度图片。",
+      "q2": "上色效果如何？",
+      "a2": "AI基于海量数据学习，能够生成自然逼真的色彩，但效果可能因图片内容而异。",
+      "q3": "处理需要多久？",
+      "a3": "一般 5-30 秒，取决于图片大小和复杂度。",
+      "q4": "可以处理彩色图片吗？",
+      "a4": "本功能主要针对黑白或灰度图片，彩色图片不会产生明显效果。"
     }
   },
   "imageCutout": {
@@ -163,6 +221,74 @@
     "processingError": "处理失败，请重试",
     "downloadPDF": "下载",
     "insufficientCredits": "积分不足，请先充值",
+    "pleaseLoginToUse": "请先登录后使用"
+  },
+  "audioWatermarkRemoval": {
+    "title": "音频去水印",
+    "description": "上传音频文件，AI自动检测并去除音频中的水印和噪音，还原清晰音质。",
+    "whyWatermark": {
+      "title": "为什么音频会有水印？",
+      "copyright": "版权保护：很多音频平台为了保护创作者版权，会在音频中嵌入人耳可辨或不可辨的水印。",
+      "branding": "来源追踪：通过水印可以追踪音频的泄露源头。",
+      "promotion": "商业标识：部分音频会在开头或结尾添加商业广告水印。",
+      "legal": "法律合规：部分音频为了符合平台规定需要添加水印标识。"
+    },
+    "howToRemove": {
+      "title": "音频怎样去水印？",
+      "ai": "我们的AI音频去水印服务采用先进的深度学习算法，能够智能识别音频中的水印信号，并将其从原始音频中分离去除。",
+      "noise": "降噪处理：在去水印的同时有效降低背景噪音，让音频更加清晰。",
+      "filter": "智能滤波：过滤掉水印频率，不影响主体音频内容。",
+      "quality": "音质保护：处理后尽量保持音频的原始音质和清晰度。"
+    },
+    "features": {
+      "title": "功能特点",
+      "aiRemoval": "AI智能去水印：自动识别并去除各类音频水印",
+      "quality": "音质保护：处理后尽量保持音频的原始音质和清晰度",
+      "batch": "批量处理：支持多个音频文件批量去水印处理",
+      "fast": "快速处理：高效的AI算法，短时间内完成处理"
+    },
+    "instructions": {
+      "title": "使用帮助",
+      "step1": "上传音频：点击选择文件或拖拽音频到上传区域",
+      "step2": "开始处理：点击「开始处理」按钮，AI将自动分析并去除水印",
+      "step3": "预览下载：处理完成后可在线预览效果，满意后下载无水印音频"
+    },
+    "examples": {
+      "title": "示例展示",
+      "subtitle": "音频去水印效果示例",
+      "before": "处理前",
+      "after": "处理后",
+      "beforeDesc": "带有水印的音频",
+      "afterDesc": "已去除水印",
+      "example1": "录音去水印示例",
+      "example2": "音乐去水印示例",
+      "example3": "语音去水印示例"
+    },
+    "faq": {
+      "title": "常见问题",
+      "q1": "支持哪些音频格式？",
+      "a1": "支持MP3、WAV、AAC、FLAC、OGG等主流音频格式，单个文件大小不超过100MB。",
+      "q2": "去水印会影响音质吗？",
+      "a2": "我们采用先进的AI算法，在有效去除水印的同时最大程度保护原始音质。",
+      "q3": "处理需要多长时间？",
+      "a3": "通常1-3分钟的音频处理时间在30秒-2分钟内完成，具体取决于文件大小和水印复杂度。",
+      "q4": "可以批量处理多个文件吗？",
+      "a4": "当前版本支持单个文件处理，如需批量处理请联系客服获取企业解决方案。"
+    },
+    "uploadTitle": "上传音频",
+    "creditsInfo": "每处理一个音频需要 1 个积分。您当前有 {credits} 个积分。",
+    "uploadPrompt": "将音频文件拖拽到此处，或点击选择文件",
+    "selectAudio": "选择音频",
+    "changeAudio": "更换音频",
+    "removeWatermark": "开始去水印",
+    "selectFile": "选择文件",
+    "uploading": "上传中...",
+    "processing": "处理中...",
+    "processingComplete": "处理完成！您的无水印音频已准备就绪。",
+    "downloadAudio": "下载无水印音频",
+    "loading": "加载中...",
+    "insufficientCredits": "积分不足，请先充值",
+    "processingError": "处理失败，请重试",
     "pleaseLoginToUse": "请先登录后使用"
   },
   "auth": {
@@ -660,7 +786,15 @@
     "about": "关于我们",
     "contactUs": "联系我们",
     "description": "专业的视频去水印服务，支持去除水印、Logo、字幕。",
-    "icp": "工业和信息化部 粤ICP备18041392号-4"
+    "icp": "工业和信息化部 粤ICP备18041392号-4",
+    "friendLinks": "友情链接",
+    "friendLink1": "免费图片处理",
+    "friendLink2": "iceBreakGame",
+    "friendLink3": "PDF转换工具",
+    "friendLink4": "在线生成二维码",
+    "friendLink5": "在线生成条码",
+    "friendLink6": "NBA趣事",
+    "friendLink7": "视频转文字"
   },
   "privacy": {
     "title": "隐私政策",

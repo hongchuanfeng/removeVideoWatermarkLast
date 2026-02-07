@@ -3,7 +3,10 @@
     "home": "Accueil",
     "imageWatermarkRemoval": "Suppression des filigranes d'images",
     "imageRestoration": "Restauration d'image",
+    "imageColorization": "Colorisation d'image",
     "imageCutout": "Suppression intelligente du fond",
+    "ebookWatermarkRemoval": "Suppression de filigrane eBook",
+    "audioWatermarkRemoval": "Suppression des filigranes audio",
     "otherRemovals": "Autres suppressions",
     "pdfWatermarkRemoval": "Suppression de filigrane PDF",
     "subscription": "Abonnement",
@@ -69,6 +72,62 @@
       "a4": "Vous pouvez sélectionner plusieurs zones, elles seront traitées en une fois."
     }
   },
+  "imageColorization": {
+    "title": "Colorisation d'image",
+    "description": "Téléversez des photos noir et blanc ou des images en niveaux de gris. L'IA ajoute automatiquement des couleurs naturelles et réalistes pour restaurer les moments historiques.",
+    "imageCreditsInfo": "Le traitement d'une image nécessite 1 crédit. Vous avez {credits} crédits restants.",
+    "uploadTitle": "Téléverser l'image",
+    "uploadPrompt": "Glissez-déposez les images ici, ou cliquez pour sélectionner",
+    "selectImage": "Sélectionner l'image",
+    "changeImage": "Changer l'image",
+    "colorizeImage": "Démarrer la colorisation",
+    "processImage": "Démarrer la colorisation",
+    "processing": "Traitement...",
+    "resultTitle": "Résultat",
+    "downloadImage": "Télécharger l'image colorisée",
+    "loading": "Chargement...",
+    "insufficientCredits": "Crédits insuffisants, veuillez d'abord recharger",
+    "processingError": "Échec du traitement, veuillez réessayer",
+    "pleaseLoginToUse": "Veuillez vous connecter pour utiliser cette fonctionnalité",
+    "features": {
+      "title": "Fonctionnalités",
+      "aiColorization": "Colorisation par IA : Analyse automatiquement les images avec des algorithmes d'apprentissage profond et ajoute des couleurs naturelles",
+      "naturalColors": "Couleurs naturelles : Génère des couleurs réalistes qui correspondent parfaitement à l'image originale",
+      "qualityPreservation": "Préservation de la qualité : Maintient la texture de l'image sans perdre la qualité originale",
+      "detailPreservation": "Préservation des détails : Maintient la texture et les détails de l'image pendant la colorisation",
+      "historyRestore": "Restauration historique : Redonne vie aux photos noir et blanc, restaurant les vraies couleurs des moments historiques",
+      "fastProcessing": "Traitement rapide : Des algorithmes efficaces complètent la colorisation en peu de temps"
+    },
+    "instructions": {
+      "title": "Mode d'emploi",
+      "step1": "Téléversez une image (JPG/PNG, noir et blanc ou niveaux de gris recommandés).",
+      "step2": "Cliquez sur « Démarrer la colorisation » et attendez le traitement par IA.",
+      "step3": "Affichez un aperçu du résultat colorisé ; retraitement si nécessaire.",
+      "step4": "Téléversez l'image colorisée lorsque vous êtes satisfait."
+    },
+    "examples": {
+      "title": "Exemples",
+      "subtitle": "Exemples de colorisation d'image",
+      "before": "Avant",
+      "after": "Après",
+      "original": "Original",
+      "colorized": "Colorisé",
+      "example1": "Exemple de colorisation de photo de portrait",
+      "example2": "Exemple de colorisation de photo de paysage",
+      "example3": "Exemple de colorisation de vieille photo"
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "Quels formats d'image sont pris en charge ?",
+      "a1": "Prend en charge JPG/PNG/JPEG et autres formats courants, jusqu'à 10Mo. Des images noir et blanc ou niveaux de gris claires sont recommandées.",
+      "q2": "Quelle est la qualité des résultats de colorisation ?",
+      "a2": "L'IA génère des couleurs naturelles et réalistes basées sur l'apprentissage de données étendues. Les résultats peuvent varier selon le contenu de l'image.",
+      "q3": "Combien de temps prend le traitement ?",
+      "a3": "Généralement entre 5-30 secondes, selon la taille et la complexité de l'image.",
+      "q4": "Puis-je traiter des images colorées ?",
+      "a4": "Cette fonctionnalité est principalement destinée aux images en noir et blanc ou en niveaux de gris. Les images colorées ne montreront pas de changements significatifs."
+    }
+  },
   "imageCutout": {
     "title": "Suppression intelligente du fond",
     "description": "TéléchargeZ une image et notre IA supprimera automatiquement le fond pour créer une image PNG transparente.",
@@ -122,6 +181,74 @@
       "q4": "Combien de temps prend le traitement ?",
       "a4": "En général 10 à 30 secondes, selon la taille et la complexité de l'image."
     }
+  },
+  "audioWatermarkRemoval": {
+    "title": "Suppression des filigranes audio",
+    "description": "Téléversez des fichiers audio. L'IA détecte et supprime automatiquement les filigranes et le bruit de l'audio, restaurant une qualité sonore claire.",
+    "whyWatermark": {
+      "title": "Pourquoi l'audio a-t-il des filigranes ?",
+      "copyright": "Protection des droits d'auteur : De nombreuses plates-formes audio intègrent des filigranes pour protéger les droits d'auteur des créateurs, qui peuvent être audibles ou non.",
+      "branding": "Suivi de la source : Les filigranes peuvent suivre la source des fuites audio.",
+      "promotion": "Marque commerciale : Certains audios ajoutent des filigranes de publicité commerciale au début ou à la fin.",
+      "legal": "Conformité légale : Certains audios nécessitent des filigranes pour se conformer aux réglementations de la plateforme."
+    },
+    "howToRemove": {
+      "title": "Comment supprimer les filigranes audio ?",
+      "ai": "Notre service de suppression de filigranes audio par IA utilise des algorithmes d'apprentissage profond avancés pour identifier intelligemment les signaux de filigrane dans l'audio et les supprimer de l'audio d'origine.",
+      "noise": "Réduction du bruit : Réduit efficacement le bruit de fond tout en supprimant les filigranes, rendant l'audio plus clair.",
+      "filter": "Filtrage intelligent : Filtre les fréquences de filigrane sans affecter le contenu audio principal.",
+      "quality": "Préservation de la qualité : Maintient la qualité et la clarté audio d'origine autant que possible."
+    },
+    "features": {
+      "title": "Fonctionnalités",
+      "aiRemoval": "Suppression de filigrane alimentée par l'IA : Identifie et supprime automatiquement divers filigranes audio",
+      "quality": "Préservation de la qualité : Préserve la qualité et la clarté audio d'origine après le traitement",
+      "batch": "Traitement par lots : Prend en charge la suppression de filigranes par lots pour plusieurs fichiers audio",
+      "fast": "Traitement rapide : Des algorithmes IA efficaces terminent le traitement en peu de temps"
+    },
+    "instructions": {
+      "title": "Mode d'emploi",
+      "step1": "Téléverser l'audio : Cliquez pour sélectionner le fichier ou faites glisser l'audio vers la zone de téléversement",
+      "step2": "Démarrer le traitement : Cliquez sur le bouton 'Démarrer le traitement'; l'IA analysera et supprimera automatiquement les filigranes",
+      "step3": "Aperçu et téléchargement : Affichez un aperçu du résultat après le traitement, téléchargez l'audio sans filigrane lorsque vous êtes satisfait"
+    },
+    "examples": {
+      "title": "Exemples",
+      "subtitle": "Exemples de suppression de filigrane audio",
+      "before": "Avant",
+      "after": "Après",
+      "beforeDesc": "Audio avec filigrane",
+      "afterDesc": "Filigrane supprimé",
+      "example1": "Exemple de suppression de filigrane d'enregistrement",
+      "example2": "Exemple de suppression de filigrane musical",
+      "example3": "Exemple de suppression de filigrane vocal"
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": " Quels formats audio sont pris en charge ?",
+      "a1": "Prend en charge MP3, WAV, AAC, FLAC, OGG et autres formats audio courants, fichier unique jusqu'à 100Mo.",
+      "q2": "La suppression du filigrane affectera-t-elle la qualité audio ?",
+      "a2": "Nous utilisons des algorithmes d'IA avancés pour supprimer efficacement les filigranes tout en protégeant la qualité audio d'origine.",
+      "q3": "Combien de temps prend le traitement ?",
+      "a3": "En général, les fichiers audio de 1-3 minutes sont traités en 30 secondes à 2 minutes, selon la taille du fichier et la complexité du filigrane.",
+      "q4": "Puis-je traiter plusieurs fichiers en lot ?",
+      "a4": "La version actuelle prend en charge le traitement de fichiers uniques. Contactez le service client pour des solutions de traitement par lots entreprise."
+    },
+    "uploadTitle": "Téléverser l'audio",
+    "creditsInfo": "Le traitement d'un audio nécessite 1 crédit. Vous avez {credits} crédits restants.",
+    "uploadPrompt": "Glissez-déposez les fichiers audio ici, ou cliquez pour sélectionner",
+    "selectAudio": "Sélectionner l'audio",
+    "changeAudio": "Changer l'audio",
+    "removeWatermark": "Supprimer le filigrane",
+    "selectFile": "Sélectionner le fichier",
+    "uploading": "Téléversement...",
+    "processing": "Traitement...",
+    "processingComplete": "Traitement terminé ! Votre audio sans filigrane est prêt.",
+    "downloadAudio": "Télécharger l'audio sans filigrane",
+    "loading": "Chargement...",
+    "insufficientCredits": "Crédits insuffisants, veuillez d'abord recharger",
+    "processingError": "Échec du traitement, veuillez réessayer",
+    "pleaseLoginToUse": "Veuillez vous connecter pour utiliser cette fonctionnalité"
   },
   "imageWatermarkRemoval": {
     "title": "Suppression des filigranes d'images",
@@ -544,7 +671,15 @@
     "about": "À propos de nous",
     "contactUs": "Nous contacter",
     "description": "Service professionnel de suppression de filigrane vidéo. Supprimez les filigranes, logos et sous-titres de vos vidéos.",
-    "icp": "工业和信息化部 粤ICP备18041392号-4"
+    "icp": "工业和信息化部 粤ICP备18041392号-4",
+    "friendLinks": "Liens d'amitié",
+    "friendLink1": "Traitement d'image gratuit",
+    "friendLink2": "iceBreakGame",
+    "friendLink3": "Outil de conversion PDF",
+    "friendLink4": "Générateur de QR code en ligne",
+    "friendLink5": "Générateur de code-barres en ligne",
+    "friendLink6": "Faits amusants NBA",
+    "friendLink7": "Vidéo en texte"
   },
   "about": {
     "title": "À propos de nous",

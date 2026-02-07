@@ -3,6 +3,10 @@
     "home": "Início",
     "imageWatermarkRemoval": "Remover marcas d'água de imagens",
     "imageRestoration": "Restauração de imagens",
+    "imageColorization": "Colorização de imagens",
+    "imageCutout": "Remoção Inteligente de Fundo",
+    "ebookWatermarkRemoval": "Remoção de Marcas d'Água de eBook",
+    "audioWatermarkRemoval": "Remoção de Marcas d'Água de Áudio",
     "otherRemovals": "Outras remoções",
     "pdfWatermarkRemoval": "Remoção de Marcas d'Água PDF",
     "subscription": "Assinatura",
@@ -68,6 +72,62 @@
       "a4": "Você pode marcar várias áreas; todas serão processadas juntas."
     }
   },
+  "imageColorization": {
+    "title": "Colorização de imagens",
+    "description": "Envie fotos em preto e branco ou imagens em tons de cinza. A IA adiciona automaticamente cores naturais e realistas para restaurar momentos históricos.",
+    "imageCreditsInfo": "O processamento de uma imagem requer 1 crédito. Você tem {credits} créditos restantes.",
+    "uploadTitle": "Enviar imagem",
+    "uploadPrompt": "Arraste e solte imagens aqui, ou clique para selecionar",
+    "selectImage": "Selecionar imagem",
+    "changeImage": "Alterar imagem",
+    "colorizeImage": "Iniciar colorização",
+    "processImage": "Iniciar colorização",
+    "processing": "Processando...",
+    "resultTitle": "Resultado",
+    "downloadImage": "Baixar imagem colorida",
+    "loading": "Carregando...",
+    "insufficientCredits": "Créditos insuficientes, recarregue primeiro",
+    "processingError": "Erro de processamento, tente novamente",
+    "pleaseLoginToUse": "Por favor, faça login para usar este recurso",
+    "features": {
+      "title": "Recursos",
+      "aiColorization": "Colorização com IA: Analisa imagens automaticamente com algoritmos de aprendizado profundo e adiciona cores naturais",
+      "naturalColors": "Cores naturais: Gera cores realistas que combinam perfeitamente com a imagem original",
+      "qualityPreservation": "Preservação de qualidade: Mantém a textura da imagem sem perder a qualidade original",
+      "detailPreservation": "Preservação de detalhes: Mantém a textura e os detalhes da imagem durante a colorização",
+      "historyRestore": "Restauração histórica: Dá vida às fotos em preto e branco, restaurando as cores verdadeiras de momentos históricos",
+      "fastProcessing": "Processamento rápido: Algoritmos eficientes completam a colorização em pouco tempo"
+    },
+    "instructions": {
+      "title": "Como usar",
+      "step1": "Envie uma imagem (JPG/PNG, preto e branco ou tons de cinza recomendados).",
+      "step2": "Clique em 'Iniciar colorização' e aguarde o processamento da IA.",
+      "step3": "Pré-visualize o resultado colorizado; processe novamente se necessário.",
+      "step4": "Baixe a imagem colorida quando estiver satisfeito."
+    },
+    "examples": {
+      "title": "Exemplos",
+      "subtitle": "Exemplos de colorização de imagens",
+      "before": "Antes",
+      "after": "Depois",
+      "original": "Original",
+      "colorized": "Colorido",
+      "example1": "Exemplo de colorização de foto de retrato",
+      "example2": "Exemplo de colorização de foto de paisagem",
+      "example3": "Exemplo de colorização de foto antiga"
+    },
+    "faq": {
+      "title": "Perguntas frequentes",
+      "q1": "Quais formatos de imagem são suportados?",
+      "a1": "Suporta JPG/PNG/JPEG e outros formatos comuns, até 100MB. Imagens em preto e branco ou tons de cinza claras são recomendadas.",
+      "q2": "Qual a qualidade dos resultados da colorização?",
+      "a2": "A IA gera cores naturais e realistas baseadas em amplo aprendizado de dados. Os resultados podem variar dependendo do conteúdo da imagem.",
+      "q3": "Quanto tempo leva o processamento?",
+      "a3": "Geralmente entre 5-30 segundos, dependendo do tamanho da imagem e da complexidade.",
+      "q4": "Posso processar imagens coloridas?",
+      "a4": "Este recurso é principalmente para imagens em preto e branco ou tons de cinza. Imagens coloridas não mostrarão mudanças significativas."
+    }
+  },
   "imageCutout": {
     "title": "Remoção inteligente de fundo",
     "description": "Faça upload de uma imagem e nossa IA removerá automaticamente o fundo para criar uma imagem PNG transparente.",
@@ -121,6 +181,74 @@
       "q4": "Quanto tempo leva o processamento?",
       "a4": "Geralmente entre 10 e 30 segundos, dependendo do tamanho e complexidade da imagem."
     }
+  },
+  "audioWatermarkRemoval": {
+    "title": "Remoção de Marcas d'Água de Áudio",
+    "description": "Carregue arquivos de áudio. A IA detecta e remove automaticamente marcas d'água e ruído do áudio, restaurando uma qualidade sonora clara.",
+    "whyWatermark": {
+      "title": "Por que o áudio tem marcas d'água?",
+      "copyright": "Proteção de direitos autorais: Muitas plataformas de áudio incorporam marcas d'água para proteger os direitos autorais dos criadores, que podem ser audíveis ou não.",
+      "branding": "Rastreamento de fonte: Marcas d'água podem rastrear a fonte de vazamentos de áudio.",
+      "promotion": "Marca comercial: Alguns áudios adicionam marcas d'água de publicidade comercial no início ou no final.",
+      "legal": "Conformidade legal: Alguns áudios precisam de marcas d'água para cumprir as regulamentações da plataforma."
+    },
+    "howToRemove": {
+      "title": "Como remover marcas d'água do áudio?",
+      "ai": "Nosso serviço de remoção de marcas d'água de áudio por IA usa algoritmos avançados de aprendizado profundo para identificar inteligentemente sinais de marca d'água no áudio e removê-los do áudio original.",
+      "noise": "Redução de ruído: Reduz efetivamente o ruído de fundo enquanto remove marcas d'água, tornando o áudio mais claro.",
+      "filter": "Filtragem inteligente: Filtra frequências de marca d'água sem afetar o conteúdo principal do áudio.",
+      "quality": "Preservação de qualidade: Mantém a qualidade e clareza original do áudio tanto quanto possível."
+    },
+    "features": {
+      "title": "Recursos",
+      "aiRemoval": "Remoção de marca d'água com IA: Identifica e remove automaticamente várias marcas d'água de áudio",
+      "quality": "Preservação de qualidade: Mantém a qualidade e clareza original do áudio após o processamento",
+      "batch": "Processamento em lote: Suporta remoção de marcas d'água em lote para múltiplos arquivos de áudio",
+      "fast": "Processamento rápido: Algoritmos IA eficientes completam o processamento em pouco tempo"
+    },
+    "instructions": {
+      "title": "Instruções de uso",
+      "step1": "Carregar áudio: Clique para selecionar arquivo ou arraste o áudio para a área de carregamento",
+      "step2": "Iniciar processamento: Clique no botão 'Iniciar processamento'; a IA analisará e removerá automaticamente as marcas d'água",
+      "step3": "Pré-visualização e download: Pré-visualize o resultado após o processamento, baixe o áudio sem marcas d'água quando estiver satisfeito"
+    },
+    "examples": {
+      "title": "Exemplos",
+      "subtitle": "Exemplos de remoção de marcas d'água de áudio",
+      "before": "Antes",
+      "after": "Depois",
+      "beforeDesc": "Áudio com marca d'água",
+      "afterDesc": "Marca d'água removida",
+      "example1": "Exemplo de remoção de marca d'água de gravação",
+      "example2": "Exemplo de remoção de marca d'água de música",
+      "example3": "Exemplo de remoção de marca d'água de fala"
+    },
+    "faq": {
+      "title": "Perguntas frequentes",
+      "q1": "Quais formatos de áudio são suportados?",
+      "a1": "Suporta MP3, WAV, AAC, FLAC, OGG e outros formatos de áudio comuns, arquivo individual até 100MB.",
+      "q2": "A remoção da marca d'água afetará a qualidade do áudio?",
+      "a2": "Usamos algoritmos de IA avançados para remover efetivamente marcas d'água enquanto protegemos a qualidade original do áudio.",
+      "q3": "Quanto tempo leva o processamento?",
+      "a3": "Geralmente, arquivos de áudio de 1-3 minutos são processados entre 30 segundos e 2 minutos, dependendo do tamanho do arquivo e complexidade da marca d'água.",
+      "q4": "Posso processar vários arquivos em lote?",
+      "a4": "A versão atual suporta processamento de arquivos individuais. Contate o atendimento ao cliente para soluções de processamento em lote corporativas."
+    },
+    "uploadTitle": "Carregar Áudio",
+    "creditsInfo": "O processamento de um áudio requer 1 crédito. Você tem {credits} créditos restantes.",
+    "uploadPrompt": "Arraste e solte arquivos de áudio aqui, ou clique para selecionar",
+    "selectAudio": "Selecionar Áudio",
+    "changeAudio": "Alterar Áudio",
+    "removeWatermark": "Remover Marca d'Água",
+    "selectFile": "Selecionar Arquivo",
+    "uploading": "Carregando...",
+    "processing": "Processando...",
+    "processingComplete": "Processamento completo! Seu áudio sem marcas d'água está pronto.",
+    "downloadAudio": "Baixar Áudio Sem Marcas d'Água",
+    "loading": "Carregando...",
+    "insufficientCredits": "Créditos insuficientes, recarregue primeiro",
+    "processingError": "Erro de processamento, tente novamente",
+    "pleaseLoginToUse": "Por favor, faça login para usar este recurso"
   },
   "imageWatermarkRemoval": {
     "title": "Remover marcas d'água de imagens",
@@ -549,7 +677,15 @@
     "about": "Sobre Nós",
     "contactUs": "Entre em Contato",
     "description": "Serviço profissional de remoção de marcas d'água de vídeo. Remova marcas d'água, logos e legendas dos seus vídeos.",
-    "icp": "工业和信息化部 粤ICP备18041392号-4"
+    "icp": "工业和信息化部 粤ICP备18041392号-4",
+    "friendLinks": "Links de Amizade",
+    "friendLink1": "Processamento de Imagem Grátis",
+    "friendLink2": "iceBreakGame",
+    "friendLink3": "Ferramenta de Conversão PDF",
+    "friendLink4": "Gerador de QR Code Online",
+    "friendLink5": "Gerador de Código de Barras Online",
+    "friendLink6": "Fatos Divertidos da NBA",
+    "friendLink7": "Vídeo para Texto"
   },
   "about": {
     "title": "Sobre Nós",

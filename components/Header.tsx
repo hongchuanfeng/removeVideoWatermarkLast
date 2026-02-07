@@ -54,6 +54,11 @@ export default function Header() {
     { href: `/${locale}/image-restoration`, label: t('imageRestoration') },
   ];
 
+  const removalItemsColorization =
+    locale === 'zh' || locale === 'en'
+      ? [{ href: `/${locale}/image-colorization`, label: t('imageColorization') }]
+      : [];
+
   const removalItemsExtra =
     locale === 'zh' || locale === 'en'
       ? [{ href: `/${locale}/image-cutout`, label: t('imageCutout') }]
@@ -61,9 +66,11 @@ export default function Header() {
 
   const removalItems = [
     ...removalItemsBase,
+    ...removalItemsColorization,
     ...removalItemsExtra,
     { href: `/${locale}/pdf-watermark-removal`, label: t('pdfWatermarkRemoval') },
     { href: `/${locale}/ebook-watermark-removal`, label: t('ebookWatermarkRemoval') },
+    { href: `/${locale}/audio-watermark-removal`, label: t('audioWatermarkRemoval') },
   ];
   const [isRemovalsOpen, setIsRemovalsOpen] = useState(false);
   const removalsRef = useRef<HTMLDivElement | null>(null);

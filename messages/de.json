@@ -3,7 +3,10 @@
     "home": "Startseite",
     "imageWatermarkRemoval": "Bildwasserzeichen entfernen",
     "imageRestoration": "Bildreparatur",
+    "imageColorization": "Bildkolorierung",
     "imageCutout": "Intelligenter Hintergrundentferner",
+    "ebookWatermarkRemoval": "E-Book-Wasserzeichen entfernen",
+    "audioWatermarkRemoval": "Audio-Wasserzeichen-Entfernung",
     "otherRemovals": "Weitere Entferner",
     "pdfWatermarkRemoval": "PDF-Wasserzeichen entfernen",
     "subscription": "Abonnement",
@@ -69,6 +72,62 @@
       "a4": "Sie können mehrere Bereiche markieren; alle werden gemeinsam verarbeitet."
     }
   },
+  "imageColorization": {
+    "title": "Bildkolorierung",
+    "description": "Laden Sie Schwarz-Weiß-Fotos oder Graustufenbilder hoch. KI fügt automatisch natürliche, realistische Farben hinzu, um historische Momente wiederherzustellen.",
+    "imageCreditsInfo": "Die Verarbeitung eines Bildes erfordert 1 Credit. Sie haben {credits} Credits übrig.",
+    "uploadTitle": "Bild hochladen",
+    "uploadPrompt": "Bilder hierher ziehen oder zum Auswählen klicken",
+    "selectImage": "Bild auswählen",
+    "changeImage": "Bild ändern",
+    "colorizeImage": "Kolorierung starten",
+    "processImage": "Kolorierung starten",
+    "processing": "Verarbeitung...",
+    "resultTitle": "Ergebnis",
+    "downloadImage": "Koloriertes Bild herunterladen",
+    "loading": "Wird geladen...",
+    "insufficientCredits": "Unzureichende Credits, bitte zuerst aufladen",
+    "processingError": "Verarbeitung fehlgeschlagen, bitte erneut versuchen",
+    "pleaseLoginToUse": "Bitte anmelden um diese Funktion zu nutzen",
+    "features": {
+      "title": "Funktionen",
+      "aiColorization": "KI-Kolorierung: Analysiert Bilder automatisch mit Deep-Learning-Algorithmen und fügt natürliche Farben hinzu",
+      "naturalColors": "Natürliche Farben: Erzeugt realistische Farben, die perfekt zum Originalbild passen",
+      "qualityPreservation": "Qualitätserhaltung: Behält Bildtextur bei, ohne Originalqualität zu verlieren",
+      "detailPreservation": "Detailerhaltung: Behält Bildtextur und Details während der Kolorierung bei",
+      "historyRestore": "Geschichtswiederherstellung: Belebt Schwarz-Weiß-Fotos wieder und stellt die wahren Farben historischer Momente wieder her",
+      "fastProcessing": "Schnelle Verarbeitung: Effiziente Algorithmen schließen die Kolorierung in kurzer Zeit ab"
+    },
+    "instructions": {
+      "title": "Verwendungsanleitung",
+      "step1": "Laden Sie ein Bild hoch (JPG/PNG, empfohlen in Schwarz-Weiß oder Graustufen).",
+      "step2": "Klicken Sie auf 'Kolorierung starten' und warten Sie auf die KI-Verarbeitung.",
+      "step3": "Vorschau des kolorierten Ergebnisses; bei Bedarf erneut verarbeiten.",
+      "step4": "Laden Sie das kolorierte Bild herunter, wenn Sie zufrieden sind."
+    },
+    "examples": {
+      "title": "Beispiele",
+      "subtitle": "Bildkolorierung Beispiele",
+      "before": "Vorher",
+      "after": "Nachher",
+      "original": "Original",
+      "colorized": "Koloriert",
+      "example1": "Porträtfotokolorierungsbeispiel",
+      "example2": "Landschaftsfotokolorierungsbeispiel",
+      "example3": "Altfotokolorierungsbeispiel"
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "Welche Bildformate werden unterstützt?",
+      "a1": "Unterstützt JPG/PNG/JPEG und andere gängige Formate, bis zu 10MB. Klare Schwarz-Weiß- oder Graustufenbilder werden empfohlen.",
+      "q2": "Wie gut sind die Kolorierungsergebnisse?",
+      "a2": "KI erzeugt basierend auf umfangreichen Datenlernen natürliche, realistische Farben. Ergebnisse können je nach Bildinhalt variieren.",
+      "q3": "Wie lange dauert die Verarbeitung?",
+      "a3": "In der Regel 5-30 Sekunden, abhängig von Bildgröße und Komplexität.",
+      "q4": "Kann ich Farbbilder verarbeiten?",
+      "a4": "Diese Funktion ist hauptsächlich für Schwarz-Weiß- oder Graustufenbilder. Farbbilder zeigen keine signifikanten Änderungen."
+    }
+  },
   "imageCutout": {
     "title": "Intelligenter Hintergrundentferner",
     "description": "Laden Sie ein Bild hoch und unsere KI entfernt automatisch den Hintergrund und erstellt ein transparentes PNG-Bild.",
@@ -122,6 +181,74 @@
       "q4": "Wie lange dauert die Verarbeitung?",
       "a4": "In der Regel 10–30 Sekunden, abhängig von Bildgröße und Komplexität."
     }
+  },
+  "audioWatermarkRemoval": {
+    "title": "Audio-Wasserzeichen-Entfernung",
+    "description": "Laden Sie Audiodateien hoch. KI erkennt und entfernt automatisch Wasserzeichen und Rauschen aus Audio und stellt eine klare Klangqualität wieder her.",
+    "whyWatermark": {
+      "title": "Warum hat Audio Wasserzeichen?",
+      "copyright": "Urheberrechtsschutz: Viele Audioplattformen betten Wasserzeichen ein, um die Urheberrechte der Ersteller zu schützen, die hörbar sein können oder nicht.",
+      "branding": "Quellenverfolgung: Wasserzeichen können die Quelle von Audio-Lecks verfolgen.",
+      "promotion": "Kommerzielle Marken: Einige Audio fügen am Anfang oder Ende Wasserzeichen für kommerzielle Werbung hinzu.",
+      "legal": "Rechtskonformität: Einige Audio benötigen Wasserzeichen, um Plattformvorschriften einzuhalten."
+    },
+    "howToRemove": {
+      "title": "Wie entfernt man Audio-Wasserzeichen?",
+      "ai": "Unser KI-Audio-Wasserzeichen-Entfernungsservice verwendet fortschrittliche Deep-Learning-Algorithmen, um Wasserzeichensignale in Audio intelligent zu identifizieren und aus dem Original-Audio zu entfernen.",
+      "noise": "Rauschunterdrückung: Reduziert effektiv Hintergrundgeräusche beim Entfernen von Wasserzeichen und macht Audio klarer.",
+      "filter": "Intelligente Filterung: Filtert Wasserzeichenfrequenzen heraus, ohne die Haupt-Audioinhalte zu beeinflussen.",
+      "quality": "Qualitätserhaltung: Behält die ursprüngliche Audioqualität und Klarheit so weit wie möglich bei."
+    },
+    "features": {
+      "title": "Funktionen",
+      "aiRemoval": "KI-gestützte Wasserzeichenentfernung: Identifiziert und entfernt automatisch verschiedene Audio-Wasserzeichen",
+      "quality": "Qualitätserhaltung: Behält die ursprüngliche Audioqualität nach der Verarbeitung bei",
+      "batch": "Stapelverarbeitung: Unterstützt die Stapelentfernung von Wasserzeichen für mehrere Audiodateien",
+      "fast": "Schnelle Verarbeitung: Effiziente KI-Algorithmen完成 обработку за короткое время"
+    },
+    "instructions": {
+      "title": "Verwendungsanleitung",
+      "step1": "Audio hochladen: Klicken Sie auf Datei auswählen oder ziehen Sie Audio in den Upload-Bereich",
+      "step2": "Verarbeitung starten: Klicken Sie auf 'Verarbeitung starten'; KI analysiert und entfernt automatisch Wasserzeichen",
+      "step3": "Vorschau & Herunterladen: Vorschau nach Verarbeitung, laden Sie wasserzeichenfreies Audio herunter, wenn zufrieden"
+    },
+    "examples": {
+      "title": "Beispiele",
+      "subtitle": "Audio-Wasserzeichen-Entfernung Beispiele",
+      "before": "Vorher",
+      "after": "Nachher",
+      "beforeDesc": "Audio mit Wasserzeichen",
+      "afterDesc": "Wasserzeichen entfernt",
+      "example1": "Beispiel für Aufnahme-Wasserzeichenentfernung",
+      "example2": "Beispiel für Musik-Wasserzeichenentfernung",
+      "example3": "Beispiel für Sprach-Wasserzeichenentfernung"
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "Welche Audioformate werden unterstützt?",
+      "a1": "Unterstützt MP3, WAV, AAC, FLAC, OGG und andere gängige Audioformate, einzelne Datei bis zu 100MB.",
+      "q2": "Beeinflusst die Wasserzeichenentfernung die Audioqualität?",
+      "a2": "Wir verwenden fortschrittliche KI-Algorithmen, um Wasserzeichen effektiv zu entfernen und die Original-Audioqualität zu schützen.",
+      "q3": "Wie lange dauert die Verarbeitung?",
+      "a3": "In der Regel werden 1-3 MinutAudios innerhalb von 30 Sekunden bis 2 Minuten verarbeitet, abhängig von Dateigröße und Wasserzeichenkomplexität.",
+      "q4": "Kann ich mehrere Dateien stapelweise verarbeiten?",
+      "a4": "Die aktuelle Version unterstützt die Einzeldateiverarbeitung. Kontaktieren Sie den Kundenservice für Unternehmens-Stapelverarbeitungslösungen."
+    },
+    "uploadTitle": "Audio hochladen",
+    "creditsInfo": "Die Verarbeitung eines Audios erfordert 1 Credit. Sie haben {credits} Credits übrig.",
+    "uploadPrompt": "Audiodateien hierher ziehen oder zum Auswählen klicken",
+    "selectAudio": "Audio auswählen",
+    "changeAudio": "Audio ändern",
+    "removeWatermark": "Wasserzeichen entfernen",
+    "selectFile": "Datei auswählen",
+    "uploading": "Hochladen...",
+    "processing": "Verarbeitung...",
+    "processingComplete": "Verarbeitung abgeschlossen! Ihr wasserzeichenfreies Audio ist bereit.",
+    "downloadAudio": "Wasserzeichenfreies Audio herunterladen",
+    "loading": "Laden...",
+    "insufficientCredits": "Unzureichende Credits, bitte zuerst aufladen",
+    "processingError": "Verarbeitung fehlgeschlagen, bitte erneut versuchen",
+    "pleaseLoginToUse": "Bitte anmelden um diese Funktion zu nutzen"
   },
   "imageWatermarkRemoval": {
     "title": "Bildwasserzeichen entfernen",
@@ -544,7 +671,15 @@
     "about": "Über uns",
     "contactUs": "Kontaktieren Sie uns",
     "description": "Professioneller Video-Wasserzeichen-Entfernungsservice. Entfernen Sie Wasserzeichen, Logos und Untertitel aus Ihren Videos.",
-    "icp": "工业和信息化部 粤ICP备18041392号-4"
+    "icp": "工业和信息化部 粤ICP备18041392号-4",
+    "friendLinks": "Freundschaftslinks",
+    "friendLink1": "Kostenlose Bildverarbeitung",
+    "friendLink2": "iceBreakGame",
+    "friendLink3": "PDF-Konvertierungstool",
+    "friendLink4": "Online QR-Code-Generator",
+    "friendLink5": "Online-Barcode-Generator",
+    "friendLink6": "NBA-Fakten",
+    "friendLink7": "Video zu Text"
   },
   "about": {
     "title": "Über uns",

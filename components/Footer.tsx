@@ -17,10 +17,20 @@ export default function Footer() {
     { href: `/${locale}/ip`, label: t('ip') },
   ];
 
+  const friendLinks = [
+    { href: 'https://mosaic.chdaoai.com/', label: t('friendLink1') },
+    { href: 'https://www.icebreakgame.com/', label: t('friendLink2') },
+    { href: 'https://pdf.chdaoai.com/', label: t('friendLink3') },
+    { href: 'https://qrcode.chdaoai.com/', label: t('friendLink4') },
+    { href: 'https://barcode.zorezoro.com/', label: t('friendLink5') },
+    { href: 'https://www.zorezoro.com/', label: t('friendLink6') },
+    { href: 'https://video2txt.zorezoro.com/', label: t('friendLink7') },
+  ];
+
   return (
     <footer className="bg-gray-900 text-gray-300 mt-20">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-5 gap-8">
           {/* Company Info */}
           <div>
             <h3 className="text-white text-xl font-bold mb-4">RemoveWatermark</h3>
@@ -82,6 +92,25 @@ export default function Footer() {
                   {t('contactUs')}
                 </Link>
               </li>
+            </ul>
+          </div>
+
+          {/* Friend Links */}
+          <div>
+            <h4 className="text-white font-semibold mb-4">{t('friendLinks')}</h4>
+            <ul className="space-y-2">
+              {friendLinks.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm hover:text-white transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
